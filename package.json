@@ -12,8 +12,8 @@
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
     "build": "quasar build",
-    "deploy": "quasar build && gh-pages -d dist",
-    "deploytest": "gh-pages -d dist"
+    "deploy": "quasar build && gh-pages -d dist/spa",
+    "deploytest": "push-dir --dir=dist/spa --remote=gh-pages --branch=master"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
@@ -32,6 +32,7 @@
     "gh-pages": "6.1.1",
     "postcss": "^8.4.14",
     "prettier": "^2.5.1",
+    "push-dir": "^0.4.1",
     "vite-plugin-checker": "^0.6.4"
   },
   "engines": {
