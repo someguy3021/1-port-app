@@ -10,7 +10,16 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
-
+        <language-switch></language-switch>
+        <q-toggle
+          size="lg"
+          keep-color
+          v-model="themeDarkSwitch"
+          @click="$q.dark.toggle()"
+          checked-icon="dark_mode"
+          color="dark"
+          unchecked-icon="wb_sunny"
+        />
         <q-toolbar-title> Quasar App </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
@@ -20,23 +29,12 @@
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
         <q-item-label header> Essential Links </q-item-label>
-
         <EssentialLink
           v-for="link in linksList"
           :key="link.title"
           v-bind="link"
         />
       </q-list>
-      <language-switch></language-switch>
-      <q-toggle
-        size="lg"
-        keep-color
-        v-model="themeDarkSwitch"
-        @click="$q.dark.toggle()"
-        checked-icon="dark_mode"
-        color="dark"
-        unchecked-icon="wb_sunny"
-      />
     </q-drawer>
 
     <q-page-container>
