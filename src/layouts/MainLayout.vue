@@ -26,7 +26,7 @@
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label header> Essential Links </q-item-label>
+        <q-item-label header> {{ $t("link_links") }} </q-item-label>
         <EssentialLink
           v-for="link in linksList"
           :key="link.title"
@@ -64,26 +64,26 @@ const themeDarkSwitch = ref(false);
 
 const linksList = [
   {
-    title: "link_aboutme",
-    caption: "quasar.dev",
+    title: "link_aboutme_title",
+    caption: "link_aboutme_caption",
     icon: "school",
     link: "https://quasar.dev",
   },
   {
-    title: "link_myworks",
-    caption: "github.com/quasarframework",
+    title: "link_myworks_title",
+    caption: "link_myworks_caption",
     icon: "code",
     link: "https://github.com/quasarframework",
   },
   {
-    title: "link_services",
-    caption: "chat.quasar.dev",
+    title: "link_services_title",
+    caption: "link_services_caption",
     icon: "chat",
     link: "https://chat.quasar.dev",
   },
   {
-    title: "link_contacts",
-    caption: "forum.quasar.dev",
+    title: "link_contacts_title",
+    caption: "link_contacts_caption",
     icon: "record_voice_over",
     link: "https://forum.quasar.dev",
   },

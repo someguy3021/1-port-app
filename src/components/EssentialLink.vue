@@ -6,7 +6,7 @@
 
     <q-item-section>
       <q-item-label>{{ $t(props.title) }}</q-item-label>
-      <q-item-label caption>{{ props.caption }}</q-item-label>
+      <q-item-label caption>{{ $t(props.caption) }}</q-item-label>
     </q-item-section>
   </q-item>
 </template>
