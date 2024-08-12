@@ -42,7 +42,16 @@ quasar build
 
 See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
 
-### Deploy with gh-pages
+## Deploy with gh-pages
+
+### Add the following to your package.json. Don't forget to have Git in windows environment variables
+
+#### Windows environment variables in "Path"
+
+```bash
+C:\Program Files\Git\bin\git.exe
+C:\Program Files\Git\cmd
+```
 
 #### Add the following to your package.json
 
@@ -55,7 +64,7 @@ See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-
     "deploy": "quasar build && gh-pages -d dist/spa",
 ```
 
-#### Add this to quasar.config to fix path to assets and css
+### Add this to quasar.config to fix path to assets and css.
 
 ```bash
 ...
