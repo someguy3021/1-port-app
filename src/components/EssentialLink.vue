@@ -5,7 +5,7 @@
     </q-item-section>
 
     <q-item-section>
-      <q-item-label>{{ props.title }} 1</q-item-label>
+      <q-item-label>{{ $t(props.title) }}</q-item-label>
       <q-item-label caption>{{ props.caption }}</q-item-label>
     </q-item-section>
   </q-item>
@@ -15,6 +15,8 @@
 defineOptions({
   name: "EssentialLink",
 });
+import { useI18n } from "vue-i18n";
+const { t } = useI18n({ useScope: "global" }); //global since my language switch is in another component.
 
 const props = defineProps({
   title: {

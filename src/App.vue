@@ -10,3 +10,5 @@ defineOptions({
   },
 });
 </script>
+
+<!-- Todo add works with DB as json an a system of tags -->
