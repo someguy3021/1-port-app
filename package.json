@@ -21,6 +21,7 @@
     "pinia": "^2.0.11",
     "quasar": "^2.8.0",
     "vue": "^3.4.18",
+    "vue-i18n": "^10.0.0-beta.5",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
@@ -32,7 +33,6 @@
     "gh-pages": "6.1.1",
     "postcss": "^8.4.14",
     "prettier": "^2.5.1",
-    "push-dir": "^0.4.1",
     "vite-plugin-checker": "^0.6.4"
   },
   "engines": {

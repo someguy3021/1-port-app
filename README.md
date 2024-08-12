@@ -58,9 +58,12 @@ See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-
 #### Add this to quasar.config to fix path to assets and css
 
 ```bash
+...
 build: {
     ...
     extendViteConf(viteConf, { isClient, isServer }) {
         viteConf.base = "./"; // <=== add this line
     },
+    vueRouterMode: "hash",
+    ...
 ```
