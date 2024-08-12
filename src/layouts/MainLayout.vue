@@ -28,6 +28,15 @@
         />
       </q-list>
       <language-switch></language-switch>
+      <q-toggle
+        size="lg"
+        keep-color
+        v-model="themeDarkSwitch"
+        @click="$q.dark.toggle()"
+        checked-icon="dark_mode"
+        color="dark"
+        unchecked-icon="wb_sunny"
+      />
     </q-drawer>
 
     <q-page-container>
@@ -44,6 +53,8 @@ import LanguageSwitch from "src/components/LanguageSwitch.vue";
 defineOptions({
   name: "MainLayout",
 });
+
+const themeDarkSwitch = ref(false);
 
 const linksList = [
   {
