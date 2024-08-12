@@ -44,16 +44,16 @@ See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-
 
 ## Deploy with gh-pages
 
-### Add the following to your package.json. Don't forget to have Git in windows environment variables
+### Git setup for deploy on github-pages.
 
-#### Windows environment variables in "Path"
+#### Add Windows environment variables in "Path"
 
 ```bash
 C:\Program Files\Git\bin\git.exe
 C:\Program Files\Git\cmd
 ```
 
-#### Add the following to your package.json
+#### Add the following to your package.json, also install gh-pages npm module
 
 ```bash
 ...
