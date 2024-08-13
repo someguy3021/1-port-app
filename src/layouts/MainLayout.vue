@@ -23,7 +23,8 @@
         />
         <q-toolbar-title> {{ $t("myportfolio") }} </q-toolbar-title>
 
-        <EssentialLink
+        <EssentialLinkHeader
+          class="gt-sm"
           v-for="link in linksListShort"
           :key="link.title"
           v-bind="link"
@@ -97,12 +98,27 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+    <q-footer
+      v-if="$q.screen.lt.md"
+      elevated
+      :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'"
+    >
+      <q-toolbar class="container flex flex-center q-mx-md">
+        <EssentialLinkHeader
+          class="lt-md"
+          v-for="link in linksListShort"
+          :key="link.title"
+          v-bind="link"
+        />
+      </q-toolbar>
+    </q-footer>
   </q-layout>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import EssentialLink from "components/EssentialLink.vue";
+import EssentialLinkHeader from "src/components/EssentialLinkHeader.vue";
 import LanguageSwitch from "src/components/LanguageSwitch.vue";
 import LanguageSwitchSidebar from "src/components/LanguageSwitchSidebar.vue";
 
