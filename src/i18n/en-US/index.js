@@ -2,6 +2,8 @@ export default {
   failed: "Action Failed",
   success: "Action succsess",
   settings: "Settings",
+  changelang: "Change site language",
+  changetheme: "Change site theme",
   myportfolio: "My portfolio",
   link_links: "Links",
   link_aboutme_title: "About me",

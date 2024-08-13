@@ -49,15 +49,25 @@
         </q-item-label>
         <q-item-section>
           <language-switch />
-          <q-toggle
-            size="lg"
-            keep-color
-            v-model="themeDarkSwitch"
-            @click="$q.dark.toggle()"
-            checked-icon="dark_mode"
-            color="dark"
-            unchecked-icon="wb_sunny"
-          />
+          <q-item>
+            <q-item-section avatar>
+              <q-icon name="contrast" />
+            </q-item-section>
+            <q-item-section avatar>
+              <q-item-label>{{ $t("changetheme") }}</q-item-label>
+            </q-item-section>
+            <q-item-section>
+              <q-toggle
+                size="lg"
+                keep-color
+                v-model="themeDarkSwitch"
+                @click="$q.dark.toggle()"
+                checked-icon="dark_mode"
+                color="dark"
+                unchecked-icon="wb_sunny"
+              />
+            </q-item-section>
+          </q-item>
         </q-item-section>
 
         <q-item-label header>

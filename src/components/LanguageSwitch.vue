@@ -1,16 +1,24 @@
 <template>
   <!-- ...... -->
-  <q-select
-    v-model="locale"
-    :options="localeOptions"
-    label="Quasar Language"
-    dense
-    borderless
-    emit-value
-    map-options
-    options-dense
-    style="min-width: 150px; padding: 0px 20px"
-  />
+  <q-item>
+    <q-item-section avatar>
+      <q-icon name="language" />
+    </q-item-section>
+
+    <q-item-section>
+      <q-select
+        v-model="locale"
+        :options="localeOptions"
+        :label="$t('changelang')"
+        dense
+        borderless
+        emit-value
+        map-options
+        options-dense
+        style="min-width: 150px"
+      />
+    </q-item-section>
+  </q-item>
   <!-- ...... -->
 </template>
 

@@ -2,6 +2,8 @@ export default {
   failed: "Действие провал",
   success: "Действие успех",
   settings: "Настройки",
+  changelang: "Изменить язык сайта",
+  changetheme: "Изменить тему сайта",
   myportfolio: "Мое портфолио",
   link_links: "Ссылки",
   link_aboutme_title: "Обо мне",
