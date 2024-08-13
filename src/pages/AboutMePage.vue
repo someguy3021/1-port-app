@@ -2,22 +2,22 @@
   <q-page class="">
     <div :class="$q.dark.isActive ? 'bg-gr1-darktheme' : 'bg-gr1-lighttheme'">
       <div class="whoiam container">
-        <div>
-          <div>
-            <div>FrontEnd Developer\Designer.</div>
-            <div>Making solid design products.</div>
-          </div>
-          <div>
-            <div>
-              FrontEnd Developer with skills to make a website, also like so
+        <q-item>
+          <q-item-section>
+            <q-item-label>FrontEnd Developer\Designer.</q-item-label>
+            <q-item-label>Making solid design products.</q-item-label>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>
+              2 FrontEnd Developer with skills to make a website, also like so
               good websites like yo really good.
-            </div>
-            <div>
-              Designer with +5 years of vector graphics, and experience in
+            </q-item-label>
+            <q-item-label>
+              2 Designer with +5 years of vector graphics, and experience in
               web-design.
-            </div>
-          </div>
-        </div>
+            </q-item-label>
+          </q-item-section>
+        </q-item>
         <img
           alt="Quasar logo"
           src="~assets/quasar-logo-vertical.svg"
@@ -41,10 +41,10 @@
     </div>
     <div :class="$q.dark.isActive ? 'bg-gr2-darktheme' : 'bg-gr2-lighttheme'">
       <div class="myskills container">
-        <div>
+        <q-item>
           <q-item-section>
             <q-item-label>Design</q-item-label>
-            <q-item-label caption>
+            <q-item-label>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               voluptatem atque, incidunt ipsam porro, expedita sapiente sit
               voluptatibus ducimus provident error repellendus magnam! Ipsa
@@ -52,11 +52,11 @@
               assumenda.</q-item-label
             >
           </q-item-section>
-        </div>
-        <div>
+        </q-item>
+        <q-item>
           <q-item-section>
             <q-item-label>FrontEnd</q-item-label>
-            <q-item-label caption>
+            <q-item-label>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               voluptatem atque, incidunt ipsam porro, expedita sapiente sit
               voluptatibus ducimus provident error repellendus magnam! Ipsa
@@ -64,7 +64,7 @@
               assumenda.</q-item-label
             >
           </q-item-section>
-        </div>
+        </q-item>
       </div>
     </div>
   </q-page>
