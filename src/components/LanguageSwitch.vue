@@ -15,7 +15,7 @@
         emit-value
         map-options
         options-dense
-        style="min-width: 150px"
+        style="min-width: 120px"
       />
     </q-item-section>
   </q-item>

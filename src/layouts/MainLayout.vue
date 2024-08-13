@@ -3,6 +3,7 @@
     <q-header elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
       <q-toolbar class="container">
         <q-btn
+          class="q-mx-xs"
           v-if="$q.screen.lt.md"
           flat
           dense
@@ -21,7 +22,9 @@
           color="darkLighter"
           unchecked-icon="wb_sunny"
         />
-        <q-toolbar-title> {{ $t("myportfolio") }} </q-toolbar-title>
+        <q-toolbar-title class="gt-sm">
+          {{ $t("myportfolio") }}
+        </q-toolbar-title>
 
         <EssentialLinkHeader
           class="gt-sm"
