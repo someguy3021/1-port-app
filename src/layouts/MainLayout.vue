@@ -10,7 +10,7 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
-        <language-switch></language-switch>
+        <language-switch />
         <q-toggle
           size="lg"
           keep-color
@@ -21,28 +21,66 @@
           unchecked-icon="wb_sunny"
         />
         <q-toolbar-title> {{ $t("myportfolio") }} </q-toolbar-title>
+
+        <EssentialLink
+          v-for="link in linksListShort"
+          :key="link.title"
+          v-bind="link"
+        />
       </q-toolbar>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label header> {{ $t("link_links") }} </q-item-label>
+        <q-item-label header>
+          <q-item header class="sidemenu-header">
+            <q-item-section avatar>
+              <q-icon name="settings" size="md" />
+            </q-item-section>
+
+            <q-item-section class="text-center text-h6">
+              <q-item-label>{{ $t("settings") }}</q-item-label>
+            </q-item-section>
+
+            <q-item-section avatar>
+              <q-icon name="settings" size="md" />
+            </q-item-section>
+          </q-item>
+        </q-item-label>
+        <q-item-section>
+          <language-switch />
+          <q-toggle
+            size="lg"
+            keep-color
+            v-model="themeDarkSwitch"
+            @click="$q.dark.toggle()"
+            checked-icon="dark_mode"
+            color="dark"
+            unchecked-icon="wb_sunny"
+          />
+        </q-item-section>
+
+        <q-item-label header>
+          <q-item header class="sidemenu-header">
+            <q-item-section avatar>
+              <q-icon name="attach_file" size="md" />
+            </q-item-section>
+
+            <q-item-section class="text-center text-h6">
+              <q-item-label>{{ $t("link_links") }}</q-item-label>
+            </q-item-section>
+
+            <q-item-section avatar>
+              <q-icon name="attach_file" size="md" />
+            </q-item-section>
+          </q-item>
+        </q-item-label>
         <EssentialLink
           v-for="link in linksList"
           :key="link.title"
           v-bind="link"
         />
       </q-list>
-      <language-switch></language-switch>
-      <q-toggle
-        size="lg"
-        keep-color
-        v-model="themeDarkSwitch"
-        @click="$q.dark.toggle()"
-        checked-icon="dark_mode"
-        color="dark"
-        unchecked-icon="wb_sunny"
-      />
     </q-drawer>
 
     <q-page-container>
@@ -67,25 +105,47 @@ const linksList = [
     title: "link_aboutme_title",
     caption: "link_aboutme_caption",
     icon: "school",
-    link: "https://quasar.dev",
+    link: "#",
   },
   {
     title: "link_myworks_title",
     caption: "link_myworks_caption",
     icon: "code",
-    link: "https://github.com/quasarframework",
+    link: "#",
   },
   {
     title: "link_services_title",
     caption: "link_services_caption",
-    icon: "chat",
-    link: "https://chat.quasar.dev",
+    icon: "home_repair_service",
+    link: "#",
   },
   {
     title: "link_contacts_title",
     caption: "link_contacts_caption",
     icon: "record_voice_over",
-    link: "https://forum.quasar.dev",
+    link: "#",
+  },
+];
+const linksListShort = [
+  {
+    title: "link_aboutme_title",
+    icon: "school",
+    link: "#",
+  },
+  {
+    title: "link_myworks_title",
+    icon: "code",
+    link: "#",
+  },
+  {
+    title: "link_services_title",
+    icon: "home_repair_service",
+    link: "#",
+  },
+  {
+    title: "link_contacts_title",
+    icon: "record_voice_over",
+    link: "#",
   },
 ];
 

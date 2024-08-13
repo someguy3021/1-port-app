@@ -1,6 +1,7 @@
 export default {
   failed: "Action Failed",
   success: "Action succsess",
+  settings: "Settings",
   myportfolio: "My portfolio",
   link_links: "Links",
   link_aboutme_title: "About me",

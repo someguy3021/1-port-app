@@ -15,8 +15,6 @@
 defineOptions({
   name: "EssentialLink",
 });
-import { useI18n } from "vue-i18n";
-const { t } = useI18n({ useScope: "global" }); //global since my language switch is in another component.
 
 const props = defineProps({
   title: {
