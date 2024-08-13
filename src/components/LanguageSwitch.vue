@@ -9,7 +9,7 @@
     emit-value
     map-options
     options-dense
-    style="min-width: 150px"
+    style="min-width: 150px; padding: 0px 20px"
   />
   <!-- ...... -->
 </template>

@@ -12,3 +12,9 @@ defineOptions({
 </script>
 
 <!-- Todo add works with DB as json an a system of tags -->
+
+<style>
+.fontStyle-Wadik {
+  font-family: Wadik;
+}
+</style>

@@ -35,15 +35,15 @@
         <q-item-label header>
           <q-item header class="sidemenu-header">
             <q-item-section avatar>
-              <q-icon name="settings" size="md" />
+              <q-icon name="settings" size="sm" />
             </q-item-section>
 
-            <q-item-section class="text-center text-h6">
+            <q-item-section class="text-center fontStyle-Wadik">
               <q-item-label>{{ $t("settings") }}</q-item-label>
             </q-item-section>
 
             <q-item-section avatar>
-              <q-icon name="settings" size="md" />
+              <q-icon name="settings" size="sm" />
             </q-item-section>
           </q-item>
         </q-item-label>
@@ -63,15 +63,15 @@
         <q-item-label header>
           <q-item header class="sidemenu-header">
             <q-item-section avatar>
-              <q-icon name="attach_file" size="md" />
+              <q-icon name="attach_file" size="sm" />
             </q-item-section>
 
-            <q-item-section class="text-center text-h6">
+            <q-item-section class="text-center fontStyle-Wadik">
               <q-item-label>{{ $t("link_links") }}</q-item-label>
             </q-item-section>
 
             <q-item-section avatar>
-              <q-icon name="attach_file" size="md" />
+              <q-icon name="attach_file" size="sm" />
             </q-item-section>
           </q-item>
         </q-item-label>
