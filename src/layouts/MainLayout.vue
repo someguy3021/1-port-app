@@ -1,8 +1,9 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="container">
         <q-btn
+          v-if="$q.screen.lt.md"
           flat
           dense
           round
@@ -30,7 +31,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+    <q-drawer v-model="leftDrawerOpen" overlay bordered>
       <q-list>
         <q-item-label header>
           <q-item header class="sidemenu-header">
@@ -48,7 +49,7 @@
           </q-item>
         </q-item-label>
         <q-item-section>
-          <language-switch />
+          <LanguageSwitchSidebar />
           <q-item>
             <q-item-section avatar>
               <q-icon name="contrast" />
@@ -103,6 +104,7 @@
 import { ref } from "vue";
 import EssentialLink from "components/EssentialLink.vue";
 import LanguageSwitch from "src/components/LanguageSwitch.vue";
+import LanguageSwitchSidebar from "src/components/LanguageSwitchSidebar.vue";
 
 defineOptions({
   name: "MainLayout",

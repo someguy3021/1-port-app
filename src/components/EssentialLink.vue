@@ -25,6 +25,7 @@ const props = defineProps({
   caption: {
     type: String,
     default: "",
+    required: false,
   },
 
   link: {

@@ -1,8 +1,8 @@
 <template>
   <!-- ...... -->
-  <q-item :class="$q.dark.isActive ? '' : 'bg-white'">
+  <q-item>
     <q-item-section avatar>
-      <q-icon name="language" :class="$q.dark.isActive ? '' : 'text-black'" />
+      <q-icon name="language" />
     </q-item-section>
 
     <q-item-section>
