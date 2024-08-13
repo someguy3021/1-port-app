@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
       <q-toolbar class="container">
         <q-btn
           v-if="$q.screen.lt.md"
@@ -18,7 +18,7 @@
           v-model="themeDarkSwitch"
           @click="$q.dark.toggle()"
           checked-icon="dark_mode"
-          color="dark"
+          color="darkLighter"
           unchecked-icon="wb_sunny"
         />
         <q-toolbar-title> {{ $t("myportfolio") }} </q-toolbar-title>
@@ -64,7 +64,7 @@
                 v-model="themeDarkSwitch"
                 @click="$q.dark.toggle()"
                 checked-icon="dark_mode"
-                color="dark"
+                color="darkLighter"
                 unchecked-icon="wb_sunny"
               />
             </q-item-section>
