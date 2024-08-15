@@ -4,22 +4,22 @@
       <div class="whoiam container flex q-pa-xl">
         <q-item class="flex column" style="max-width: 500px">
           <q-item-section>
-            <q-item-label class="text-h4 fontStyle-Wadik"
+            <q-item-label class="th-scalabletext-var1-h1 text-bold"
               >FrontEnd Developer\Designer.</q-item-label
             >
-            <q-item-label class="fontStyle-Wadik"
+            <q-item-label class="th-scalabletext-var1-h3"
               >Making solid design products and experiences.</q-item-label
             >
           </q-item-section>
           <q-item-section>
-            <q-item-label>
+            <q-item class="q-mt-md">
               FrontEnd Developer with skills to make a website, also like so
               good websites like yo really good.
-            </q-item-label>
-            <q-item-label>
+            </q-item>
+            <q-item class="q-mt-md">
               Designer with +5 years of vector graphics, and experience in
               web-design.
-            </q-item-label>
+            </q-item>
           </q-item-section>
         </q-item>
         <img
@@ -49,10 +49,12 @@
       </div>
     </div>
     <div :class="$q.dark.isActive ? 'bg-gr2-darktheme' : 'bg-gr2-lighttheme'">
-      <div class="myskills container q-pa-xl">
+      <div class="myskills container q-pa-xl flex justify-center">
         <q-item>
           <q-item-section class="q-pa-xl">
-            <q-item-label class="text-h4 fontStyle-Wadik">Design</q-item-label>
+            <q-item-label class="th-scalabletext-var1-h2 fontStyle-Wadik"
+              >Design</q-item-label
+            >
             <q-item-label>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
               voluptatem atque, incidunt ipsam porro, expedita sapiente sit
@@ -64,7 +66,7 @@
         </q-item>
         <q-item>
           <q-item-section class="q-pa-xl">
-            <q-item-label class="text-h4 fontStyle-Wadik"
+            <q-item-label class="th-scalabletext-var1-h2 fontStyle-Wadik"
               >FrontEnd</q-item-label
             >
             <q-item-label>
@@ -100,15 +102,6 @@ defineOptions({
 }
 .border-radius20 {
   border-radius: 20px;
-}
-
-.scalabletext-h2 {
-}
-.scalabletext-h2 {
-}
-.scalabletext-h3 {
-}
-.scalabletext-h4 {
 }
 
 .bg-gr2-lighttheme {

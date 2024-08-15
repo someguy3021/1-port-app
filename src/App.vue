@@ -13,18 +13,104 @@ defineOptions({
 
 <!-- Todo add works with DB as json an a system of tags -->
 
-<style>
+<style lang="scss">
+// Basic container with %
+.container {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Font styles classes storage here
 .fontStyle-Wadik {
   font-family: Wadik;
 }
 .fontwhite {
   color: white;
 }
-.container {
-  max-width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+
+// Custom adaptive font sizes class library. Larger fonts become smaller faster that small fonts. h1-for biggest headings, h2-for big headings, h3-for small headings, h4-for bigger text.
+.th-scalabletext-var1-h1 {
+  font-size: 96px;
 }
+.th-scalabletext-var1-h2 {
+  font-size: 60px;
+}
+.th-scalabletext-var1-h3 {
+  font-size: 40px;
+}
+.th-scalabletext-var1-h4 {
+  font-size: 20px;
+}
+.th-scalabletext-var1-h5 {
+  font-size: 16px;
+}
+.th-scalabletext-var1-h6 {
+  font-size: 14px;
+}
+
+@media (max-width: 1439.99px) {
+  .th-scalabletext-var1-h1 {
+    font-size: 80px;
+  }
+  .th-scalabletext-var1-h2 {
+    font-size: 48px;
+  }
+  .th-scalabletext-var1-h3 {
+    font-size: 32px;
+  }
+  .th-scalabletext-var1-h4 {
+    font-size: 20px;
+  }
+  .th-scalabletext-var1-h5 {
+    font-size: 16px;
+  }
+  .th-scalabletext-var1-h6 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1023.99px) {
+  .th-scalabletext-var1-h1 {
+    font-size: 48px;
+  }
+  .th-scalabletext-var1-h2 {
+    font-size: 28px;
+  }
+  .th-scalabletext-var1-h3 {
+    font-size: 24px;
+  }
+  .th-scalabletext-var1-h4 {
+    font-size: 20px;
+  }
+  .th-scalabletext-var1-h5 {
+    font-size: 16px;
+  }
+  .th-scalabletext-var1-h6 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 599.99px) {
+  .th-scalabletext-var1-h1 {
+    font-size: 28px;
+  }
+  .th-scalabletext-var1-h2 {
+    font-size: 24px;
+  }
+  .th-scalabletext-var1-h3 {
+    font-size: 20px;
+  }
+  .th-scalabletext-var1-h4 {
+    font-size: 20px;
+  }
+  .th-scalabletext-var1-h5 {
+    font-size: 16px;
+  }
+  .th-scalabletext-var1-h6 {
+    font-size: 14px;
+  }
+}
+// Custom adaptive font sizes class library. Larger fonts become smaller faster that small fonts. h1-for biggest headings, h2-for big headings, h3-for small headings, h4-for bigger text.
+
 .popup {
   position: absolute;
   left: 0;
