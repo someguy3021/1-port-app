@@ -31,6 +31,9 @@ defineOptions({
 .th-fontbold900 {
   font-weight: 900;
 }
+.th-font-lineheight-16 {
+  line-height: 1.6;
+}
 
 // Custom blocks colors with both themes
 .bg-gr1-lighttheme {
@@ -57,7 +60,7 @@ defineOptions({
 }
 // Custom adaptive font sizes class library. Larger fonts become smaller faster that small fonts. h1-for biggest headings, h2-for big headings, h3-for small headings, h4-for bigger text.
 .th-scalabletext-var1-h1 {
-  font-size: 96px;
+  font-size: 92px;
 }
 .th-scalabletext-var1-h2 {
   font-size: 60px;
