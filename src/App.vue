@@ -37,14 +37,14 @@ defineOptions({
 
 // Custom blocks colors with both themes
 .bg-gr1-lighttheme {
-  background: linear-gradient(to left, $primary, white, white, $accent);
+  background: linear-gradient(215deg, $primary, white, white, $accent);
 }
 .bg-gr1-darktheme {
   background: linear-gradient(215deg, $dark-page, $accent);
 }
 
 .bg-gr2-lighttheme {
-  background: linear-gradient(to left, $primary, white, white, $primary);
+  background: linear-gradient(90deg, $primary, white, white, $primary);
 }
 .bg-gr2-darktheme {
   background: linear-gradient(90deg, $dark-page, $primary);

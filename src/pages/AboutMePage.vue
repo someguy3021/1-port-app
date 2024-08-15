@@ -29,7 +29,7 @@
             class="flex flex-center non-selectable"
             alt="Quasar logo"
             src="~assets/quasar-logo-vertical.svg"
-            style="min-width: 200px; min-height: 200px; width: 80%; height: 80%"
+            style="min-width: 100px; min-height: 100px; width: 80%; height: 80%"
           />
         </q-item>
       </div>
@@ -55,10 +55,7 @@
         />
       </div>
     </div>
-    <div
-      class="q-py-xl"
-      :class="$q.dark.isActive ? 'bg-gr2-darktheme' : 'bg-gr2-lighttheme'"
-    >
+    <div class="q-py-xl" :class="$q.dark.isActive ? 'bg-gr2-darktheme' : ''">
       <div
         class="myskills aboutme-2textblocks-wrapper container flex justify-center"
       >
