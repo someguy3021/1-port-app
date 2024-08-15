@@ -1,7 +1,7 @@
 <template>
   <q-page class="">
-    <div>
-      <div class="whoiam-wrapper container flex q-pa-xl">
+    <div class="q-py-xl">
+      <div class="whoiam-wrapper container flex">
         <q-item class="whoiam-text flex column q-ma-md">
           <q-item-section class="flex flex-center">
             <q-item-label class="th-scalabletext-var1-h1 text-bold"
@@ -55,9 +55,12 @@
         />
       </div>
     </div>
-    <div :class="$q.dark.isActive ? 'bg-gr2-darktheme' : 'bg-gr2-lighttheme'">
+    <div
+      class="q-py-xl"
+      :class="$q.dark.isActive ? 'bg-gr2-darktheme' : 'bg-gr2-lighttheme'"
+    >
       <div
-        class="myskills aboutme-2textblocks-wrapper container q-pa-xl flex justify-center"
+        class="myskills aboutme-2textblocks-wrapper container flex justify-center"
       >
         <q-item class="aboutme-2textblocks-design">
           <q-item-section class="q-pa-md">
