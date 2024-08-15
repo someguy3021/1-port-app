@@ -7,3 +7,19 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Sfuitext_light";
+  src: local("Sfuitext_light"),
+    url("./fonts/sfuitext_light.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sfuitext_lightitalic";
+  src: local("Sfuitext_lightitalic"),
+    url("./fonts/sfuitext_lightitalic.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}

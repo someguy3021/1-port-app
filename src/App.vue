@@ -28,7 +28,33 @@ defineOptions({
 .fontwhite {
   color: white;
 }
+.th-fontbold900 {
+  font-weight: 900;
+}
 
+// Custom blocks colors with both themes
+.bg-gr1-lighttheme {
+  background: linear-gradient(to left, $primary, white, white, $accent);
+}
+.bg-gr1-darktheme {
+  background: linear-gradient(215deg, $dark-page, $accent);
+}
+
+.bg-gr2-lighttheme {
+  background: linear-gradient(to left, $primary, white, white, $primary);
+}
+.bg-gr2-darktheme {
+  background: linear-gradient(90deg, $dark-page, $primary);
+}
+// Custom blocks colors with both themes
+
+.bg-glass-black {
+  background: linear-gradient(to left, $glass1, $glass2);
+}
+
+.border-radius20 {
+  border-radius: 20px;
+}
 // Custom adaptive font sizes class library. Larger fonts become smaller faster that small fonts. h1-for biggest headings, h2-for big headings, h3-for small headings, h4-for bigger text.
 .th-scalabletext-var1-h1 {
   font-size: 96px;
