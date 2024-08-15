@@ -22,7 +22,7 @@
           color="darkLighter"
           unchecked-icon="wb_sunny"
         />
-        <q-toolbar-title class="gt-sm">
+        <q-toolbar-title class="gt-sm non-selectable">
           {{ $t("myportfolio") }}
         </q-toolbar-title>
 
