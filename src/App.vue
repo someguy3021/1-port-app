@@ -132,7 +132,7 @@ defineOptions({
     font-size: 20px;
   }
   .th-scalabletext-var1-h5 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .th-scalabletext-var1-h6 {
     font-size: 14px;

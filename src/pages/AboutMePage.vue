@@ -1,9 +1,9 @@
 <template>
   <q-page class="">
     <div class="q-py-xl">
-      <div class="whoiam-wrapper container flex">
+      <div class="whoiam-wrapper container q-py-xl flex">
         <q-item class="whoiam-text flex column q-ma-md">
-          <q-item-section class="flex flex-center">
+          <q-item-section class="flex">
             <q-item-label class="th-scalabletext-var1-h1 text-bold"
               >FrontEnd Developer\Designer.</q-item-label
             >
@@ -11,12 +11,12 @@
               >Making solid design products and experiences.</q-item-label
             >
           </q-item-section>
-          <q-item-section class="whoiam-wrapper q-pa-md">
-            <q-item class="q-mt-md" style="max-width: 300px">
+          <q-item-section class="whoiam-wrapper q-py-md">
+            <q-item class="q-pt-md" style="max-width: 300px">
               FrontEnd Developer with skills to make a website, also like so
               good websites like yo really good.
             </q-item>
-            <q-item class="q-mt-md" style="max-width: 300px">
+            <q-item class="q-pt-md" style="max-width: 300px">
               Designer with +5 years of vector graphics, and experience in
               web-design.
             </q-item>
@@ -57,7 +57,7 @@
     </div>
     <div class="q-py-xl" :class="$q.dark.isActive ? 'bg-gr2-darktheme' : ''">
       <div
-        class="myskills aboutme-2textblocks-wrapper container flex justify-center"
+        class="myskills aboutme-2textblocks-wrapper container q-py-xl flex justify-center"
       >
         <q-item class="aboutme-2textblocks-design">
           <q-item-section class="q-pa-md">
