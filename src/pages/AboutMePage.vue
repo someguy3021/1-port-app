@@ -29,7 +29,7 @@
             class="flex flex-center non-selectable"
             alt="Quasar logo"
             src="~assets/quasar-logo-vertical.svg"
-            style="min-width: 100px; min-height: 100px; width: 80%; height: 80%"
+            style="min-width: 200px; min-height: 200px; width: 80%; height: 80%"
           />
         </q-item>
       </div>
