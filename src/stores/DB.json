@@ -1,0 +1,145 @@
+{
+  "works": [
+    {
+      "title": {
+        "en-US": "This website!",
+        "ru-1": "Этот вебсайт!"
+      },
+      "tags": ["tag_website", "tag_frontend", "tag_design"],
+      "rating": 6,
+      "hidden": false,
+      "thumbnail": "test.webp",
+      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+      }
+    },
+    {
+      "title": {
+        "en-US": "Logo 1 for a client",
+        "ru-1": "Лого 1 для клиента"
+      },
+      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
+      "rating": 10,
+      "hidden": false,
+      "thumbnail": "test.webp",
+      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+      }
+    },
+    {
+      "title": {
+        "en-US": "Logo 2 for a client",
+        "ru-1": "Лого 2 для клиента"
+      },
+      "tags": [
+        "tag_website",
+        "tag_frontend",
+        "tag_design",
+        "tag_no_code",
+        "tag_tilda"
+      ],
+      "rating": 10,
+      "hidden": true,
+      "thumbnail": "test.webp",
+      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+      }
+    }
+  ],
+
+  "services_TODO_FROM_KWORK": [
+    {
+      "title": {
+        "en-US": "Website on Tilda or WordPress",
+        "ru-1": "Вебсайт на Тильда или Вордпресс"
+      },
+      "tags": [
+        "tag_website",
+        "tag_frontend",
+        "tag_design",
+        "tag_tilda",
+        "tag_wordpress"
+      ],
+      "rating": 6,
+      "priceUS": 80,
+      "priceRU": 4000,
+      "hidden": false,
+      "thumbnail": "test.webp",
+      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+      }
+    },
+    {
+      "title": {
+        "en-US": "Vector Logo",
+        "ru-1": "Векторное Лого"
+      },
+      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
+      "rating": 10,
+      "priceUS": 40,
+      "priceRU": 2000,
+      "hidden": false,
+      "thumbnail": "test.webp",
+      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+      }
+    },
+    {
+      "title": {
+        "en-US": "Logo 2 for a client",
+        "ru-1": "Лого 2 для клиента"
+      },
+      "tags": [
+        "tag_website",
+        "tag_frontend",
+        "tag_design",
+        "tag_no_code",
+        "tag_tilda"
+      ],
+      "rating": 10,
+      "priceUS": 40,
+      "priceRU": 2000,
+      "hidden": true,
+      "thumbnail": "test.webp",
+      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+      }
+    }
+  ]
+}

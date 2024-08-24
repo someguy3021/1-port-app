@@ -35,24 +35,13 @@
       </div>
     </div>
     <div
-      class="hidden"
+      class=""
       :class="$q.dark.isActive ? 'bg-gr1-darktheme' : 'bg-gr1-lighttheme'"
     >
       <div
         class="myworksexample container q-pa-xl bg-glass-black border-radius20"
       >
-        <img
-          class="non-selectable"
-          alt="Quasar logo"
-          src="~assets/quasar-logo-vertical.svg"
-          style="width: 200px; height: 200px"
-        />
-        <img
-          class="non-selectable"
-          alt="Quasar logo"
-          src="~assets/quasar-logo-vertical.svg"
-          style="width: 200px; height: 200px"
-        />
+        <PortCards_Wrapper />
       </div>
     </div>
     <div class="q-py-xl" :class="$q.dark.isActive ? 'bg-gr2-darktheme' : ''">
@@ -91,6 +80,7 @@
 </template>
 
 <script setup>
+import PortCards_Wrapper from "src/components/PortCards_Wrapper.vue";
 defineOptions({
   name: "IndexPage",
 });
