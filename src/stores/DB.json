@@ -5,7 +5,11 @@
         "en-US": "This website!",
         "ru-1": "Этот вебсайт!"
       },
-      "tags": ["tag_website", "tag_frontend", "tag_design"],
+      "tags": [
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"],
+        ["tag_design", "brush"]
+      ],
       "rating": 6,
       "hidden": false,
       "thumbnail": "testcommS-1",
@@ -30,7 +34,11 @@
         "en-US": "Logo 1 for a client",
         "ru-1": "Лого 1 для клиента"
       },
-      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
+      "tags": [
+        ["tag_logo", "diamond"],
+        ["tag_graphics_and_vector", "diamond"],
+        ["tag_design", "brush"]
+      ],
       "rating": 10,
       "hidden": false,
       "thumbnail": "testcommS-3",
@@ -50,11 +58,11 @@
         "ru-1": "Лого 2 для клиента"
       },
       "tags": [
-        "tag_website",
-        "tag_frontend",
-        "tag_design",
-        "tag_no_code",
-        "tag_tilda"
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"],
+        ["tag_design", "brush"],
+        ["tag_no_code", "code_off"],
+        ["tag_tilda", "code_off"]
       ],
       "rating": 10,
       "hidden": true,
@@ -78,11 +86,11 @@
         "ru-1": "Вебсайт на Тильда или Вордпресс"
       },
       "tags": [
-        "tag_website",
-        "tag_frontend",
-        "tag_design",
-        "tag_tilda",
-        "tag_wordpress"
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"],
+        ["tag_design", "brush"],
+        ["tag_tilda", "code_off"],
+        ["tag_wordpress", "code_off"]
       ],
       "rating": 6,
       "priceUS": 80,
@@ -104,7 +112,11 @@
         "en-US": "Vector Logo",
         "ru-1": "Векторное Лого"
       },
-      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
+      "tags": [
+        ["tag_logo", "diamond"],
+        ["tag_graphics_and_vector", "diamond"],
+        ["tag_design", "brush"]
+      ],
       "rating": 10,
       "priceUS": 40,
       "priceRU": 2000,
@@ -126,11 +138,11 @@
         "ru-1": "Лого 2 для клиента"
       },
       "tags": [
-        "tag_website",
-        "tag_frontend",
-        "tag_design",
-        "tag_no_code",
-        "tag_tilda"
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"],
+        ["tag_design", "brush"],
+        ["tag_no_code", "code_off"],
+        ["tag_tilda", "code_off"]
       ],
       "rating": 10,
       "priceUS": 40,

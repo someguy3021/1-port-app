@@ -16,4 +16,12 @@ export default {
   link_services_caption: "Services that I do",
   link_contacts_title: "Contacts",
   link_contacts_caption: "My contacts",
+  tag_website: "Website",
+  tag_frontend: "FrontEnd",
+  tag_design: "Design",
+  tag_logo: "Logo",
+  tag_graphics_and_vector: "Vector Graphics",
+  tag_no_code: "No code",
+  tag_tilda: "Tilda",
+  tag_wordpress: "Wordpress",
 };

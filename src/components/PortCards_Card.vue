@@ -5,7 +5,7 @@
         {{ work.title?.[i18nLocale.locale.value] }}
 
         <li v-for="tag in work.tags" :key="tag">
-          {{ tag }}
+          {{ $t(tag?.[0]) }}
         </li>
         <div>
           <img v-bind:src="`works_imgs/${work.thumbnail}.webp`" />

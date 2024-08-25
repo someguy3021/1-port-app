@@ -16,4 +16,12 @@ export default {
   link_services_caption: "Предоставляемые услуги",
   link_contacts_title: "Контакты",
   link_contacts_caption: "Мои контакты",
+  tag_website: "Вебсайт",
+  tag_frontend: "Фронтенд",
+  tag_design: "Дизайн",
+  tag_logo: "Лого",
+  tag_graphics_and_vector: "Векторная графика",
+  tag_no_code: "No-code",
+  tag_tilda: "Tilda",
+  tag_wordpress: "Wordpress",
 };
