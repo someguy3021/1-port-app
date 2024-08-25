@@ -60,7 +60,7 @@ defineOptions({
 }
 // Custom adaptive font sizes class library. Larger fonts become smaller faster that small fonts. h1-for biggest headings, h2-for big headings, h3-for small headings, h4-for bigger text.
 .th-scalabletext-var1-h1 {
-  font-size: 92px;
+  font-size: 80px;
 }
 .th-scalabletext-var1-h2 {
   font-size: 60px;
@@ -69,7 +69,7 @@ defineOptions({
   font-size: 40px;
 }
 .th-scalabletext-var1-h4 {
-  font-size: 20px;
+  font-size: 28px;
 }
 .th-scalabletext-var1-h5 {
   font-size: 16px;
@@ -80,7 +80,7 @@ defineOptions({
 
 @media (max-width: 1439.99px) {
   .th-scalabletext-var1-h1 {
-    font-size: 80px;
+    font-size: 64px;
   }
   .th-scalabletext-var1-h2 {
     font-size: 48px;
@@ -89,7 +89,7 @@ defineOptions({
     font-size: 32px;
   }
   .th-scalabletext-var1-h4 {
-    font-size: 20px;
+    font-size: 28px;
   }
   .th-scalabletext-var1-h5 {
     font-size: 16px;
@@ -100,7 +100,7 @@ defineOptions({
 }
 @media (max-width: 1023.99px) {
   .th-scalabletext-var1-h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
   .th-scalabletext-var1-h2 {
     font-size: 28px;
@@ -109,7 +109,7 @@ defineOptions({
     font-size: 24px;
   }
   .th-scalabletext-var1-h4 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .th-scalabletext-var1-h5 {
     font-size: 16px;

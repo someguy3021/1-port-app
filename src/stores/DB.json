@@ -12,7 +12,7 @@
       ],
       "rating": 6,
       "hidden": false,
-      "thumbnail": "testcommS-1",
+      "thumbnail": "testcommS-3",
       "imgPaths": [
         "testcommS-1",
         "testcommS-2",
@@ -155,7 +155,16 @@
         "ru-1": "Я сделал и то и это!"
       },
       "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "en-US": [
+          [
+            "BIT TEXT",
+            "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!"
+          ],
+          [
+            "BIT TEXT2",
+            "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!"
+          ]
+        ],
         "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
       }
     }

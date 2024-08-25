@@ -4,21 +4,19 @@
       <div class="whoiam-wrapper container q-py-xl flex">
         <q-item class="whoiam-text flex column q-ma-md">
           <q-item-section class="flex">
-            <q-item-label class="th-scalabletext-var1-h1 text-bold"
-              >FrontEnd Developer\Designer.</q-item-label
-            >
-            <q-item-label class="th-scalabletext-var1-h3"
-              >Making solid design products and experiences.</q-item-label
-            >
+            <q-item-label class="th-scalabletext-var1-h1 text-bold">{{
+              $t("aboutmepage_Frontend_Developer_Designer")
+            }}</q-item-label>
+            <q-item-label class="th-scalabletext-var1-h3">{{
+              $t("aboutmepage_Making_Products")
+            }}</q-item-label>
           </q-item-section>
           <q-item-section class="whoiam-wrapper q-py-md">
             <q-item class="q-pt-md" style="max-width: 300px">
-              FrontEnd Developer with skills to make a website, also like so
-              good websites like yo really good.
+              {{ $t("aboutmepage_Making_Products_SmallPhrase1") }}
             </q-item>
             <q-item class="q-pt-md" style="max-width: 300px">
-              Designer with +5 years of vector graphics, and experience in
-              web-design.
+              {{ $t("aboutmepage_Making_Products_SmallPhrase2") }}
             </q-item>
           </q-item-section>
         </q-item>
@@ -50,27 +48,21 @@
       >
         <q-item class="aboutme-2textblocks-design">
           <q-item-section class="q-pa-md">
-            <q-item-label class="th-scalabletext-var1-h2 text-bold"
-              >Design</q-item-label
-            >
+            <q-item-label class="th-scalabletext-var1-h2 text-bold">{{
+              $t("aboutmepage_2GridBlocks_Design_Title")
+            }}</q-item-label>
             <q-item class="th-scalabletext-var1-h5 th-font-lineheight-16">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              voluptatem atque, incidunt ipsam porro, expedita sapiente sit
-              voluptatibus ducimus provident error repellendus magnam! Ipsa
-              obcaecati blanditiis porro voluptates. Eius, assumenda.</q-item
+              {{ $t("aboutmepage_2GridBlocks_Design_Descr") }}</q-item
             >
           </q-item-section>
         </q-item>
         <q-item class="aboutme-2textblocks-frontend">
           <q-item-section class="q-pa-md">
-            <q-item-label class="th-scalabletext-var1-h2 text-bold"
-              >FrontEnd</q-item-label
-            >
+            <q-item-label class="th-scalabletext-var1-h2 text-bold">{{
+              $t("aboutmepage_2GridBlocks_Frontend_Title")
+            }}</q-item-label>
             <q-item class="th-scalabletext-var1-h5 th-font-lineheight-16">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-              voluptatem atque, incidunt ipsam porro, expedita sapiente sit
-              voluptatibus ducimus provident error repellendus magnam! Ipsa
-              obcaecati blanditiis porro voluptates. Eius, assumenda.</q-item
+              {{ $t("aboutmepage_2GridBlocks_Frontend_Descr") }}</q-item
             >
           </q-item-section>
         </q-item>

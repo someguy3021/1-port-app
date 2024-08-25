@@ -63,7 +63,7 @@
         />
       </div>
     </div> -->
-    <div class="wrapper-cards-slider">
+    <div class="wrapper-cards-slider flex">
       <PortCards_Card v-for="work in worksData" :key="work.id" :work="work" />
     </div>
   </q-item>
