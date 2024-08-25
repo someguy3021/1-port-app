@@ -1,15 +1,11 @@
 <template>
   <q-page class="container flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    />
-    <q-btn :label="$t('failed')" />
+    <PortCards_Wrapper />
   </q-page>
 </template>
 
 <script setup>
+import PortCards_Wrapper from "src/components/PortCards_Wrapper.vue";
 defineOptions({
   name: "IndexPage",
 });

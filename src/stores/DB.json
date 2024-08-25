@@ -8,8 +8,14 @@
       "tags": ["tag_website", "tag_frontend", "tag_design"],
       "rating": 6,
       "hidden": false,
-      "thumbnail": "test.webp",
-      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "thumbnail": "testcommS-1",
+      "imgPaths": [
+        "testcommS-1",
+        "testcommS-2",
+        "testcommS-2",
+        "testcommS-2",
+        "testcommS-2"
+      ],
       "descriptionShort": {
         "en-US": "I did this and that!",
         "ru-1": "Я сделал и то и это!"
@@ -27,8 +33,8 @@
       "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
       "rating": 10,
       "hidden": false,
-      "thumbnail": "test.webp",
-      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "thumbnail": "testcommS-3",
+      "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
         "ru-1": "Я сделал и то и это!"
@@ -52,8 +58,8 @@
       ],
       "rating": 10,
       "hidden": true,
-      "thumbnail": "test.webp",
-      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "thumbnail": "testcommS-3",
+      "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
         "ru-1": "Я сделал и то и это!"
@@ -82,8 +88,8 @@
       "priceUS": 80,
       "priceRU": 4000,
       "hidden": false,
-      "thumbnail": "test.webp",
-      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "thumbnail": "testcommS-3",
+      "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
         "ru-1": "Я сделал и то и это!"
@@ -103,8 +109,8 @@
       "priceUS": 40,
       "priceRU": 2000,
       "hidden": false,
-      "thumbnail": "test.webp",
-      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "thumbnail": "testcommS-3",
+      "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
         "ru-1": "Я сделал и то и это!"
@@ -130,8 +136,8 @@
       "priceUS": 40,
       "priceRU": 2000,
       "hidden": true,
-      "thumbnail": "test.webp",
-      "imgPaths": ["something path to this folders in public and stuff", ""],
+      "thumbnail": "testcommS-3",
+      "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
         "ru-1": "Я сделал и то и это!"
