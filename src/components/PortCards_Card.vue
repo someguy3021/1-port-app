@@ -6,6 +6,7 @@
 
         <li v-for="tag in work.tags" :key="tag">
           {{ $t(tag?.[0]) }}
+          <q-icon :name="tag?.[1]" size="sm" />
         </li>
         <div>
           <img v-bind:src="`works_imgs/${work.thumbnail}.webp`" />
