@@ -36,7 +36,7 @@
       <div
         class="myworksexample container thscale-q-pa-xl bg-glass-black border-radius20"
       >
-        <PortCards_Wrapper />
+        <PortCards_Wrapper :howMuchWorksToShow="howMuchWorksToShow" />
       </div>
     </div>
     <div class="q-py-xl" :class="$q.dark.isActive ? '' : ''">
@@ -73,6 +73,8 @@ import PortCards_Wrapper from "src/components/PortCards_Wrapper.vue";
 defineOptions({
   name: "IndexPage",
 });
+
+let howMuchWorksToShow = 3;
 </script>
 
 <style lang="scss" scoped>

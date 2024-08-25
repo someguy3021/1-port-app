@@ -1,39 +1,33 @@
 <template>
-  <q-item>
+  <div>
     <!-- <div class="wrapper-filters">
+      <div class="th-scalabletext-var1-h2 text-bold q-pb-md">
+        {{ $t("myportfolio") }}
+      </div>
       <div
         v-if="$q.screen.width >= 880"
         class="btns-container flex items-center no-wrap q-gutter-x-md q-gutter-y-md q-mb-lg text-h3"
       >
         <q-btn
-          label="По популярности"
+          label="Только вебсайты"
           no-caps
           class="text-subtitle1"
-          @click="typeOfFillter = 'По популярности'"
+          color="accent"
+          @click="typeOfFillter = 'Только вебсайты'"
         />
         <q-btn
-          label="По цене"
+          label="Только дизайны"
           no-caps
           class="text-subtitle1"
-          @click="typeOfFillter = 'По цене'"
+          color="accent"
+          @click="typeOfFillter = 'Только дизайны'"
         />
         <q-btn
-          label="По наименованию"
+          label="По типу работы"
           no-caps
           class="text-subtitle1"
-          @click="typeOfFillter = 'По наименованию'"
-        />
-        <q-btn
-          label="По типу товара"
-          no-caps
-          class="text-subtitle1"
+          color="accent"
           @click="typeOfFillter = 'По типу товара'"
-        />
-        <q-btn
-          label="Сначала избранное"
-          no-caps
-          class="text-subtitle1"
-          @click="typeOfFillter = 'Сначала избранное'"
         />
 
         <q-icon
@@ -66,7 +60,7 @@
     <div class="wrapper-cards-slider flex">
       <PortCards_Card v-for="work in worksData" :key="work.id" :work="work" />
     </div>
-  </q-item>
+  </div>
 </template>
   
 <script setup>
@@ -90,6 +84,14 @@ defineOptions({
 //   "Сначала избранное",
 // ]);
 
+// Get info about how much works to show on page
+const props = defineProps({
+  howMuchWorksToShow: {
+    type: Number,
+    required: false,
+  },
+});
+
 const worksData = ref([]);
 
 onMounted(async () => {
@@ -107,7 +109,13 @@ async function getworksData() {
   //   });
   let tempArr = works;
   console.log(tempArr);
-  worksData.value = tempArr;
+  // If not getting any data about how much elements to show - show all of them
+  if (
+    (props.howMuchWorksToShow !== null) &
+    (props.howMuchWorksToShow !== undefined)
+  ) {
+    worksData.value = tempArr.slice(0, props.howMuchWorksToShow);
+  } else worksData.value = tempArr;
 }
 
 // async function fillterworksData(modelForFB) {
