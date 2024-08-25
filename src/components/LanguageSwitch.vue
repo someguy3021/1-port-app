@@ -1,6 +1,6 @@
 <template>
   <!-- ...... -->
-  <q-item :class="$q.dark.isActive ? '' : 'bg-white'">
+  <q-item class="q-pa-md" :class="$q.dark.isActive ? '' : 'bg-white'">
     <q-item-section avatar>
       <q-icon name="language" :class="$q.dark.isActive ? '' : 'text-black'" />
     </q-item-section>

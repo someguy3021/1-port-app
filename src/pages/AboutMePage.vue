@@ -20,19 +20,21 @@
             </q-item>
           </q-item-section>
         </q-item>
-        <q-item class="whoiam-img flex-center border-radius20 q-ma-md">
+        <q-card
+          class="whoiam-img flex justify-center flex-center border-radius20 q-ma-md"
+        >
           <img
-            class="flex flex-center non-selectable"
+            class="non-selectable"
             alt="Quasar logo"
             src="~assets/quasar-logo-vertical.svg"
             style="min-width: 200px; min-height: 200px; width: 80%; height: 80%"
           />
-        </q-item>
+        </q-card>
       </div>
     </div>
     <div class="" :class="$q.dark.isActive ? '' : ''">
       <div
-        class="myworksexample container q-pa-xl bg-glass-black border-radius20"
+        class="myworksexample container thscale-q-pa-xl bg-glass-black border-radius20"
       >
         <PortCards_Wrapper />
       </div>

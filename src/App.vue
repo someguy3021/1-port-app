@@ -20,6 +20,10 @@ defineOptions({
   margin-right: auto;
   margin-left: auto;
 }
+// A set of all sides scalable paddings, l and r decreses faster than b and t. Order is BT and LR btw
+.thscale-q-pa-xl {
+  padding: 48px 48px;
+}
 
 // Font styles classes storage here
 .fontStyle-Wadik {
@@ -121,6 +125,9 @@ defineOptions({
   .container {
     max-width: 100%;
   }
+  .thscale-q-pa-xl {
+    padding: 36px 12px;
+  }
 }
 @media (max-width: 599.99px) {
   .th-scalabletext-var1-h1 {
@@ -144,6 +151,9 @@ defineOptions({
 
   .container {
     max-width: 100%;
+  }
+  .thscale-q-pa-xl {
+    padding: 36px 4px;
   }
 }
 // Custom adaptive font sizes class library. Larger fonts become smaller faster that small fonts. h1-for biggest headings, h2-for big headings, h3-for small headings, h4-for bigger text.
