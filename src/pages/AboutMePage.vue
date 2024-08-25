@@ -32,17 +32,14 @@
         </q-item>
       </div>
     </div>
-    <div
-      class=""
-      :class="$q.dark.isActive ? 'bg-gr1-darktheme' : 'bg-gr1-lighttheme'"
-    >
+    <div class="" :class="$q.dark.isActive ? '' : ''">
       <div
         class="myworksexample container q-pa-xl bg-glass-black border-radius20"
       >
         <PortCards_Wrapper />
       </div>
     </div>
-    <div class="q-py-xl" :class="$q.dark.isActive ? 'bg-gr2-darktheme' : ''">
+    <div class="q-py-xl" :class="$q.dark.isActive ? '' : ''">
       <div
         class="myskills aboutme-2textblocks-wrapper container q-py-xl flex justify-center"
       >

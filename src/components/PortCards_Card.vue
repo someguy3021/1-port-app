@@ -18,27 +18,34 @@
         height="300px"
         class="text-white shadow-1 rounded-borders"
       >
-        <q-carousel-slide></q-carousel-slide>
         <q-carousel-slide
           v-for="(img, index) in work.imgPaths"
           :key="img"
           :name="index + 1"
-          :img-src="`works_imgs/${img}.webp`"
-        />
+          class="flex justify-center"
+          ><img
+            v-bind:src="`works_imgs/${img}.webp`"
+            style="height: 100%"
+            class="non-selectable"
+        /></q-carousel-slide>
       </q-carousel>
     </div>
     <div class="my-card-text text-h6 text-weight-regular q-pb-none">
-      <div class="flex q-gutter-x-md q-gutter-y-md q-mb-lg text-h3">
+      <div
+        class="flex q-gutter-x-md q-gutter-y-md q-mb-lg th-scalabletext-var1-h6"
+      >
         <q-btn
           v-for="tag in work.tags"
           :key="tag"
           no-caps
           color="accent"
           class="q-pa-xs row rounded-borders"
-          style="min-width: 160px"
+          style="width: 200px"
           @click="typeOfFillter = tag"
         >
-          <div class="col-6" style="min-width: 50px">{{ $t(tag?.[0]) }}</div>
+          <div class="q-pr-lg col-6" style="min-width: 50px">
+            {{ $t(tag?.[0]) }}
+          </div>
           <q-icon :name="tag?.[1]" size="sm" class="col-2"
         /></q-btn>
       </div>
@@ -76,7 +83,30 @@ const props = defineProps({
   /* <div v-for="img in work.imgPaths" :key="img">
           <img v-bind:src="`works_imgs/${img}.webp`" />
         </div>
-        <img v-bind:src="`works_imgs/${work.thumbnail}.webp`" /> */
+        <img v-bind:src="`works_imgs/${work.thumbnail}.webp`" /> 
+        
+        
+        
+        
+        
+                <q-carousel-slide
+          v-for="(img, index) in work.imgPaths"
+          :key="img"
+          :name="index + 1"
+          :img-src="`works_imgs/${img}.webp`"
+          style="object-fit: cover"
+          ><img v-bind:src="`works_imgs/${img}.webp`"
+        /></q-carousel-slide>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        */
 }
 
 import { ref } from "vue";

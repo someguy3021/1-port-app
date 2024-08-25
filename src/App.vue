@@ -117,6 +117,10 @@ defineOptions({
   .th-scalabletext-var1-h6 {
     font-size: 14px;
   }
+
+  .container {
+    max-width: 100%;
+  }
 }
 @media (max-width: 599.99px) {
   .th-scalabletext-var1-h1 {
@@ -136,6 +140,10 @@ defineOptions({
   }
   .th-scalabletext-var1-h6 {
     font-size: 14px;
+  }
+
+  .container {
+    max-width: 100%;
   }
 }
 // Custom adaptive font sizes class library. Larger fonts become smaller faster that small fonts. h1-for biggest headings, h2-for big headings, h3-for small headings, h4-for bigger text.
