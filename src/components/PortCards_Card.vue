@@ -1,5 +1,5 @@
 <template>
-  <q-card class="q-pa-md q-ma-md" style="min-width: 300px">
+  <q-card class="q-pa-md q-ma-md" style="min-width: 300px; max-width: 400px">
     <div class="q-pb-md">
       <q-carousel
         v-model="slide"
@@ -40,14 +40,14 @@
           :key="tag"
           no-caps
           color="accent"
-          class="q-pa-xs row rounded-borders"
-          style="width: 200px"
+          class="q-pa-xs row rounded-borders th-scalabletext-var1-h7"
+          style="max-width: 180px"
           @click="typeOfFillter = tag"
         >
-          <div class="q-pr-lg col-6" style="min-width: 50px">
+          <div class="q-pr-lg col-6" style="min-width: 64px">
             {{ $t(tag?.[0]) }}
           </div>
-          <q-icon :name="tag?.[1]" size="sm" class="col-2"
+          <q-icon :name="tag?.[1]" size="sm" class="q-pl-lg col-2"
         /></q-btn>
       </div>
       <div>

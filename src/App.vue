@@ -81,6 +81,9 @@ defineOptions({
 .th-scalabletext-var1-h6 {
   font-size: 14px;
 }
+.th-scalabletext-var1-h7 {
+  font-size: 12px;
+}
 
 @media (max-width: 1439.99px) {
   .th-scalabletext-var1-h1 {
@@ -179,4 +182,15 @@ defineOptions({
 .popup-z {
   z-index: 1001;
 }
+
+// ---DARKTHEME---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---DARKTHEME
+// .body--dark {
+//   --q-primary: #1976d2;
+//   --q-secondary: #26a69a;
+//   --q-accent: #9c27b0;
+//   --q-positive: #21ba45;
+//   --q-negative: #c10015;
+//   --q-info: #31ccec;
+//   --q-warning: #f2c037;
+// }
 </style>
