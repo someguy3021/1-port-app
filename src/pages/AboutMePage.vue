@@ -20,9 +20,7 @@
             </q-item>
           </q-item-section>
         </q-item>
-        <q-item
-          class="whoiam-img flex-center bg-glass-black border-radius20 q-ma-md"
-        >
+        <q-item class="whoiam-img flex-center border-radius20 q-ma-md">
           <img
             class="flex flex-center non-selectable"
             alt="Quasar logo"
