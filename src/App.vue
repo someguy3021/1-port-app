@@ -62,6 +62,10 @@ defineOptions({
 .border-radius20 {
   border-radius: 20px;
 }
+.border-accentColor {
+  border: solid;
+  border-color: $accent;
+}
 // Custom adaptive font sizes class library. Larger fonts become smaller faster that small fonts. h1-for biggest headings, h2-for big headings, h3-for small headings, h4-for bigger text.
 .th-scalabletext-var1-h1 {
   font-size: 80px;
@@ -182,15 +186,4 @@ defineOptions({
 .popup-z {
   z-index: 1001;
 }
-
-// ---DARKTHEME---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---TODO---DARKTHEME
-// .body--dark {
-//   --q-primary: #1976d2;
-//   --q-secondary: #26a69a;
-//   --q-accent: #9c27b0;
-//   --q-positive: #21ba45;
-//   --q-negative: #c10015;
-//   --q-info: #31ccec;
-//   --q-warning: #f2c037;
-// }
 </style>

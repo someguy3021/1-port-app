@@ -1,5 +1,8 @@
 <template>
-  <q-card class="q-pa-md q-ma-md" style="min-width: 300px; max-width: 400px">
+  <q-card
+    class="q-pa-md q-ma-md shadow-6"
+    style="min-width: 300px; max-width: 400px"
+  >
     <div class="q-pb-md">
       <q-carousel
         v-model="slide"
@@ -8,7 +11,7 @@
         transition-next="jump-left"
         swipeable
         animated
-        control-color="accent"
+        control-color="secondary"
         prev-icon="arrow_left"
         next-icon="arrow_right"
         navigation-icon="radio_button_unchecked"
@@ -17,7 +20,7 @@
         padding
         arrows
         height="300px"
-        class="text-white shadow-1 rounded-borders"
+        class="text-white shadow-0 rounded-borders"
       >
         <q-carousel-slide
           v-for="(img, index) in work.imgPaths"
@@ -27,7 +30,7 @@
           ><img
             v-bind:src="`works_imgs/${img}.webp`"
             style="height: 100%"
-            class="non-selectable"
+            class="non-selectable rounded-borders"
         /></q-carousel-slide>
       </q-carousel>
     </div>
@@ -44,10 +47,10 @@
           style="max-width: 180px"
           @click="typeOfFillter = tag"
         >
-          <div class="q-pr-lg col-6" style="min-width: 64px">
+          <div class="q-pr-md col-6" style="min-width: 64px">
             {{ $t(tag?.[0]) }}
           </div>
-          <q-icon :name="tag?.[1]" size="sm" class="q-pl-lg col-2"
+          <q-icon :name="tag?.[1]" size="sm" class="q-pl-md col-2"
         /></q-btn>
       </div>
       <div>
@@ -67,8 +70,6 @@ defineOptions({
   name: "PortCards_Card",
 });
 
-console.log("Got work");
-
 import { useI18n } from "vue-i18n";
 const i18nLocale = useI18n();
 console.log(i18nLocale.locale.value); // "en-US"
@@ -80,35 +81,23 @@ const props = defineProps({
   },
 });
 
-{
-  /* <div v-for="img in work.imgPaths" :key="img">
-          <img v-bind:src="`works_imgs/${img}.webp`" />
-        </div>
-        <img v-bind:src="`works_imgs/${work.thumbnail}.webp`" /> 
-        
-        
-        
-        
-        
-                <q-carousel-slide
-          v-for="(img, index) in work.imgPaths"
-          :key="img"
-          :name="index + 1"
-          :img-src="`works_imgs/${img}.webp`"
-          style="object-fit: cover"
-          ><img v-bind:src="`works_imgs/${img}.webp`"
-        /></q-carousel-slide>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        */
-}
+// {
+//   /* <div v-for="img in work.imgPaths" :key="img">
+//           <img v-bind:src="`works_imgs/${img}.webp`" />
+//         </div>
+//         <img v-bind:src="`works_imgs/${work.thumbnail}.webp`" />
+
+//                 <q-carousel-slide
+//           v-for="(img, index) in work.imgPaths"
+//           :key="img"
+//           :name="index + 1"
+//           :img-src="`works_imgs/${img}.webp`"
+//           style="object-fit: cover"
+//           ><img v-bind:src="`works_imgs/${img}.webp`"
+//         /></q-carousel-slide>
+
+//         */
+// }
 
 import { ref } from "vue";
 

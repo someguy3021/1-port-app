@@ -13,16 +13,20 @@
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
 $primary: #2b55a3;
-$secondary: #26a69a;
-$accent: #9c27b0;
-
-$dark: #232b42;
-$dark-page: #161a25;
-
+$secondary: #1cb4a5;
+$accent: #9d3ead;
 $positive: #21ba45;
 $negative: #c10015;
 $info: #31ccec;
 $warning: #f2c037;
+//
+//
+$white-page: #ffffff;
+$page-darker: #f2f2f2;
+//
+//
+$dark: #232b42;
+$dark-page: #161a25;
 //
 //
 $darkLighter: #2c3b68;
@@ -30,7 +34,13 @@ $darkLighter: #2c3b68;
 //
 $glass1: #0a0a0a2a;
 $glass2: #0707081c;
-//
-//
-$white-page: #ffffff;
-$page-darker: #f2f2f2;
+
+.body--dark {
+  --q-primary: #2b55a3;
+  --q-secondary: #26a69a;
+  --q-accent: #9d3ead;
+  --q-positive: #21ba45;
+  --q-negative: #c10015;
+  --q-info: #31ccec;
+  --q-warning: #f2c037;
+}
