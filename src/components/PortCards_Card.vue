@@ -1,6 +1,6 @@
 <template>
   <q-card
-    class="q-pa-md q-ma-md shadow-6"
+    class="q-pa-md q-ma-md box-shadow-example-accentColor border-accentColor"
     style="min-width: 300px; max-width: 400px"
   >
     <div class="q-pb-md">
@@ -11,7 +11,7 @@
         transition-next="jump-left"
         swipeable
         animated
-        control-color="secondary"
+        control-color="accent"
         prev-icon="arrow_left"
         next-icon="arrow_right"
         navigation-icon="radio_button_unchecked"

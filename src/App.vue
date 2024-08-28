@@ -63,8 +63,11 @@ defineOptions({
   border-radius: 20px;
 }
 .border-accentColor {
-  border: solid;
-  border-color: $accent;
+  border: solid 2px;
+  border-color: $primary;
+}
+.box-shadow-example-accentColor {
+  box-shadow: 0px 0px 6px $primary;
 }
 // Custom adaptive font sizes class library. Larger fonts become smaller faster that small fonts. h1-for biggest headings, h2-for big headings, h3-for small headings, h4-for bigger text.
 .th-scalabletext-var1-h1 {
@@ -89,6 +92,27 @@ defineOptions({
   font-size: 12px;
 }
 
+@media (max-width: 1539.99px) {
+  .th-scalabletext-var1-h1 {
+    font-size: 64px;
+  }
+  .th-scalabletext-var1-h2 {
+    font-size: 60px;
+  }
+  .th-scalabletext-var1-h3 {
+    font-size: 40px;
+  }
+  .th-scalabletext-var1-h4 {
+    font-size: 28px;
+  }
+  .th-scalabletext-var1-h5 {
+    font-size: 16px;
+  }
+  .th-scalabletext-var1-h6 {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 1439.99px) {
   .th-scalabletext-var1-h1 {
     font-size: 64px;
@@ -111,7 +135,7 @@ defineOptions({
 }
 @media (max-width: 1023.99px) {
   .th-scalabletext-var1-h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
   .th-scalabletext-var1-h2 {
     font-size: 28px;

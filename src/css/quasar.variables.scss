@@ -12,6 +12,7 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
+// Light theme - Stylish white with shadows
 $primary: #2b55a3;
 $secondary: #1cb4a5;
 $accent: #9d3ead;
@@ -25,7 +26,7 @@ $white-page: #ffffff;
 $page-darker: #f2f2f2;
 //
 //
-$dark: #232b42;
+$dark: #232b42; // D
 $dark-page: #161a25;
 //
 //
@@ -35,6 +36,7 @@ $darkLighter: #2c3b68;
 $glass1: #0a0a0a2a;
 $glass2: #0707081c;
 
+// Dark theme - Steam with neon lights
 .body--dark {
   --q-primary: #2b55a3;
   --q-secondary: #26a69a;
@@ -44,3 +46,8 @@ $glass2: #0707081c;
   --q-info: #31ccec;
   --q-warning: #f2c037;
 }
+
+$separator-dark-color: rgba(0, 0, 0, 0.12);
+$dark-shadow-color: $accent;
+$layout-shadow-dark: 0 0 10px 2px rgba(0, 0, 0, 0.2),
+  0 0px 10px rgba(0, 0, 0, 0.24);
