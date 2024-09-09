@@ -3,15 +3,15 @@
     {
       "title": {
         "en-US": "This website!",
-        "ru-1": "Этот вебсайт!"
+        "ru-1": "Пример - Этот вебсайт!"
       },
       "tags": [
         ["tag_website", "language"],
         ["tag_frontend", "web_asset"],
         ["tag_design", "brush"]
       ],
-      "rating": 6,
-      "hidden": false,
+      "rating": 8,
+      "hidden": true,
       "thumbnail": "testcommS-3",
       "imgPaths": [
         "testcommS-1",
@@ -32,124 +32,172 @@
     {
       "title": {
         "en-US": "Logo 1 for a client",
-        "ru-1": "Лого 1 для клиента"
+        "ru-1": "Пример - Лого 1 для клиента"
       },
       "tags": [
         ["tag_logo", "diamond"],
         ["tag_graphics_and_vector", "diamond"],
         ["tag_design", "brush"]
       ],
+      "rating": 9,
+      "hidden": true,
+      "thumbnail": "testcommS-3",
+      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+      }
+    },
+    {
+      "title": {
+        "en-US": "Logo 2 for a client",
+        "ru-1": "Пример - Лого 2 для клиента"
+      },
+      "tags": [
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"],
+        ["tag_design", "brush"],
+        ["tag_no_code", "code_off"],
+        ["tag_tilda", "code_off"]
+      ],
       "rating": 10,
+      "hidden": true,
+      "thumbnail": "testcommS-3",
+      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+      }
+    },
+    {
+      "title": {
+        "en-US": "Logo 2 for a client",
+        "ru-1": "Пример - Лого 2 для клиента"
+      },
+      "tags": [
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"],
+        ["tag_design", "brush"],
+        ["tag_no_code", "code_off"],
+        ["tag_tilda", "code_off"]
+      ],
+      "rating": 10,
+      "hidden": true,
+      "thumbnail": "testcommS-3",
+      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+      }
+    },
+    {
+      "title": {
+        "en-US": "Logo 2 for a client",
+        "ru-1": "Пример - Лого 2 для клиента"
+      },
+      "tags": [
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"],
+        ["tag_design", "brush"],
+        ["tag_no_code", "code_off"],
+        ["tag_tilda", "code_off"]
+      ],
+      "rating": 10,
+      "hidden": true,
+      "thumbnail": "testcommS-3",
+      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+      }
+    },
+    {
+      "title": {
+        "en-US": "Product cards - accessories for strikeball",
+        "ru-1": "Карточки товара - акссесуары для страйкбола"
+      },
+      "tags": [
+        ["tag_graphics_and_vector", "diamond"],
+        ["tag_design", "brush"]
+      ],
+      "rating": 8,
       "hidden": false,
-      "thumbnail": "testcommS-3",
-      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "thumbnail": "marketcard_strikeball1_1",
+      "imgPaths": [
+        "marketcard_strikeball1_1",
+        "marketcard_strikeball1_2",
+        "marketcard_strikeball1_3",
+        "marketcard_strikeball1_4"
+      ],
       "descriptionShort": {
         "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
+        "ru-1": "Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола"
       },
       "descriptionLong": {
         "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+        "ru-1": "Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола. Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола"
       }
     },
     {
       "title": {
-        "en-US": "Logo 2 for a client",
-        "ru-1": "Лого 2 для клиента"
+        "en-US": "Logo for massage studio",
+        "ru-1": "Логотип для студии массажа \"Умный фитнес\""
       },
       "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"],
-        ["tag_no_code", "code_off"],
-        ["tag_tilda", "code_off"]
+        ["tag_logo", "diamond"],
+        ["tag_graphics_and_vector", "diamond"],
+        ["tag_design", "brush"]
       ],
-      "rating": 10,
-      "hidden": true,
-      "thumbnail": "testcommS-3",
-      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "rating": 9,
+      "hidden": false,
+      "thumbnail": "logo_massageStudio1_1",
+      "imgPaths": ["logo_massageStudio1_1"],
       "descriptionShort": {
         "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
+        "ru-1": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика"
       },
       "descriptionLong": {
         "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+        "ru-1": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика. Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика."
       }
     },
     {
       "title": {
-        "en-US": "Logo 2 for a client",
-        "ru-1": "Лого 2 для клиента"
+        "en-US": "Logo for furniture company",
+        "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\""
       },
       "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"],
-        ["tag_no_code", "code_off"],
-        ["tag_tilda", "code_off"]
+        ["tag_logo", "diamond"],
+        ["tag_graphics_and_vector", "diamond"],
+        ["tag_design", "brush"]
       ],
-      "rating": 10,
-      "hidden": true,
-      "thumbnail": "testcommS-3",
-      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "rating": 9,
+      "hidden": false,
+      "thumbnail": "logo_furniture1_1",
+      "imgPaths": ["logo_furniture1_1"],
       "descriptionShort": {
         "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
+        "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\", созданный по пожеланиям заказчика"
       },
       "descriptionLong": {
         "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
-      }
-    },
-    {
-      "title": {
-        "en-US": "Logo 2 for a client",
-        "ru-1": "Лого 2 для клиента"
-      },
-      "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"],
-        ["tag_no_code", "code_off"],
-        ["tag_tilda", "code_off"]
-      ],
-      "rating": 10,
-      "hidden": true,
-      "thumbnail": "testcommS-3",
-      "imgPaths": ["testcommS-3", "testcommS-3"],
-      "descriptionShort": {
-        "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
-      },
-      "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
-      }
-    },
-    {
-      "title": {
-        "en-US": "Logo 2 for a client",
-        "ru-1": "Лого 2 для клиента"
-      },
-      "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"],
-        ["tag_no_code", "code_off"],
-        ["tag_tilda", "code_off"]
-      ],
-      "rating": 10,
-      "hidden": true,
-      "thumbnail": "testcommS-3",
-      "imgPaths": ["testcommS-3", "testcommS-3"],
-      "descriptionShort": {
-        "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
-      },
-      "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+        "ru-1": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов."
       }
     }
   ],
