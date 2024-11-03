@@ -1,9 +1,10 @@
 {
   "works": [
     {
+      "id": 1,
       "title": {
         "en-US": "This website!",
-        "ru-1": "Пример - Этот вебсайт!"
+        "ru-1": "Этот вебсайт!"
       },
       "tags": [
         ["tag_website", "language"],
@@ -11,7 +12,7 @@
         ["tag_design", "brush"]
       ],
       "rating": 8,
-      "hidden": true,
+      "hidden": false,
       "thumbnail": "testcommS-3",
       "imgPaths": [
         "testcommS-1",
@@ -22,14 +23,60 @@
       ],
       "descriptionShort": {
         "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
+        "ru-1": "Сайт-портфолио на фреймворке Quasar. Разработка дизайна, верстки и внутренней работы сайта, а также хостинг на GitHub Pages."
       },
       "descriptionLong": {
         "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+        "ru-1": [
+          [
+            ["work_dialog_inner_textAndPicture"],
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded",
+              "width:300px"
+            ]
+          ],
+          [
+            ["work_dialog_inner_textOnly"],
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded",
+              "width:300px"
+            ]
+          ],
+          [
+            ["work_dialog_inner_PictureAndText"],
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded",
+              "width:300px"
+            ]
+          ],
+          [
+            ["work_dialog_inner_PictureOnly"],
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded",
+              "width:300px"
+            ]
+          ]
+        ]
       }
     },
     {
+      "id": 2,
       "title": {
         "en-US": "Logo 1 for a client",
         "ru-1": "Пример - Лого 1 для клиента"
@@ -78,6 +125,7 @@
       }
     },
     {
+      "id": 3,
       "title": {
         "en-US": "Logo 2 for a client",
         "ru-1": "Пример - Лого 2 для клиента"
@@ -103,6 +151,7 @@
       }
     },
     {
+      "id": 4,
       "title": {
         "en-US": "Logo 2 for a client",
         "ru-1": "Пример - Лого 2 для клиента"
@@ -128,6 +177,7 @@
       }
     },
     {
+      "id": 5,
       "title": {
         "en-US": "Product cards - accessories for strikeball",
         "ru-1": "Карточки товара - акссесуары для страйкбола"
@@ -155,6 +205,7 @@
       }
     },
     {
+      "id": 6,
       "title": {
         "en-US": "Logo for massage studio",
         "ru-1": "Логотип для студии массажа \"Умный фитнес\""
@@ -178,6 +229,7 @@
       }
     },
     {
+      "id": 7,
       "title": {
         "en-US": "Logo for furniture company",
         "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\""
@@ -204,6 +256,7 @@
 
   "services_TODO_FROM_KWORK": [
     {
+      "id": 1,
       "title": {
         "en-US": "Website on Tilda or WordPress",
         "ru-1": "Вебсайт на Тильда или Вордпресс"
@@ -231,6 +284,7 @@
       }
     },
     {
+      "id": 2,
       "title": {
         "en-US": "Vector Logo",
         "ru-1": "Векторное Лого"
@@ -256,6 +310,7 @@
       }
     },
     {
+      "id": 3,
       "title": {
         "en-US": "Logo 2 for a client",
         "ru-1": "Лого 2 для клиента"

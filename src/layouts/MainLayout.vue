@@ -2,36 +2,16 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
       <q-toolbar class="container">
-        <q-btn
-          class="q-mx-xs"
-          v-if="$q.screen.lt.md"
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
+        <q-btn class="q-mx-xs" v-if="$q.screen.lt.md" flat dense round icon="menu" aria-label="Menu"
+          @click="toggleLeftDrawer" />
         <language-switch />
-        <q-toggle
-          size="lg"
-          keep-color
-          v-model="themeDarkSwitch"
-          @click="$q.dark.toggle()"
-          checked-icon="dark_mode"
-          color="darkLighter"
-          unchecked-icon="wb_sunny"
-        />
+        <q-toggle size="lg" keep-color v-model="themeDarkSwitch" @click="$q.dark.toggle()" checked-icon="dark_mode"
+          color="darkLighter" unchecked-icon="wb_sunny" />
         <q-toolbar-title class="gt-sm non-selectable th-fontbold900">
           {{ $t("myportfolio") }}
         </q-toolbar-title>
 
-        <EssentialLinkHeader
-          class="gt-sm"
-          v-for="link in linksListShort"
-          :key="link.title"
-          v-bind="link"
-        />
+        <EssentialLinkHeader class="gt-sm" v-for="link in linksListShort" :key="link.title" v-bind="link" />
       </q-toolbar>
     </q-header>
 
@@ -62,15 +42,8 @@
               <q-item-label>{{ $t("changetheme") }}</q-item-label>
             </q-item-section>
             <q-item-section>
-              <q-toggle
-                size="lg"
-                keep-color
-                v-model="themeDarkSwitch"
-                @click="$q.dark.toggle()"
-                checked-icon="dark_mode"
-                color="darkLighter"
-                unchecked-icon="wb_sunny"
-              />
+              <q-toggle size="lg" keep-color v-model="themeDarkSwitch" @click="$q.dark.toggle()"
+                checked-icon="dark_mode" color="darkLighter" unchecked-icon="wb_sunny" />
             </q-item-section>
           </q-item>
         </q-item-section>
@@ -90,36 +63,19 @@
             </q-item-section>
           </q-item>
         </q-item-label>
-        <EssentialLink
-          v-for="link in linksList"
-          :key="link.title"
-          v-bind="link"
-        />
+        <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
 
     <q-page-container>
       <router-view />
     </q-page-container>
-    <q-footer
-      v-if="$q.screen.lt.md"
-      elevated
-      :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'"
-    >
+    <q-footer v-if="$q.screen.lt.md" elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
       <q-toolbar class="container flex flex-center q-mx-md">
-        <EssentialLinkHeader
-          class="lt-md"
-          v-for="link in linksListShort"
-          :key="link.title"
-          v-bind="link"
-        />
+        <EssentialLinkHeader class="lt-md" v-for="link in linksListShort" :key="link.title" v-bind="link" />
       </q-toolbar>
     </q-footer>
-    <q-page-scroller
-      position="bottom-right"
-      :scroll-offset="150"
-      :offset="[18, 18]"
-    >
+    <q-page-scroller position="bottom-right" :scroll-offset="150" :offset="[18, 18]">
       <q-btn fab icon="keyboard_arrow_up" color="accent" />
     </q-page-scroller>
   </q-layout>
@@ -143,7 +99,7 @@ const linksList = [
     title: "link_aboutme_title",
     caption: "link_aboutme_caption",
     icon: "school",
-    link: "#",
+    link: "/",
   },
   {
     title: "link_myworks_title",

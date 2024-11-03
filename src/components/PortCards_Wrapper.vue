@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <div class="wrapper-filters">
-      <div class="th-scalabletext-var1-h2 text-bold q-pb-md">
+      <div class="h2 text-bold q-pb-md">
         {{ $t("myportfolio") }}
       </div>
       <div
@@ -62,7 +62,7 @@
     </div>
   </div>
 </template>
-  
+
 <script setup>
 import PortCards_Card from "./PortCards_Card.vue";
 import { works } from "../stores/DB.json";
@@ -160,4 +160,3 @@ async function getworksData() {
 //   fillterworksData(modelForFB.value);
 // });
 </script>
-  

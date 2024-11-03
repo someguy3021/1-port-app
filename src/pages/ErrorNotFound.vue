@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center"
-  >
+  <div class="fullscreen text-white text-center q-pa-md flex flex-center">
     <div>
       <div style="font-size: 30vh">404</div>
 
@@ -9,15 +7,7 @@
         {{ $t("page404_caption") }}
       </div>
 
-      <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
-        to="/"
-        :label="$t('page404_button')"
-        no-caps
-      />
+      <q-btn class="q-mt-xl" color="white" text-color="black" unelevated to="/" :label="$t('page404_button')" no-caps />
     </div>
   </div>
 </template>
