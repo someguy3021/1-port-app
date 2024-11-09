@@ -1,5 +1,5 @@
 <template>
-  <q-item clickable tag="a" target="_blank" :href="props.link">
+  <q-item clickable tag="a" :href="props.link">
     <q-item-section v-if="props.icon" avatar>
       <q-icon :name="props.icon" />
     </q-item-section>
@@ -30,7 +30,7 @@ const props = defineProps({
 
   link: {
     type: String,
-    default: "#",
+    default: "",
   },
 
   icon: {

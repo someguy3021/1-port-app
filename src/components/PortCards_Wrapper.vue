@@ -108,6 +108,7 @@ async function getworksData() {
   //     });
   //   });
   let tempArr = works;
+  tempArr = tempArr.filter(work => work.hidden === false); // removing all the testing elements or hidden elements
   console.log(tempArr);
   // If not getting any data about how much elements to show - show all of them
   if (

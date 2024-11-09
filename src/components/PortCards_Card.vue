@@ -15,7 +15,7 @@
       <div class="flex q-gutter-x-md q-gutter-y-md q-mb-lg h6">
         <q-btn v-for="tag in work.tags" :key="tag" no-caps color="accent" class="q-pa-xs row rounded-borders h7"
           style="max-width: 180px" @click="typeOfFillter = tag">
-          <div class="q-pr-md col-6" style="min-width: 64px">
+          <div class="q-pr-sm col-6" style="min-width: 64px">
             {{ $t(tag?.[0]) }}
           </div>
           <q-icon :name="tag?.[1]" size="sm" class="q-pl-md col-2" />

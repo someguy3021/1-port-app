@@ -99,13 +99,13 @@ const linksList = [
     title: "link_aboutme_title",
     caption: "link_aboutme_caption",
     icon: "school",
-    link: "/",
+    link: "#",
   },
   {
     title: "link_myworks_title",
     caption: "link_myworks_caption",
     icon: "code",
-    link: "#",
+    link: "/works",
   },
   {
     title: "link_services_title",
@@ -129,7 +129,7 @@ const linksListShort = [
   {
     title: "link_myworks_title",
     icon: "code",
-    link: "#",
+    link: "/works21323",
   },
   {
     title: "link_services_title",

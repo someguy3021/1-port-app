@@ -8,7 +8,6 @@
             <q-card-section style="max-height: 80vh;" class="scroll">
                 <q-card-section v-for="(index) in work.descriptionLong?.[i18nLocale.locale.value]?.length" :key="index"
                     :class=work.descriptionLong?.[i18nLocale.locale.value]?.[index]?.[0]>
-                    {{ work.title?.[i18nLocale.locale.value] }}
                     <p :class="work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[1]">
                         {{ work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[0] }}
                     </p>
