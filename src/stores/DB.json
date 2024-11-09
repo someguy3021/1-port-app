@@ -29,46 +29,46 @@
         "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
         "ru-1": [
           [
-            ["work_dialog_inner_textAndPicture"],
+            "work_dialog_inner_textAndPicture",
             [
               "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
               "fw-normal",
               "font-size:18vw",
               "testcommS-1",
-              "rounded",
+              "rounded-borders",
               "width:300px"
             ]
           ],
           [
-            ["work_dialog_inner_textOnly"],
+            "work_dialog_inner_textOnly",
             [
               "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
               "fw-normal",
               "font-size:18vw",
               "testcommS-1",
-              "rounded",
+              "rounded-borders",
               "width:300px"
             ]
           ],
           [
-            ["work_dialog_inner_PictureAndText"],
+            "work_dialog_inner_PictureAndText",
             [
               "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
               "fw-normal",
               "font-size:18vw",
               "testcommS-1",
-              "rounded",
+              "rounded-borders",
               "width:300px"
             ]
           ],
           [
-            ["work_dialog_inner_PictureOnly"],
+            "work_dialog_inner_PictureOnly",
             [
               "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
               "fw-normal",
               "font-size:18vw",
               "testcommS-1",
-              "rounded",
+              "rounded-borders",
               "width:300px"
             ]
           ]
@@ -96,32 +96,52 @@
       },
       "descriptionLong": {
         "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
-      }
-    },
-    {
-      "title": {
-        "en-US": "Logo 2 for a client",
-        "ru-1": "Пример - Лого 2 для клиента"
-      },
-      "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"],
-        ["tag_no_code", "code_off"],
-        ["tag_tilda", "code_off"]
-      ],
-      "rating": 10,
-      "hidden": true,
-      "thumbnail": "testcommS-3",
-      "imgPaths": ["testcommS-3", "testcommS-3"],
-      "descriptionShort": {
-        "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
-      },
-      "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
       }
     },
     {
@@ -147,7 +167,52 @@
       },
       "descriptionLong": {
         "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
       }
     },
     {
@@ -173,11 +238,127 @@
       },
       "descriptionLong": {
         "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
       }
     },
     {
       "id": 5,
+      "title": {
+        "en-US": "Logo 2 for a client",
+        "ru-1": "Пример - Лого 2 для клиента"
+      },
+      "tags": [
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"],
+        ["tag_design", "brush"],
+        ["tag_no_code", "code_off"],
+        ["tag_tilda", "code_off"]
+      ],
+      "rating": 10,
+      "hidden": true,
+      "thumbnail": "testcommS-3",
+      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "descriptionShort": {
+        "en-US": "I did this and that!",
+        "ru-1": "Я сделал и то и это!"
+      },
+      "descriptionLong": {
+        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": 6,
       "title": {
         "en-US": "Product cards - accessories for strikeball",
         "ru-1": "Карточки товара - акссесуары для страйкбола"
@@ -200,12 +381,57 @@
         "ru-1": "Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола"
       },
       "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола. Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола"
+        "en-US": "Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола. Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола",
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
       }
     },
     {
-      "id": 6,
+      "id": 7,
       "title": {
         "en-US": "Logo for massage studio",
         "ru-1": "Логотип для студии массажа \"Умный фитнес\""
@@ -224,12 +450,57 @@
         "ru-1": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика"
       },
       "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика. Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика."
+        "en-US": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика. Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика.",
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
       }
     },
     {
-      "id": 7,
+      "id": 8,
       "title": {
         "en-US": "Logo for furniture company",
         "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\""
@@ -248,8 +519,53 @@
         "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\", созданный по пожеланиям заказчика"
       },
       "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов."
+        "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
       }
     }
   ],
@@ -280,7 +596,52 @@
       },
       "descriptionLong": {
         "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
       }
     },
     {
@@ -306,7 +667,52 @@
       },
       "descriptionLong": {
         "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
       }
     },
     {
@@ -343,7 +749,52 @@
             "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!"
           ]
         ],
-        "ru-1": "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в!"
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
       }
     }
   ]

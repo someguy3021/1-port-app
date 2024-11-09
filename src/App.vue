@@ -235,4 +235,72 @@ p {
 .popup-z {
   z-index: 1001;
 }
+
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #529DF3 #2A2C2C;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #2A2C2C;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #4E5253;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #3B3E3E;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #529DF3;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #3588DC;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #3D9EFF;
+}
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+  background-color: #2A2C2C;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #555555 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: #555555 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <q-card class="q-pa-md q-ma-md box-shadow-example-accentColor border-accentColor"
     style="min-width: 300px; max-width: 400px">
-    <div class="q-pb-md">
+    <div>
       <q-carousel v-model="slide" infinite transition-prev="jump-right" transition-next="jump-left" swipeable animated
         control-color="accent" prev-icon="arrow_left" next-icon="arrow_right" navigation-icon="radio_button_unchecked"
         navigation-active-icon="radio_button_checked" navigation padding arrows height="300px"
@@ -29,12 +29,19 @@
           {{ work.descriptionShort?.[i18nLocale.locale.value] }}
         </div>
       </div>
-      <q-btn>Text</q-btn>
+      <q-separator />
+
     </div>
+    <q-card-actions align="right">
+      <q-btn class="text-capitalize" @click="showCardDialog = true" color="accent">{{ $t("button_ShowMore") }}</q-btn>
+    </q-card-actions>
   </q-card>
+  <PortCards_Card_Dialog v-model="showCardDialog" :work="work"></PortCards_Card_Dialog>
 </template>
 
 <script setup>
+import PortCards_Card_Dialog from "./PortCards_Card_Dialog.vue";
+const showCardDialog = ref(false);
 defineOptions({
   name: "PortCards_Card",
 });

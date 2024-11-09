@@ -45,4 +45,5 @@ export default {
   aboutmepage_Frontend_Developer_Designer1: "Wordpress",
   aboutmepage_Frontend_Developer_Designer1: "Wordpress",
   aboutmepage_Frontend_Developer_Designer1: "Wordpress",
+  button_ShowMore: "Show more",
 };
