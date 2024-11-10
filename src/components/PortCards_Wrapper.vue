@@ -57,7 +57,7 @@
         />
       </div>
     </div> -->
-    <div class="wrapper-cards-slider flex justify-center">
+    <div class="wrapper-cards-items flex justify-center container">
       <PortCards_Card v-for="work in worksData" :key="work.id" :work="work" />
     </div>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <q-card class="q-pa-md q-ma-md box-shadow-example-accentColor border-accentColor"
-    style="min-width: 300px; max-width: 400px">
+    style="min-width: 200px; max-width: 500px">
     <div>
       <q-carousel v-model="slide" infinite transition-prev="jump-right" transition-next="jump-left" swipeable animated
         control-color="accent" prev-icon="arrow_left" next-icon="arrow_right" navigation-icon="radio_button_unchecked"
@@ -20,16 +20,26 @@
           </div>
           <q-icon :name="tag?.[1]" size="sm" class="q-pl-md col-2" />
         </q-btn>
+        <q-btn v-for="stackUsedForWork in work.stackUsedForWork" :key="stackUsedForWork" no-caps color="accent"
+          class="q-pa-xs row rounded-borders h7" style="max-width: 180px" @click="typeOfFillter = tag">
+          <div class="q-pr-sm col-6" style="min-width: 64px">
+            {{ $t(stackUsedForWork?.[0]) }}
+          </div>
+          <q-icon :name="stackUsedForWork?.[1]" size="sm" class="q-pl-md col-2" />
+        </q-btn>
       </div>
       <div>
         <div class="h4">
           {{ work.title?.[i18nLocale.locale.value] }}
         </div>
         <div class="h6">
+          {{ $t("portcard_work_madeFor") }}: {{ work.madeFor?.[i18nLocale.locale.value] }}
+        </div>
+        <div class="h5 q-pt-md">
           {{ work.descriptionShort?.[i18nLocale.locale.value] }}
         </div>
       </div>
-      <q-separator />
+
 
     </div>
     <q-card-actions align="right">

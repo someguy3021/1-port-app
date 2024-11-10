@@ -90,7 +90,7 @@ defineOptions({
 
 
   .container {
-    max-width: 100%;
+    width: 100%;
   }
 
   .thscale-q-pa-xl {
@@ -100,7 +100,7 @@ defineOptions({
 
 @media (max-width: 599.99px) {
   .container {
-    max-width: 100%;
+    width: 100%;
   }
 
   .thscale-q-pa-xl {

@@ -6,10 +6,18 @@
         "en-US": "This website!",
         "ru-1": "Этот вебсайт!"
       },
+      "madeFor": {
+        "en-US": "Me",
+        "ru-1": "Я"
+      },
       "tags": [
         ["tag_website", "language"],
         ["tag_frontend", "web_asset"],
         ["tag_design", "brush"]
+      ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
       "rating": 8,
       "hidden": false,
@@ -22,7 +30,7 @@
         "testcommS-2"
       ],
       "descriptionShort": {
-        "en-US": "I did this and that!",
+        "en-US": "Portfolio website on the Quasar framework. Development of design, layout and internal work of the website, as well as hosting on GitHub Pages.",
         "ru-1": "Сайт-портфолио на фреймворке Quasar. Разработка дизайна, верстки и внутренней работы сайта, а также хостинг на GitHub Pages."
       },
       "descriptionLong": {
@@ -81,10 +89,18 @@
         "en-US": "Logo 1 for a client",
         "ru-1": "Пример - Лого 1 для клиента"
       },
+      "madeFor": {
+        "en-US": "Me",
+        "ru-1": "Я"
+      },
       "tags": [
         ["tag_logo", "diamond"],
         ["tag_graphics_and_vector", "diamond"],
         ["tag_design", "brush"]
+      ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
       "rating": 9,
       "hidden": true,
@@ -150,12 +166,20 @@
         "en-US": "Logo 2 for a client",
         "ru-1": "Пример - Лого 2 для клиента"
       },
+      "madeFor": {
+        "en-US": "Me",
+        "ru-1": "Я"
+      },
       "tags": [
         ["tag_website", "language"],
         ["tag_frontend", "web_asset"],
         ["tag_design", "brush"],
         ["tag_no_code", "code_off"],
         ["tag_tilda", "code_off"]
+      ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
       "rating": 10,
       "hidden": true,
@@ -221,12 +245,20 @@
         "en-US": "Logo 2 for a client",
         "ru-1": "Пример - Лого 2 для клиента"
       },
+      "madeFor": {
+        "en-US": "Me",
+        "ru-1": "Я"
+      },
       "tags": [
         ["tag_website", "language"],
         ["tag_frontend", "web_asset"],
         ["tag_design", "brush"],
         ["tag_no_code", "code_off"],
         ["tag_tilda", "code_off"]
+      ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
       "rating": 10,
       "hidden": true,
@@ -292,12 +324,20 @@
         "en-US": "Logo 2 for a client",
         "ru-1": "Пример - Лого 2 для клиента"
       },
+      "madeFor": {
+        "en-US": "Me",
+        "ru-1": "Я"
+      },
       "tags": [
         ["tag_website", "language"],
         ["tag_frontend", "web_asset"],
         ["tag_design", "brush"],
         ["tag_no_code", "code_off"],
         ["tag_tilda", "code_off"]
+      ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
       "rating": 10,
       "hidden": true,
@@ -363,9 +403,17 @@
         "en-US": "Product cards - accessories for strikeball",
         "ru-1": "Карточки товара - акссесуары для страйкбола"
       },
+      "madeFor": {
+        "en-US": "Individual customer",
+        "ru-1": "Индивидуальный заказчик"
+      },
       "tags": [
         ["tag_graphics_and_vector", "diamond"],
         ["tag_design", "brush"]
+      ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
       "rating": 8,
       "hidden": false,
@@ -377,11 +425,11 @@
         "marketcard_strikeball1_4"
       ],
       "descriptionShort": {
-        "en-US": "I did this and that!",
-        "ru-1": "Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола"
+        "en-US": "Product card design for Ozon marketplace - airsoft accessories",
+        "ru-1": "Дизайн карт продукта для маркетплейса Ozon - аксессуары для страйкбола"
       },
       "descriptionLong": {
-        "en-US": "Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола. Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола",
+        "en-US": "Дизайн карт продукта для маркетплейса Ozon - аксессуары для страйкбола. Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола",
         "ru-1": [
           [
             "work_dialog_inner_textAndPicture",
@@ -433,20 +481,28 @@
     {
       "id": 7,
       "title": {
-        "en-US": "Logo for massage studio",
+        "en-US": "Logo for massage studio \"Smart Fitness\"",
         "ru-1": "Логотип для студии массажа \"Умный фитнес\""
+      },
+      "madeFor": {
+        "en-US": "Individual customer",
+        "ru-1": "Индивидуальный заказчик"
       },
       "tags": [
         ["tag_logo", "diamond"],
         ["tag_graphics_and_vector", "diamond"],
         ["tag_design", "brush"]
       ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+      ],
       "rating": 9,
       "hidden": false,
       "thumbnail": "logo_massageStudio1_1",
       "imgPaths": ["logo_massageStudio1_1"],
       "descriptionShort": {
-        "en-US": "I did this and that!",
+        "en-US": "Logo for the massage studio \"Smart Fitness\", created according to the customer's wishes",
         "ru-1": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика"
       },
       "descriptionLong": {
@@ -502,21 +558,256 @@
     {
       "id": 8,
       "title": {
-        "en-US": "Logo for furniture company",
+        "en-US": "Logo for furniture company \"Vam Dam Mebel\"",
         "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\""
+      },
+      "madeFor": {
+        "en-US": "Individual customer",
+        "ru-1": "Индивидуальный заказчик"
       },
       "tags": [
         ["tag_logo", "diamond"],
         ["tag_graphics_and_vector", "diamond"],
         ["tag_design", "brush"]
       ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+      ],
       "rating": 9,
       "hidden": false,
       "thumbnail": "logo_furniture1_1",
       "imgPaths": ["logo_furniture1_1"],
       "descriptionShort": {
-        "en-US": "I did this and that!",
+        "en-US": "Logo for the furniture company \"Vam Dam Mebel\", created according to the customer's wishes",
         "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\", созданный по пожеланиям заказчика"
+      },
+      "descriptionLong": {
+        "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "title": {
+        "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
+        "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету"
+      },
+      "madeFor": {
+        "en-US": "Development Team \"ITitans\"",
+        "ru-1": "Команда разработки \"ITitans\""
+      },
+      "tags": [
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"]
+      ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+      ],
+      "rating": 7,
+      "hidden": false,
+      "thumbnail": "testcommS-1",
+      "imgPaths": ["testcommS-1"],
+      "descriptionShort": {
+        "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
+        "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету"
+      },
+      "descriptionLong": {
+        "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "title": {
+        "en-US": "Development of chat logic for the service \"FG-Rulit\"",
+        "ru-1": "Разработка логики чата для сервиса \"ФГ-Рулит\""
+      },
+      "madeFor": {
+        "en-US": "Development Team \"ITitans\"",
+        "ru-1": "Команда разработки \"ITitans\""
+      },
+      "tags": [
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"]
+      ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+      ],
+      "rating": 9,
+      "hidden": false,
+      "thumbnail": "testcommS-1",
+      "imgPaths": ["testcommS-1"],
+      "descriptionShort": {
+        "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
+        "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету"
+      },
+      "descriptionLong": {
+        "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
+        "ru-1": [
+          [
+            "work_dialog_inner_textAndPicture",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_textOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureAndText",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ],
+          [
+            "work_dialog_inner_PictureOnly",
+            [
+              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
+              "fw-normal",
+              "font-size:18vw",
+              "testcommS-1",
+              "rounded-borders",
+              "width:300px"
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "title": {
+        "en-US": "Full development of the frontend part of the service \"Bushtree\"",
+        "ru-1": "Полная разработка фронтенд-части сервиса \"Bushtree\""
+      },
+      "madeFor": {
+        "en-US": "Development Team \"IGene\"",
+        "ru-1": "Команда разработки \"IGene\""
+      },
+      "tags": [
+        ["tag_website", "language"],
+        ["tag_frontend", "web_asset"]
+      ],
+      "stackUsedForWork": [
+        ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+      ],
+      "rating": 9,
+      "hidden": false,
+      "thumbnail": "testcommS-1",
+      "imgPaths": ["testcommS-1"],
+      "descriptionShort": {
+        "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
+        "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету"
       },
       "descriptionLong": {
         "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",

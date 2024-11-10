@@ -7,8 +7,8 @@
         <language-switch />
         <q-toggle size="lg" keep-color v-model="themeDarkSwitch" @click="$q.dark.toggle()" checked-icon="dark_mode"
           color="darkLighter" unchecked-icon="wb_sunny" />
-        <q-toolbar-title class="gt-sm non-selectable th-fontbold900">
-          {{ $t("myportfolio") }}
+        <q-toolbar-title class="gt-sm non-selectable th-fontbold900 rounded-borders">
+          <q-item to="/" class="text-weight-regular text-white rounded-borders">{{ $t("myportfolio") }}</q-item>
         </q-toolbar-title>
 
         <EssentialLinkHeader class="gt-sm" v-for="link in linksListShort" :key="link.title" v-bind="link" />
