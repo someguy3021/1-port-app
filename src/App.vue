@@ -99,9 +99,6 @@ defineOptions({
 }
 
 @media (max-width: 599.99px) {
-  .container {
-    width: 100%;
-  }
 
   .thscale-q-pa-xl {
     padding: 36px 4px;
@@ -199,7 +196,7 @@ h6,
 
 @media (max-width: 1200px) {
   .h1_bigger1 {
-    font-size: 3rem;
+    font-size: calc(12px + 3vw);
   }
 }
 

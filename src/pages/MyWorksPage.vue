@@ -1,5 +1,5 @@
 <template>
-  <q-page class="container flex flex-center">
+  <q-page class="container">
     <PortCards_Wrapper />
   </q-page>
 </template>

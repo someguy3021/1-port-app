@@ -20,7 +20,9 @@
           </div>
           <q-icon :name="tag?.[1]" size="sm" class="q-pl-md col-2" />
         </q-btn>
-        <q-btn v-for="stackUsedForWork in work.stackUsedForWork" :key="stackUsedForWork" no-caps color="accent"
+      </div>
+      <div class="flex q-gutter-x-md q-gutter-y-md q-mb-lg h6">
+        <q-btn v-for="stackUsedForWork in work.stackUsedForWork" :key="stackUsedForWork" no-caps
           class="q-pa-xs row rounded-borders h7" style="max-width: 180px" @click="typeOfFillter = tag">
           <div class="q-pr-sm col-6" style="min-width: 64px">
             {{ $t(stackUsedForWork?.[0]) }}
@@ -28,7 +30,7 @@
           <q-icon :name="stackUsedForWork?.[1]" size="sm" class="q-pl-md col-2" />
         </q-btn>
       </div>
-      <div>
+      <div class="q-mt-lg">
         <div class="h4">
           {{ work.title?.[i18nLocale.locale.value] }}
         </div>
@@ -39,8 +41,6 @@
           {{ work.descriptionShort?.[i18nLocale.locale.value] }}
         </div>
       </div>
-
-
     </div>
     <q-card-actions align="right">
       <q-btn class="text-capitalize" @click="showCardDialog = true" color="accent">{{ $t("button_ShowMore") }}</q-btn>

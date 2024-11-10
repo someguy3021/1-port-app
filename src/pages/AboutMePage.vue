@@ -1,33 +1,31 @@
 <template>
-  <q-page class="">
-    <div class="q-py-xl">
-      <div class="whoiam-wrapper container q-py-xl flex">
-        <q-item class="whoiam-text flex column q-ma-md">
-          <q-item-section class="flex">
-            <q-item-label class="h1_bigger1 text-bold">{{
-              $t("aboutmepage_Frontend_Developer_Designer")
-            }}</q-item-label>
-            <q-item-label class="h3">{{
-              $t("aboutmepage_Making_Products")
-            }}</q-item-label>
-          </q-item-section>
-          <q-item-section class="whoiam-wrapper q-py-md">
-            <q-item class="q-pt-md h5" style="max-width: 300px">
-              {{ $t("aboutmepage_Making_Products_SmallPhrase1") }}
-            </q-item>
-            <q-item class="q-pt-md h5" style="max-width: 300px">
-              {{ $t("aboutmepage_Making_Products_SmallPhrase2") }}
-            </q-item>
-          </q-item-section>
-        </q-item>
-        <q-card class="whoiam-img flex justify-center flex-center border-radius20 q-ma-md">
-          <img class="non-selectable" alt="Quasar logo" src="~assets/quasar-logo-vertical.svg"
-            style="min-width: 200px; min-height: 200px; width: 80%; height: 80%" />
-        </q-card>
-      </div>
+  <q-page>
+    <div class="q-py-xl whoiam-wrapper container flex">
+      <q-item class="whoiam-text flex column q-ma-md">
+        <q-item-section class="flex">
+          <q-item-label class="h1_bigger1 text-bold">{{
+            $t("aboutmepage_Frontend_Developer_Designer")
+          }}</q-item-label>
+          <q-item-label class="h3">{{
+            $t("aboutmepage_Making_Products")
+          }}</q-item-label>
+        </q-item-section>
+        <q-item-section class="whoiam-wrapper q-py-md">
+          <q-item class="q-pt-md h5" style="max-width: 300px">
+            {{ $t("aboutmepage_Making_Products_SmallPhrase1") }}
+          </q-item>
+          <q-item class="q-pt-md h5" style="max-width: 300px">
+            {{ $t("aboutmepage_Making_Products_SmallPhrase2") }}
+          </q-item>
+        </q-item-section>
+      </q-item>
+      <q-card class="whoiam-img flex justify-center flex-center border-radius20 q-ma-md">
+        <img class="non-selectable" alt="Quasar logo" src="~assets/quasar-logo-vertical.svg"
+          style="min-width: 200px; min-height: 200px; width: 80%; height: 80%" />
+      </q-card>
     </div>
     <div class="" :class="$q.dark.isActive ? '' : ''">
-      <div class="myworksexample container thscale-q-pa-xl bg-glass-black border-radius20">
+      <div class="myworksexample thscale-q-pa-xl bg-glass-black border-radius20">
         <PortCards_Wrapper :howMuchWorksToShow="howMuchWorksToShow" />
       </div>
     </div>

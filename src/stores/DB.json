@@ -17,6 +17,8 @@
       ],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_Vue", "language"],
+        ["work_stackUsedForWork_Coding_VueQuasar", "language"],
         ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
       "rating": 8,
@@ -412,8 +414,8 @@
         ["tag_design", "brush"]
       ],
       "stackUsedForWork": [
-        ["work_stackUsedForWork_Coding_JS", "language"],
-        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+        ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
+        ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
       ],
       "rating": 8,
       "hidden": false,
@@ -494,8 +496,8 @@
         ["tag_design", "brush"]
       ],
       "stackUsedForWork": [
-        ["work_stackUsedForWork_Coding_JS", "language"],
-        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+        ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
+        ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
       ],
       "rating": 9,
       "hidden": false,
@@ -571,8 +573,8 @@
         ["tag_design", "brush"]
       ],
       "stackUsedForWork": [
-        ["work_stackUsedForWork_Coding_JS", "language"],
-        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+        ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
+        ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
       ],
       "rating": 9,
       "hidden": false,
@@ -790,8 +792,8 @@
         "ru-1": "Полная разработка фронтенд-части сервиса \"Bushtree\""
       },
       "madeFor": {
-        "en-US": "Development Team \"IGene\"",
-        "ru-1": "Команда разработки \"IGene\""
+        "en-US": "Development Team \"ITGene\"",
+        "ru-1": "Команда разработки \"ITGene\""
       },
       "tags": [
         ["tag_website", "language"],
@@ -799,6 +801,7 @@
       ],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Coding_JS", "language"],
+        ["work_stackUsedForWork_Coding_Vue", "language"],
         ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
       "rating": 9,
