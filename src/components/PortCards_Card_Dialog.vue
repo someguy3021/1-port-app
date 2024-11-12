@@ -6,13 +6,17 @@
                 <q-btn v-close-popup flat round icon="close"></q-btn>
             </q-toolbar>
             <q-card-section style="max-height: 80vh;" class="scroll">
-                <q-card-section v-for="(index) in work.descriptionLong?.[i18nLocale.locale.value]?.length" :key="index"
+                <q-card-section class="full-width"
+                    v-for="(index) in work.descriptionLong?.[i18nLocale.locale.value]?.length" :key="index"
                     :class=work.descriptionLong?.[i18nLocale.locale.value]?.[index]?.[0]>
                     <p :class="work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[1]">
                         {{ work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[0] }}
                     </p>
-                    <img v-bind:src="`works_imgs/${work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[3]}.webp`"
-                        :class="work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[4]" alt="#">
+                    <div :class="work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[4]">
+                        <img v-bind:src="`works_imgs/${work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[3]}.webp`"
+                            class="rounded-borders full-width" alt="#">
+                    </div>
+
                 </q-card-section>
             </q-card-section>
 

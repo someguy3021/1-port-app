@@ -3,7 +3,7 @@
     <div>
       <div style="font-size: 30vh">404</div>
 
-      <div class="text-h2" style="opacity: 0.4">
+      <div class="h2" style="opacity: 0.4">
         {{ $t("page404_caption") }}
       </div>
 

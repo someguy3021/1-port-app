@@ -99,7 +99,7 @@ const linksList = [
     title: "link_aboutme_title",
     caption: "link_aboutme_caption",
     icon: "school",
-    link: "#",
+    link: "/",
   },
   {
     title: "link_myworks_title",
@@ -111,35 +111,35 @@ const linksList = [
     title: "link_services_title",
     caption: "link_services_caption",
     icon: "home_repair_service",
-    link: "#",
+    link: "/works",
   },
   {
     title: "link_contacts_title",
     caption: "link_contacts_caption",
     icon: "record_voice_over",
-    link: "#",
+    link: "/works",
   },
 ];
 const linksListShort = [
   {
     title: "link_aboutme_title",
     icon: "school",
-    link: "#",
+    link: "/",
   },
   {
     title: "link_myworks_title",
     icon: "code",
-    link: "/works21323",
+    link: "/works",
   },
   {
     title: "link_services_title",
     icon: "home_repair_service",
-    link: "#",
+    link: "/works",
   },
   {
     title: "link_contacts_title",
     icon: "record_voice_over",
-    link: "#",
+    link: "/works",
   },
 ];
 

@@ -1,9 +1,9 @@
 <template>
   <q-page>
     <div class="q-py-xl whoiam-wrapper container flex">
-      <q-item class="whoiam-text flex column q-ma-md">
+      <q-item class="whoiam-text flex column">
         <q-item-section class="flex">
-          <q-item-label class="h1_bigger1 text-bold">{{
+          <q-item-label class="h1_bigger2 text-bold ">{{
             $t("aboutmepage_Frontend_Developer_Designer")
           }}</q-item-label>
           <q-item-label class="h3">{{
@@ -33,19 +33,19 @@
       <div class="myskills aboutme-2textblocks-wrapper container q-py-xl flex justify-center">
         <q-item class="aboutme-2textblocks-design">
           <q-item-section class="q-pa-md">
-            <q-item-label class="h2 text-bold">{{
+            <q-item-label class="h1 text-bold">{{
               $t("aboutmepage_2GridBlocks_Design_Title")
             }}</q-item-label>
-            <q-item class="h5 th-font-lineheight-16">
+            <q-item class="h5">
               {{ $t("aboutmepage_2GridBlocks_Design_Descr") }}</q-item>
           </q-item-section>
         </q-item>
         <q-item class="aboutme-2textblocks-frontend">
           <q-item-section class="q-pa-md">
-            <q-item-label class="h2 text-bold">{{
+            <q-item-label class="h1 text-bold">{{
               $t("aboutmepage_2GridBlocks_Frontend_Title")
             }}</q-item-label>
-            <q-item class="h5 th-font-lineheight-16">
+            <q-item class="h5">
               {{ $t("aboutmepage_2GridBlocks_Frontend_Descr") }}</q-item>
           </q-item-section>
         </q-item>
