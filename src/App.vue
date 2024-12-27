@@ -35,6 +35,10 @@ defineOptions({
 //   line-height: 72px;
 // }
 
+body {
+  background-color: white; // for loading page as black and then changing it
+}
+
 // :root {
 //   /* --background: #101010; */
 //   --on-background: #f2f2f2;
@@ -90,12 +94,12 @@ defineOptions({
 }
 
 .border-accentColor {
-  border: solid 2px;
-  border-color: $primary;
+  border: solid 1px;
+  border-color: $dark_border_1;
 }
 
 .box-shadow-example-accentColor {
-  box-shadow: 0px 0px 6px $primary;
+  box-shadow: 0px 0px 6px $dark_border_1;
 }
 
 // Custom adaptive font sizes class library. Larger fonts become smaller faster that small fonts. h1-for biggest headings, h2-for big headings, h3-for small headings, h4-for bigger text.

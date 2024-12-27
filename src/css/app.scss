@@ -23,3 +23,19 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("./fonts/Inter.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Italic"), url("./fonts/InterItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: normal; // Adjust if the italic version has a different weight
+  font-display: swap;
+}
