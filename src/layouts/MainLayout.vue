@@ -5,13 +5,12 @@
         <q-btn class="q-mx-xs" v-if="$q.screen.lt.md" flat dense round icon="menu" aria-label="Menu"
           @click="toggleLeftDrawer" />
         <language-switch />
-        <q-toggle size="lg" keep-color v-model="themeDarkSwitch" @click="$q.dark.toggle()" checked-icon="dark_mode"
-          color="darkLighter" unchecked-icon="wb_sunny" />
+        <ThemeSwitcher />
         <q-toolbar-title class="gt-sm non-selectable th-fontbold900 rounded-borders">
           <q-item to="/" class="text-weight-regular text-white rounded-borders">{{ $t("myportfolio") }}</q-item>
         </q-toolbar-title>
 
-        <EssentialLinkHeader class="gt-sm" v-for="link in linksListShort" :key="link.title" v-bind="link" />
+        <EssentialLink class="gt-sm" v-for="link in linksListShort" :key="link.title" v-bind="link" />
       </q-toolbar>
     </q-header>
 
@@ -33,7 +32,7 @@
           </q-item>
         </q-item-label>
         <q-item-section>
-          <LanguageSwitchSidebar />
+          <LanguageSwitch />
           <q-item>
             <q-item-section avatar>
               <q-icon name="contrast" />
@@ -42,8 +41,7 @@
               <q-item-label>{{ $t("changetheme") }}</q-item-label>
             </q-item-section>
             <q-item-section>
-              <q-toggle size="lg" keep-color v-model="themeDarkSwitch" @click="$q.dark.toggle()"
-                checked-icon="dark_mode" color="darkLighter" unchecked-icon="wb_sunny" />
+              <ThemeSwitcher />
             </q-item-section>
           </q-item>
         </q-item-section>
@@ -72,7 +70,7 @@
     </q-page-container>
     <q-footer v-if="$q.screen.lt.md" elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
       <q-toolbar class="container flex flex-center q-mx-md">
-        <EssentialLinkHeader class="lt-md" v-for="link in linksListShort" :key="link.title" v-bind="link" />
+        <EssentialLink class="lt-md" v-for="link in linksListShort" :key="link.title" v-bind="link" />
       </q-toolbar>
     </q-footer>
     <q-page-scroller position="bottom-right" :scroll-offset="150" :offset="[18, 18]">
@@ -84,15 +82,12 @@
 <script setup>
 import { ref } from "vue";
 import EssentialLink from "components/EssentialLink.vue";
-import EssentialLinkHeader from "src/components/EssentialLinkHeader.vue";
 import LanguageSwitch from "src/components/LanguageSwitch.vue";
-import LanguageSwitchSidebar from "src/components/LanguageSwitchSidebar.vue";
+import ThemeSwitcher from "src/components/ThemeSwitcher.vue";
 
 defineOptions({
   name: "MainLayout",
 });
-
-const themeDarkSwitch = ref(true);
 
 const linksList = [
   {
@@ -125,21 +120,25 @@ const linksListShort = [
     title: "link_aboutme_title",
     icon: "school",
     link: "/",
+    isHeader: true,
   },
   {
     title: "link_myworks_title",
     icon: "code",
     link: "/works",
+    isHeader: true,
   },
   {
     title: "link_services_title",
     icon: "home_repair_service",
     link: "/works",
+    isHeader: true,
   },
   {
     title: "link_contacts_title",
     icon: "record_voice_over",
     link: "/works",
+    isHeader: true,
   },
 ];
 
