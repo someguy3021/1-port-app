@@ -9,8 +9,10 @@
         <q-toolbar-title class="gt-sm non-selectable th-fontbold900 rounded-borders">
           <q-item to="/" class="text-weight-regular text-white rounded-borders">{{ $t("myportfolio") }}</q-item>
         </q-toolbar-title>
+        <div class="row gt-xs">
+          <EssentialLink v-for="link in linksListShort" :key="link.title" v-bind="link" class="col" />
+        </div>
 
-        <EssentialLink class="gt-sm" v-for="link in linksListShort" :key="link.title" v-bind="link" />
       </q-toolbar>
     </q-header>
 

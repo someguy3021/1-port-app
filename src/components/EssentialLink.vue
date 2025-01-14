@@ -9,7 +9,7 @@
       <q-item-label caption v-if="props.caption">{{ $t(props.caption) }}</q-item-label>
     </q-item-section>
   </q-item>
-  <q-item class="q-mx-none" style="padding-right: 16px; padding-left: 16px" :to="props.link.toString()"
+  <q-item class="q-mx-none rounded-borders" style="width: 120px;" :to="props.link.toString()"
     v-if="props.isHeader == true">
     <q-item-section style="flex: auto; align-items: center" v-if="props.icon" avatar>
       <q-icon :name="props.icon" />
@@ -54,18 +54,7 @@ const props = defineProps({
 </script>
 
 <style>
-.main_q_item {
-  padding-right: 16px;
-  padding-left: 16px
-}
-
-.main_q_item_section {
-  flex: auto;
-  align-items: center
-}
-
-.main_q_item_label {
-  text-align: center;
-  min-width: 40px
+.q-item__section--side {
+  padding-right: 0px;
 }
 </style>

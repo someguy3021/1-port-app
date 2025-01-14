@@ -68,4 +68,20 @@ function onOKClick() {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.work_dialog_inner_textAndPicture {
+    display: flex;
+}
+
+.work_dialog_inner_textOnly {
+    display: flex;
+}
+
+.work_dialog_inner_PictureAndText {
+    display: flex;
+}
+
+.work_dialog_inner_PictureOnly {
+    display: flex;
+}
+</style>
