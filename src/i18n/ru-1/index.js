@@ -2,7 +2,7 @@ export default {
   failed: "Действие провал",
   success: "Действие успех",
   page404_caption: "Упс. Здесь ничего нет...",
-  page404_button: "На главную",
+  page404_button: "На предыдущую страницу",
   settings: "Настройки",
   changelang: "Изменить язык сайта",
   changetheme: "Изменить тему сайта",

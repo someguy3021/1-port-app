@@ -49,7 +49,7 @@ defineOptions({
 
 import { useI18n } from "vue-i18n";
 const i18nLocale = useI18n();
-console.log(i18nLocale.locale.value); // "en-US"
+// console.log(i18nLocale.locale.value); // "en-US"
 
 // Get info about 1 work
 const props = defineProps({

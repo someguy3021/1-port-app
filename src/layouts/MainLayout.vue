@@ -6,11 +6,11 @@
           @click="toggleLeftDrawer" />
         <language-switch />
         <ThemeSwitcher />
-        <q-toolbar-title class="gt-sm non-selectable th-fontbold900 rounded-borders">
-          <q-item to="/" class="text-weight-regular text-white rounded-borders">{{ $t("myportfolio") }}</q-item>
+        <q-toolbar-title class="gt-md non-selectable th-fontbold900 rounded-borders">
+          <q-item class="text-weight-regular text-white rounded-borders">{{ $t("myportfolio") }}</q-item>
         </q-toolbar-title>
-        <div class="row gt-xs">
-          <EssentialLink v-for="link in linksListShort" :key="link.title" v-bind="link" class="col" />
+        <div class="row gt-sm">
+          <EssentialLink v-for="link in linksListShort" :key="link.title" v-bind="link" />
         </div>
 
       </q-toolbar>
@@ -71,7 +71,7 @@
       <router-view />
     </q-page-container>
     <q-footer v-if="$q.screen.lt.md" elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
-      <q-toolbar class="container flex flex-center q-mx-md">
+      <q-toolbar class="container flex flex-center">
         <EssentialLink class="lt-md" v-for="link in linksListShort" :key="link.title" v-bind="link" />
       </q-toolbar>
     </q-footer>

@@ -44,7 +44,7 @@ const props = defineProps({
     },
 });
 
-console.log(props)
+// console.log(props)
 defineEmits([
     // REQUIRED; need to specify some events that your
     // component will emit through useDialogPluginComponent()

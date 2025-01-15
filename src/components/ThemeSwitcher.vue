@@ -10,7 +10,7 @@ import { useQuasar } from "quasar";
 defineOptions({
   name: "ThemeSwitcher",
 });
-
+const toggleDarkMode = () => { }; // dummy method to disable warning
 const $q = useQuasar();
 
 // Initialize themeDarkSwitch with a default value of true (dark mode)
