@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
-      <q-toolbar class="container">
+      <q-toolbar class="container" :class="$q.screen.lt.md ? '' : 'q-py-xs'">
         <q-btn class="q-mx-xs" v-if="$q.screen.lt.md" flat dense round icon="menu" aria-label="Menu"
           @click="toggleLeftDrawer" />
         <language-switch />
@@ -72,7 +72,7 @@
     </q-page-container>
     <q-footer v-if="$q.screen.lt.md" elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
       <q-toolbar class="container flex flex-center">
-        <EssentialLink class="lt-md" v-for="link in linksListShort" :key="link.title" v-bind="link" />
+        <EssentialLink v-for="link in linksListShort" :key="link.title" v-bind="link" />
       </q-toolbar>
     </q-footer>
     <q-page-scroller position="bottom-right" :scroll-offset="150" :offset="[18, 18]">

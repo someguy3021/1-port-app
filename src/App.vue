@@ -127,7 +127,8 @@ body {
 
 @media (max-width: 1439.99px) {}
 
-@media (max-width: 1023.99px) {
+@media (max-width: 1022.99px) {
+  // was 1023.99
 
 
   .container {
