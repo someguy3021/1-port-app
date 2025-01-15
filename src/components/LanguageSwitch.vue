@@ -1,5 +1,4 @@
 <template>
-  <!-- ...... -->
   <q-item :class="$q.dark.isActive ? '' : 'bg-white'">
     <q-item-section avatar>
       <q-icon name="language" :class="$q.dark.isActive ? '' : 'text-black'" />
@@ -10,7 +9,6 @@
         map-options options-dense style="min-width: 120px" />
     </q-item-section>
   </q-item>
-  <!-- ...... -->
 </template>
 
 <script>

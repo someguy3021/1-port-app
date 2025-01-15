@@ -13,9 +13,14 @@ const routes = [
   {
     // these routes for who wants to hire me as a prog and knows coding
     path: "/dev",
+    name: "DevRoot",
     component: () => import("layouts/EmptyLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/AboutMePage.vue") },
+      {
+        path: "",
+        name: "Dev",
+        component: () => import("pages/AboutMePage.vue"),
+      },
       { path: "works", component: () => import("pages/MyWorksPage.vue") },
       { path: "services", component: () => import("pages/ServicesPage.vue") },
       { path: "contacts", component: () => import("pages/ContactsPage.vue") },
@@ -24,9 +29,14 @@ const routes = [
   {
     // these routes for who wants a website or a design, but it is just a customer
     path: "/webdes",
+    name: "WebDesRoot",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/AboutMePage.vue") },
+      {
+        path: "",
+        name: "WebDes",
+        component: () => import("pages/AboutMePage.vue"),
+      },
       { path: "works", component: () => import("pages/MyWorksPage.vue") },
       { path: "services", component: () => import("pages/ServicesPage.vue") },
       { path: "contacts", component: () => import("pages/ContactsPage.vue") },
@@ -35,9 +45,14 @@ const routes = [
   {
     // these routes for someone who wants their audio fixed, but it is just a customer
     path: "/audio",
-    component: () => import("layouts/EmptyLayout.vue"),
+    name: "AudioRoot",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/AboutMePage.vue") },
+      {
+        path: "",
+        name: "Audio",
+        component: () => import("pages/AboutMePage.vue"),
+      },
       { path: "works", component: () => import("pages/MyWorksPage.vue") },
       { path: "services", component: () => import("pages/ServicesPage.vue") },
       { path: "contacts", component: () => import("pages/ContactsPage.vue") },
