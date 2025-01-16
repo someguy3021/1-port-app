@@ -12,7 +12,7 @@
       </q-carousel>
     </div>
     <div class="q-pa-lg my-card-text text-weight-regular">
-      <div class="flex q-gutter-x-sm q-gutter-y-sm q-mb-lg h6" id="tags_holder">
+      <div class="flex q-gutter-x-sm q-gutter-y-sm q-mb-lg" id="tags_holder">
         <q-btn v-for="tag in work.tags" :key="tag" no-caps color="accent" class="q-pa-xs row rounded-borders"
           @click="typeOfFillter = tag">
           <div class="" style="min-width: 64px">

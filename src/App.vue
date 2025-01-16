@@ -233,6 +233,10 @@ h6,
   font-size: 1rem;
 }
 
+.h7 {
+  font-size: 0.85rem;
+}
+
 .h1_bigger1 {
   font-size: calc(1rem + 1vw);
 }
