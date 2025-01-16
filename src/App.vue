@@ -25,7 +25,7 @@ onBeforeMount(() => {
   setTimeout(() => {
     // Hide loading animation after the operation completes
     $q.loading.hide();
-  }, 2000); // Adjust this duration as needed for your async task
+  }, 1000); // Adjust this duration as needed for your async task
 });
 </script>
 
