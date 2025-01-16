@@ -108,13 +108,13 @@ const linksList = [
     title: "link_services_title",
     caption: "link_services_caption",
     icon: "home_repair_service",
-    link: "/works",
+    link: "/contacts",
   },
   {
     title: "link_contacts_title",
     caption: "link_contacts_caption",
     icon: "record_voice_over",
-    link: "/works",
+    link: "/contacts",
   },
 ];
 const linksListShort = [
@@ -133,13 +133,13 @@ const linksListShort = [
   {
     title: "link_services_title",
     icon: "home_repair_service",
-    link: "/works",
+    link: "/contacts",
     isHeader: true,
   },
   {
     title: "link_contacts_title",
     icon: "record_voice_over",
-    link: "/works",
+    link: "/contacts",
     isHeader: true,
   },
 ];

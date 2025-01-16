@@ -7,6 +7,6 @@
 
 <script setup>
 defineOptions({
-  name: "ContactsPage",
+  name: "DevRootPage",
 });
 </script>

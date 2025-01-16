@@ -13,13 +13,13 @@ const routes = [
   {
     // these routes for who wants to hire me as a prog and knows coding
     path: "/dev",
-    name: "DevRoot",
+    name: "Dev",
     component: () => import("layouts/EmptyLayout.vue"),
     children: [
       {
         path: "",
-        name: "Dev",
-        component: () => import("pages/AboutMePage.vue"),
+        name: "DevRoot",
+        component: () => import("pages/dev/DevRootPage.vue"),
       },
       { path: "works", component: () => import("pages/MyWorksPage.vue") },
       { path: "services", component: () => import("pages/ServicesPage.vue") },
@@ -29,12 +29,12 @@ const routes = [
   {
     // these routes for who wants a website or a design, but it is just a customer
     path: "/webdes",
-    name: "WebDesRoot",
+    name: "WebDes",
     component: () => import("layouts/MainLayout.vue"),
     children: [
       {
         path: "",
-        name: "WebDes",
+        name: "WebDesRoot",
         component: () => import("pages/AboutMePage.vue"),
       },
       { path: "works", component: () => import("pages/MyWorksPage.vue") },
@@ -44,13 +44,13 @@ const routes = [
   },
   {
     // these routes for someone who wants their audio fixed, but it is just a customer
-    path: "/audio",
-    name: "AudioRoot",
+    path: "/freelancer",
+    name: "Freelancer",
     component: () => import("layouts/MainLayout.vue"),
     children: [
       {
         path: "",
-        name: "Audio",
+        name: "FreelancerRoot",
         component: () => import("pages/AboutMePage.vue"),
       },
       { path: "works", component: () => import("pages/MyWorksPage.vue") },

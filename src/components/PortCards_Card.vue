@@ -12,13 +12,13 @@
       </q-carousel>
     </div>
     <div class="q-pa-lg my-card-text text-weight-regular">
-      <div class="flex q-gutter-x-sm q-gutter-y-sm q-mb-lg h6">
+      <div class="flex q-gutter-x-sm q-gutter-y-sm q-mb-lg h6" id="tags_holder">
         <q-btn v-for="tag in work.tags" :key="tag" no-caps color="accent" class="q-pa-xs row rounded-borders"
           @click="typeOfFillter = tag">
-          <div class="col-6" style="min-width: 64px">
+          <div class="" style="min-width: 64px">
             {{ $t(tag?.[0]) }}
           </div>
-          <q-icon :name="tag?.[1]" size="sm" class="q-pl-md col-2" />
+          <q-icon :name="tag?.[1]" size="sm" class="q-pl-md" />
         </q-btn>
       </div>
       <div class="q-mt-lg">
