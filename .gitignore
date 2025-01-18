@@ -2,6 +2,8 @@
 .thumbs.db
 node_modules
 public/works_imgs
+public/ign
+src/assets/ign
 
 # Quasar core related directories
 .quasar

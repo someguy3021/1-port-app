@@ -12,7 +12,6 @@
         <div class="row gt-sm">
           <EssentialLink v-for="link in linksListShort" :key="link.title" v-bind="link" />
         </div>
-
       </q-toolbar>
     </q-header>
 
@@ -149,4 +148,52 @@ const leftDrawerOpen = ref(false);
 function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
+
+import { useQuasar } from 'quasar';
+import { useI18n } from 'vue-i18n';
+import { onMounted } from 'vue';
+
+// Get the Quasar instance
+const $q = useQuasar();
+
+// Get the translation function
+const { t } = useI18n();
+
+// Function to check if the user has already accepted cookies
+const hasAcceptedCookies = () => {
+  return localStorage.getItem('cookieConsent') === 'accepted';
+};
+
+// Function to save the user's consent
+const saveCookieConsent = () => {
+  localStorage.setItem('cookieConsent', 'accepted');
+};
+
+// Function to show the cookie consent notification
+const showCookieNotification = () => {
+  $q.notify({
+    message: t('we_are_using_cookies'), // Localized message
+    position: 'bottom-right',
+    color: 'primary',
+    icon: 'contactless',
+    actions: [
+      {
+        // label: t('we_are_using_cookies_agree'), // Localized "OK" button text
+        icon: 'check_circle',
+        color: 'white',
+        round: true,
+        handler: () => {
+          saveCookieConsent(); // Save consent when the user clicks "OK"
+        },
+      },
+    ],
+  });
+};
+
+// Show the notification only if the user hasn't accepted cookies yet
+onMounted(() => {
+  if (!hasAcceptedCookies()) {
+    showCookieNotification();
+  }
+});
 </script>

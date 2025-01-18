@@ -7,6 +7,9 @@ export default {
   changelang: "Change site language",
   changetheme: "Change site theme",
   myportfolio: "My portfolio",
+  we_are_using_cookies:
+    "This site uses cookies to save theme colors and your language for website",
+  we_are_using_cookies_agree: "Ok",
   link_links: "Links",
   link_aboutme_title: "About me",
   link_aboutme_caption: "About me and my skills",

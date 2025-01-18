@@ -1,7 +1,8 @@
 <template>
   <q-card class="q-pb-md q-ma-md box-shadow-example-accentColor border-accentColor border-radius20"
     style="min-width: 200px; max-width: 500px">
-    <div class="">
+    <!-- Card sections divs -->
+    <div>
       <q-carousel v-model="slide" infinite transition-prev="jump-right" transition-next="jump-left" swipeable animated
         control-color="accent" prev-icon="arrow_left" next-icon="arrow_right" navigation-icon="radio_button_unchecked"
         navigation-active-icon="radio_button_checked" navigation padding arrows height="calc(200px + 10vw)"
@@ -33,9 +34,11 @@
         </div>
       </div>
     </div>
-    <q-card-actions align="right" class=" q-pa-md">
-      <q-btn class="text-capitalize" @click="showCardDialog = true" color="accent">{{ $t("button_ShowMore") }}</q-btn>
-    </q-card-actions>
+    <div>
+      <q-card-actions align="right" class="q-pa-md">
+        <q-btn class="text-capitalize" @click="showCardDialog = true" color="accent">{{ $t("button_ShowMore") }}</q-btn>
+      </q-card-actions>
+    </div>
   </q-card>
   <PortCards_Card_Dialog v-model="showCardDialog" :work="work"></PortCards_Card_Dialog>
 </template>
@@ -80,3 +83,13 @@ import { ref } from "vue";
 
 const slide = ref(1);
 </script>
+
+<style>
+.my-card-test {
+  display: flex;
+}
+
+.my-card-text {
+  flex-grow: 1;
+}
+</style>

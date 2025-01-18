@@ -7,6 +7,9 @@ export default {
   changelang: "Изменить язык сайта",
   changetheme: "Изменить тему сайта",
   myportfolio: "Мое портфолио",
+  we_are_using_cookies:
+    "Этот сайт использует куки чтобы сохранять цветовую тему и язык сайта",
+  we_are_using_cookies_agree: "Хорошо",
   link_links: "Ссылки",
   link_aboutme_title: "Обо мне",
   link_aboutme_caption: "Обо мне и моих навыках",
