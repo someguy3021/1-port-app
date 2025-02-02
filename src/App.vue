@@ -32,42 +32,19 @@ onBeforeMount(() => {
 <!-- Todo add works with DB as json an a system of tags -->
 
 <style lang="scss">
-// .text-hero {
-//   text-align: left;
-//   letter-spacing: -2px;
-//   text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
-//   font-family: Neue Montreal, sans-serif;
-//   font-size: 80px;
-//   font-weight: 500;
-//   line-height: 90%;
-// }
-
-// .text-hero.project-title {
-//   background-image: linear-gradient(to bottom, var(--on-background) 50%, transparent);
-//   letter-spacing: -1px;
-//   text-shadow: 0 5px 15px #0057ff33, 0 -5px 15px #ff5a0026, 0 -5px 25px #ffffff40;
-//   -webkit-text-fill-color: transparent;
-//   -webkit-background-clip: text;
-//   background-clip: text;
-//   font-size: 64px;
-//   line-height: 72px;
-// }
-
 body {
   background-color: white; // for loading page as black and then changing it
 }
-
-// :root {
-//   /* --background: #101010; */
-//   --on-background: #f2f2f2;
-// }
-
 
 // Basic container with %
 .container {
   max-width: 80%;
   margin-right: auto;
   margin-left: auto;
+}
+
+.q-item.q-router-link--active {
+  color: var(--q-secondary);
 }
 
 // A set of all sides scalable paddings, l and r decreses faster than b and t. Order is BT and LR btw

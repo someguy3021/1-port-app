@@ -93,7 +93,7 @@ const props = defineProps({
   },
 });
 
-const worksData = ref([]);
+const worksData = ref([]); // this is place for works data
 
 onMounted(async () => {
   getworksData();

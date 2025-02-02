@@ -1,6 +1,6 @@
 <template>
   <q-item :class="$q.dark.isActive ? '' : 'bg-white'">
-    <q-item-section avatar>
+    <q-item-section avatar :class="$q.screen.lt.md ? '' : 'q-py-xs'">
       <q-icon name="language" :class="$q.dark.isActive ? '' : 'text-black'" />
     </q-item-section>
 

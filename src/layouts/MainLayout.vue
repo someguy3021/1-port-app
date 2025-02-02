@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
-      <q-toolbar class="container" :class="$q.screen.lt.md ? '' : 'q-py-xs'">
+      <q-toolbar class="container">
         <q-btn class="q-mx-xs" v-if="$q.screen.lt.md" flat dense round icon="menu" aria-label="Menu"
           @click="toggleLeftDrawer" />
         <language-switch />
@@ -10,7 +10,7 @@
           <q-item class="text-weight-regular text-white rounded-borders">{{ $t("myportfolio") }}</q-item>
         </q-toolbar-title>
         <div class="row gt-sm">
-          <EssentialLink v-for="link in linksListShort" :key="link.title" v-bind="link" />
+          <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" :isHeader="true" />
         </div>
       </q-toolbar>
     </q-header>
@@ -71,7 +71,7 @@
     </q-page-container>
     <q-footer v-if="$q.screen.lt.md" elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
       <q-toolbar class="container flex flex-center">
-        <EssentialLink v-for="link in linksListShort" :key="link.title" v-bind="link" />
+        <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" :isHeader="true" />
       </q-toolbar>
     </q-footer>
     <q-page-scroller position="bottom-right" :scroll-offset="150" :offset="[18, 18]">
@@ -90,58 +90,11 @@ defineOptions({
   name: "MainLayout",
 });
 
-const linksList = [
-  {
-    title: "link_aboutme_title",
-    caption: "link_aboutme_caption",
-    icon: "school",
-    link: "/",
+const props = defineProps({
+  linksList: {
+    type: Object,
   },
-  {
-    title: "link_myworks_title",
-    caption: "link_myworks_caption",
-    icon: "code",
-    link: "/works",
-  },
-  {
-    title: "link_services_title",
-    caption: "link_services_caption",
-    icon: "home_repair_service",
-    link: "/contacts",
-  },
-  {
-    title: "link_contacts_title",
-    caption: "link_contacts_caption",
-    icon: "record_voice_over",
-    link: "/contacts",
-  },
-];
-const linksListShort = [
-  {
-    title: "link_aboutme_title",
-    icon: "school",
-    link: "/",
-    isHeader: true,
-  },
-  {
-    title: "link_myworks_title",
-    icon: "code",
-    link: "/works",
-    isHeader: true,
-  },
-  {
-    title: "link_services_title",
-    icon: "home_repair_service",
-    link: "/contacts",
-    isHeader: true,
-  },
-  {
-    title: "link_contacts_title",
-    icon: "record_voice_over",
-    link: "/contacts",
-    isHeader: true,
-  },
-];
+});
 
 const leftDrawerOpen = ref(false);
 

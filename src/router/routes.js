@@ -14,7 +14,29 @@ const routes = [
     // these routes for who wants to hire me as a prog and knows coding
     path: "/dev",
     name: "Dev",
-    component: () => import("layouts/EmptyLayout.vue"),
+    component: () => import("layouts/MainLayout.vue"),
+    props: {
+      linksList: [
+        {
+          title: "link_aboutme_title",
+          caption: "link_aboutme_caption",
+          icon: "school",
+          link: "/",
+        },
+        {
+          title: "link_myworks_title",
+          caption: "link_myworks_caption",
+          icon: "code",
+          link: "/works",
+        },
+        {
+          title: "link_contacts_title",
+          caption: "link_contacts_caption",
+          icon: "record_voice_over",
+          link: "/contacts",
+        },
+      ],
+    },
     children: [
       {
         path: "",
@@ -31,6 +53,34 @@ const routes = [
     path: "/webdes",
     name: "WebDes",
     component: () => import("layouts/MainLayout.vue"),
+    props: {
+      linksList: [
+        {
+          title: "link_aboutme_title",
+          caption: "link_aboutme_caption",
+          icon: "school",
+          link: "/",
+        },
+        {
+          title: "link_myworks_title",
+          caption: "link_myworks_caption",
+          icon: "code",
+          link: "/works",
+        },
+        {
+          title: "link_services_title",
+          caption: "link_services_caption",
+          icon: "home_repair_service",
+          link: "/contacts",
+        },
+        {
+          title: "link_contacts_title",
+          caption: "link_contacts_caption",
+          icon: "record_voice_over",
+          link: "/contacts",
+        },
+      ],
+    },
     children: [
       {
         path: "",
@@ -47,6 +97,34 @@ const routes = [
     path: "/freelancer",
     name: "Freelancer",
     component: () => import("layouts/MainLayout.vue"),
+    props: {
+      linksList: [
+        {
+          title: "link_aboutme_title",
+          caption: "link_aboutme_caption",
+          icon: "school",
+          link: "/",
+        },
+        {
+          title: "link_myworks_title",
+          caption: "link_myworks_caption",
+          icon: "code",
+          link: "/works",
+        },
+        {
+          title: "link_services_title",
+          caption: "link_services_caption",
+          icon: "home_repair_service",
+          link: "/contacts",
+        },
+        {
+          title: "link_contacts_title",
+          caption: "link_contacts_caption",
+          icon: "record_voice_over",
+          link: "/contacts",
+        },
+      ],
+    },
     children: [
       {
         path: "",

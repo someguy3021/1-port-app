@@ -48,4 +48,6 @@ export default {
   work_stackUsedForWork_Visual_AdobePhotoshop: "Adobe Photoshop",
   work_stackUsedForWork_Visual_AdobeIllustrator: "Adobe Illustrator",
   work_stackUsedForWork_Visual_Figma: "Figma",
+  devPages_devRootPage_exp1_role: "",
+  devPages_devRootPage_exp1_where: "",
 };
