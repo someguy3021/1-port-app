@@ -48,4 +48,16 @@ export default {
   work_stackUsedForWork_Visual_AdobePhotoshop: "Adobe Photoshop",
   work_stackUsedForWork_Visual_AdobeIllustrator: "Adobe Illustrator",
   work_stackUsedForWork_Visual_Figma: "Figma",
+  devPages_devRootPage_exp_general1: "Work experience",
+  devPages_devRootPage_exp_1_role: "FrontEnd-Developer",
+  devPages_devRootPage_exp_1_where: "SOYUZ.RF (September 2024–present)",
+  devPages_devRootPage_exp_1_descr: "Done this and that",
+  devPages_devRootPage_exp_2_role: "FrontEnd-Developer, Manager",
+  devPages_devRootPage_exp_2_where:
+    "Educational project on the course 1T - group development (February 2024– June 2024)",
+  devPages_devRootPage_exp_2_descr: "Done this and that",
+  devPages_devRootPage_exp_3_role: "FrontEnd-Developer, Manager",
+  devPages_devRootPage_exp_3_where:
+    "UrFU diploma project - group development (February 2023– May 2023)",
+  devPages_devRootPage_exp_3_descr: "Done this and that",
 };
