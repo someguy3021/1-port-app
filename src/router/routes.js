@@ -1,6 +1,6 @@
 const routes = [
   // {
-  //   // это роуты деприкейтед, наверно потом сюда бы накидать 404
+  //   // these are depricate routes, probably 404 should be added here later
   //   path: "/",
   //   component: () => import("layouts/MainLayout.vue"),
   //   children: [
@@ -29,12 +29,12 @@ const routes = [
           icon: "code",
           link: "/works",
         },
-        {
-          title: "link_contacts_title",
-          caption: "link_contacts_caption",
-          icon: "record_voice_over",
-          link: "/contacts",
-        },
+        // {
+        //   title: "link_contacts_title",
+        //   caption: "link_contacts_caption",
+        //   icon: "record_voice_over",
+        //   link: "/contacts",
+        // },
       ],
     },
     children: [

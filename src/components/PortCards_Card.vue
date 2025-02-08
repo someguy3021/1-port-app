@@ -20,6 +20,9 @@
             {{ $t(tag?.[0]) }}
           </div>
           <q-icon :name="tag?.[1]" size="sm" class="q-pl-md" />
+          <q-tooltip class="bg-secondary text-body2" :offset="[10, 10]">
+            {{ $t("tooltip_clickTofilterByTag") }}
+          </q-tooltip>
         </q-btn>
       </div>
       <div class="q-mt-lg">
@@ -36,7 +39,10 @@
     </div>
     <div>
       <q-card-actions align="right" class="q-pa-md">
-        <q-btn class="text-capitalize" @click="showCardDialog = true" color="accent">{{ $t("button_ShowMore") }}</q-btn>
+        <q-btn class="text-capitalize" @click="showCardDialog = true" color="accent">{{ $t("button_ShowMore") }}
+          <q-tooltip class="bg-secondary text-body2" :offset="[10, 10]">
+            {{ $t("tooltip_showTheWorkDescrLong") }}
+          </q-tooltip></q-btn>
       </q-card-actions>
     </div>
   </q-card>

@@ -60,4 +60,6 @@ export default {
   devPages_devRootPage_exp_3_where:
     "UrFU diploma project - group development (February 2023– May 2023)",
   devPages_devRootPage_exp_3_descr: "Done this and that",
+  tooltip_showTheWorkDescrLong: "Show the work in details",
+  tooltip_clickTofilterByTag: "Click to filter by this tag",
 };

@@ -61,4 +61,6 @@ export default {
   devPages_devRootPage_exp_3_where:
     "Дипломный проект УрФУ - групповая разработка (Февраль 2023– Май 2023)",
   devPages_devRootPage_exp_3_descr: "Делал то-то-то",
+  tooltip_showTheWorkDescrLong: "Показать работу подробнее",
+  tooltip_clickTofilterByTag: "Нажмите чтобы отфильтровать по этому тегу",
 };
