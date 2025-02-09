@@ -1,0 +1,1 @@
+import{Q as a}from"./QPage.dd636651.js";import{_ as e}from"./PortCards_Wrapper.ccfc05ec.js";import{Y as t,_ as r,$ as o,j as s}from"./index.57c8faae.js";import"./QDialog.4a98b041.js";import"./vue-i18n.8b394767.js";const u=Object.assign({name:"IndexPage"},{__name:"MyWorksPage",setup(c){return(_,m)=>(t(),r(a,{class:"container"},{default:o(()=>[s(e)]),_:1}))}});export{u as default};
