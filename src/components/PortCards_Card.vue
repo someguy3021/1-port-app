@@ -4,12 +4,13 @@
     <!-- Card sections divs -->
     <div>
       <q-carousel v-model="slide" infinite transition-prev="jump-right" transition-next="jump-left" swipeable animated
-        control-color="accent" prev-icon="arrow_left" next-icon="arrow_right" navigation-icon="radio_button_unchecked"
-        navigation-active-icon="radio_button_checked" navigation padding arrows height="calc(200px + 10vw)"
+        control-color="dark" prev-icon="arrow_left" next-icon="arrow_right" navigation-icon="radio_button_unchecked"
+        navigation-active-icon="radio_button_checked" control-type="regular" :navigation="work.imgPaths.length > 1"
+        :arrows="work.imgPaths.length > 1" height="calc(200px + 10vw)" ref="carousel"
         class="text-white shadow-0 rounded-borders bg-glass-black q-pt-md">
         <q-carousel-slide v-for="(img, index) in work.imgPaths" :key="img" :name="index + 1" class="flex justify-center"
-          style="width: 100%;"><q-img v-bind:src="`works_imgs/${img}.webp`" style="height: 100%;"
-            class="non-selectable rounded-borders" /></q-carousel-slide>
+          style="width: 100%;"><q-img v-bind:src="`works_imgs/${img}.webp`" spinner-color="secondary" fit="contain"
+            style="max-height: 100%; max-width: 400px" class="non-selectable rounded-borders" /></q-carousel-slide>
       </q-carousel>
     </div>
     <div class="q-pa-lg my-card-text text-weight-regular">
