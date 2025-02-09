@@ -8,7 +8,7 @@
         navigation-active-icon="radio_button_checked" navigation padding arrows height="calc(200px + 10vw)"
         class="text-white shadow-0 rounded-borders bg-glass-black q-pt-md">
         <q-carousel-slide v-for="(img, index) in work.imgPaths" :key="img" :name="index + 1" class="flex justify-center"
-          style="width: 100%;"><img v-bind:src="`works_imgs/${img}.webp`" style="height: 100%;"
+          style="width: 100%;"><q-img v-bind:src="`works_imgs/${img}.webp`" style="height: 100%;"
             class="non-selectable rounded-borders" /></q-carousel-slide>
       </q-carousel>
     </div>

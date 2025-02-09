@@ -39,11 +39,16 @@ function onOKClick() {
 
 <template>
     <q-dialog ref="dialogRef" @hide="onDialogHide">
-        <q-card class="q-dialog-plugin" style="width: 1400px; max-width: 90vw;">
+        <q-card class="q-dialog-plugin" style="width: 1400px; max-width: 95vw;">
             <q-toolbar class="bg-dark">
                 <q-toolbar-title>{{ work.title?.[i18nLocale.locale.value] }}</q-toolbar-title>
                 <q-btn v-close-popup flat round icon="close"></q-btn>
             </q-toolbar>
+            <q-card-section style="max-height: 87vh;" class="scroll">
+                <PortCards_Card_Dialog_Block
+                    v-for="(block, index) in props.work.descriptionLong?.[i18nLocale.locale.value] || []" :key="index"
+                    :block="block || {}" />
+            </q-card-section>
             <!-- <q-card-section style="max-height: 80vh;" class="scroll">
                 <q-card-section class="full-width"
                     v-for="(index) in work.descriptionLong?.[i18nLocale.locale.value]?.length" :key="index"
@@ -58,9 +63,7 @@ function onOKClick() {
 
                 </q-card-section>
             </q-card-section> -->
-            <PortCards_Card_Dialog_Block
-                v-for="(block, index) in props.work.descriptionLong?.[i18nLocale.locale.value] || []" :key="index"
-                :block="block || {}" />
+
 
 
             <!-- buttons example -->
