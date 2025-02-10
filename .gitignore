@@ -4,6 +4,7 @@ node_modules
 public/works_imgs
 public/ign
 src/assets/ign
+src/assets/works_imgs
 
 # Quasar core related directories
 .quasar

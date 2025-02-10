@@ -9,17 +9,19 @@
             </div>
         </div>
         <div class="col-12 col-md" :class="$q.screen.lt.md ? 'q-px-xs' : 'q-px-lg'">
-            <q-img v-bind:src="`works_imgs/${workFolder}${blockImgName}.${imgType}`" :class="blockImgClasses"
-                class="full-width" style="max-height: 500px;" spinner-color="secondary" fit="scale-down" alt="#" />
+            <q-img v-bind:src="imgURL_Pub" :class="blockImgClasses" class="full-width" style="max-height: 500px;"
+                spinner-color="secondary" fit="scale-down" alt="#" />
+            <!-- <img src="~assets/works_imgs/1_this_website/vuei18n.webp" alt="dsadasdasdasdasdasdsadasdasdas"> -->
+            <!-- <img :src="require('./vuei18n.webp')" alt=",nmb,mn,bn,bncbncvncnbv"> -->
+            <!-- <q-img :src="require('@/assets/ign/works_imgs/1_this_website/vuei18n.webp')" alt="Image" /> -->
             <!-- <img v-if="imageUrl" :src="imageUrl" :class="blockImgClasses" alt="Block Image"
                 @error="imageUrl = defaultImageUrl"> -->
         </div>
     </div>
     <div class="any_block_wrapper row q-py-md" v-if="blockClass == 'work_dialog_inner_PictureAndText'"
         :class="$q.screen.lt.md ? 'q-px-xs' : 'q-px-lg'">
-        <div class="col-12 col-md"><q-img v-bind:src="`works_imgs/${workFolder}${blockImgName}.${imgType}`"
-                :class="blockImgClasses" style="max-height: 500px;" spinner-color="secondary" fit="scale-down"
-                class="full-width" alt="#" />
+        <div class="col-12 col-md"><q-img v-bind:src="imgURL_Pub" :class="blockImgClasses" style="max-height: 500px;"
+                spinner-color="secondary" fit="scale-down" class="full-width" alt="#" />
         </div>
         <div class="col-12 col-md q-py-md flex" :class="$q.screen.lt.md ? 'q-px-xs' : 'q-px-lg'">
             <div class="self-center">
@@ -37,8 +39,8 @@
     </div>
     <div class="any_block_wrapper q-py-md" v-if="blockClass == 'work_dialog_inner_PictureOnly'"
         :class="$q.screen.lt.md ? 'q-px-xs' : 'q-px-lg'">
-        <q-img v-bind:src="`works_imgs/${workFolder}${blockImgName}.${imgType}`" :class="blockImgClasses"
-            class="full-width" spinner-color="secondary" fit="scale-down" alt="#" />
+        <q-img v-bind:src="imgURL_Pub" :class="blockImgClasses" class="full-width" spinner-color="secondary"
+            fit="scale-down" alt="#" />
     </div>
 </template>
 
@@ -87,25 +89,27 @@ const imgType = computed(() => {
         return 'webp'
     }
 })
-
-// const defaultImageUrl = '/path/to/default/image.png';
+const imgURL_Pub = `works_imgs/${workFolder.value}${blockImgName.value}.${imgType.value}`;
+// // failed at making those pics src folder --------failed at making those pics src folder --------failed at making those pics src folder --------
+// const defaultImageUrl = '~assets/ign/works_imgs/1_this_website/vuei18n.webp';
 // const imageUrl = ref(null);
 
 // onMounted(async () => {
-//   if (props.blockImgName && props.blockImgType !== undefined && props.blockImgType !== null) {
-//     const imageName = props.blockImgName;
-//     const imageType = props.blockImgType;
-//     try {
-//       const imageModule = await import(`../assets/works_imgs/${imageName}.${imgTypeMap[imageType]}`);
-//       imageUrl.value = imageModule.default;
-//     } catch (error) {
-//       console.error("Failed to load image:", error);
-//       imageUrl.value = defaultImageUrl;
+//     if (blockImgName && blockImgType !== undefined && blockImgType !== null) {
+//         try {
+//             const imageModule = await import(`~assets/works_imgs/${workFolder}${blockImgName}.${imgType}`);
+//             imageUrl.value = imageModule.default;
+//         } catch (error) {
+//             console.error("Failed to load image:", error);
+//             imageUrl.value = defaultImageUrl;
+//         }
+//     } else {
+//         imageUrl.value = defaultImageUrl;
 //     }
-//   } else {
-//     imageUrl.value = defaultImageUrl;
-//   }
 // });
+// const imageUrl = computed(() => {
+//     return new URL(`works_imgs/${workFolder.value}${blockImgName.value}.${imgType.value}`, import.meta.url).href;
+// }); // failed at making those pics src folder
 </script>
 
 <style lang="scss">
