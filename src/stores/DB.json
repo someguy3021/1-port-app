@@ -24,13 +24,7 @@
       "rating": 8,
       "hidden": false,
       "thumbnail": "testcommS-3",
-      "imgPaths": [
-        "testcommS-1",
-        "testcommS-2",
-        "testcommS-2",
-        "testcommS-2",
-        "testcommS-2"
-      ],
+      "imgPaths": ["1_this_website/worksShow", "1_this_website/githubPages"],
       "descriptionShort": {
         "en-US": "Portfolio website on the Quasar framework. Development of design, layout and internal work of the website, as well as hosting on GitHub Pages.",
         "ru-1": "Сайт-портфолио на фреймворке Quasar. Разработка дизайна, верстки и внутренней работы сайта, а также хостинг на GitHub Pages."
