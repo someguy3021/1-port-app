@@ -48,29 +48,11 @@ function onOKClick() {
                 <PortCards_Card_Dialog_Block
                     v-for="(block, index) in props.work.descriptionLong?.[i18nLocale.locale.value] || []" :key="index"
                     :block="block || {}" />
+                <q-card-actions class="q-pt-md" align="center">
+                    <q-btn color="accent" :label="$t('close')" @click="onOKClick" />
+                    <!-- <q-btn color="accent" label="Cancel" @click="onDialogCancel" /> -->
+                </q-card-actions>
             </q-card-section>
-            <!-- <q-card-section style="max-height: 80vh;" class="scroll">
-                <q-card-section class="full-width"
-                    v-for="(index) in work.descriptionLong?.[i18nLocale.locale.value]?.length" :key="index"
-                    :class=work.descriptionLong?.[i18nLocale.locale.value]?.[index]?.[0]>
-                    <p :class="work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[1]">
-                        {{ work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[0] }}
-                    </p>
-                    <div :class="work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[4]">
-                        <img v-bind:src="`works_imgs/${work.descriptionLong?.[i18nLocale.locale.value]?.[index - 1]?.[1]?.[3]}.webp`"
-                            class="rounded-borders full-width" alt="#">
-                    </div>
-
-                </q-card-section>
-            </q-card-section> -->
-
-
-
-            <!-- buttons example -->
-            <!-- <q-card-actions align="right">
-                <q-btn color="primary" label="OK" @click="onOKClick" />
-                <q-btn color="primary" label="Cancel" @click="onDialogCancel" />
-            </q-card-actions> -->
         </q-card>
     </q-dialog>
 </template>

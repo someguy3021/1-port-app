@@ -1,6 +1,8 @@
 export default {
   failed: "Action Failed",
   success: "Action succsess",
+  close: "Close",
+  open: "Open",
   page404_caption: "Oops. Nothing here...",
   page404_button: "Back to previous page",
   settings: "Settings",

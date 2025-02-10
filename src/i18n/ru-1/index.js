@@ -1,6 +1,8 @@
 export default {
-  failed: "Действие провал",
-  success: "Действие успех",
+  failed: "Провал",
+  success: "Успешно",
+  close: "Закрыть",
+  open: "Открыть",
   page404_caption: "Упс. Здесь ничего нет...",
   page404_button: "На предыдущую страницу",
   settings: "Настройки",
