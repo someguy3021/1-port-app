@@ -9,8 +9,9 @@
         :arrows="work.imgPaths.length > 1" height="calc(200px + 10vw)" ref="carousel"
         class="text-white shadow-0 rounded-borders bg-glass-black q-pt-md">
         <q-carousel-slide v-for="(img, index) in work.imgPaths" :key="img" :name="index + 1" class="flex justify-center"
-          style="width: 100%;"><q-img v-bind:src="`works_imgs/${img}.webp`" spinner-color="secondary" fit="contain"
-            style="max-height: 100%; max-width: 400px" class="non-selectable rounded-borders" /></q-carousel-slide>
+          style="width: 100%;"><q-img v-bind:src="`works_imgs/${workFolder}${img}.webp`" spinner-color="secondary"
+            fit="contain" style="max-height: 100%; max-width: 400px"
+            class="non-selectable rounded-borders" /></q-carousel-slide>
       </q-carousel>
     </div>
     <div class="q-pa-lg my-card-text text-weight-regular">
@@ -52,6 +53,7 @@
 
 <script setup>
 import PortCards_Card_Dialog from "./PortCards_Card_Dialog.vue";
+import { ref, computed } from "vue";
 const showCardDialog = ref(false);
 defineOptions({
   name: "PortCards_Card",
@@ -59,7 +61,6 @@ defineOptions({
 
 import { useI18n } from "vue-i18n";
 const i18nLocale = useI18n();
-// console.log(i18nLocale.locale.value); // "en-US"
 
 // Get info about 1 work
 const props = defineProps({
@@ -67,26 +68,10 @@ const props = defineProps({
     type: Object,
   },
 });
-
-// {
-//   /* <div v-for="img in work.imgPaths" :key="img">
-//           <img v-bind:src="`works_imgs/${img}.webp`" />
-//         </div>
-//         <img v-bind:src="`works_imgs/${work.thumbnail}.webp`" />
-
-//                 <q-carousel-slide
-//           v-for="(img, index) in work.imgPaths"
-//           :key="img"
-//           :name="index + 1"
-//           :img-src="`works_imgs/${img}.webp`"
-//           style="object-fit: cover"
-//           ><img v-bind:src="`works_imgs/${img}.webp`"
-//         /></q-carousel-slide>
-
-//         */
-// }
-
-import { ref } from "vue";
+const workFolder = computed(() => {
+  if (!props.work || !props.work.ihn) return '';
+  return `${props.work.ihn}/`;
+});
 
 const slide = ref(1);
 </script>

@@ -47,9 +47,9 @@ function onOKClick() {
             <q-card-section style="max-height: 87vh;" class="scroll">
                 <PortCards_Card_Dialog_Block
                     v-for="(block, index) in props.work.descriptionLong?.[i18nLocale.locale.value] || []" :key="index"
-                    :block="block || {}" />
+                    :block="block || {}" :workFolder="props.work.ihn || {}" />
                 <q-card-actions class="q-pt-lg" align="center">
-                    <q-btn color="accent" :label="$t('close')" @click="onOKClick" size="lg" />
+                    <q-btn class="text-capitalize" color="accent" :label="$t('close')" @click="onOKClick" size="lg" />
                     <!-- <q-btn color="accent" label="Cancel" @click="onDialogCancel" /> -->
                 </q-card-actions>
             </q-card-section>

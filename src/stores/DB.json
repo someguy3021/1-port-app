@@ -23,8 +23,8 @@
       ],
       "rating": 8,
       "hidden": false,
-      "thumbnail": "testcommS-3",
-      "imgPaths": ["1_this_website/worksShow", "1_this_website/githubPages"],
+      "ihn": "1_this_website",
+      "imgPaths": ["worksShow", "githubPages"],
       "descriptionShort": {
         "en-US": "Portfolio website on the Quasar framework. Development of design, layout and internal work of the website, as well as hosting on GitHub Pages.",
         "ru-1": "Сайт-портфолио на фреймворке Quasar. Разработка дизайна, верстки и внутренней работы сайта, а также хостинг на GitHub Pages."
@@ -40,7 +40,7 @@
                 "The main goal of this project was an interactive and convenient way for anyone to look at my work in different directions.\n\nThe stack was chosen to be a productive and powerful Quasar framework, based on the Vue framework - my main specialization as a FrontEnd developer.\n\nThe way to host this site on the Internet was GitHub Pages - it allows you to host a site on the Internet for free, and although this method has a drawback in the form of a non-customizable server, it was ideal for this specific task.\n\nFurther in this window I will describe my actions and choices when writing this project, sometimes going into technical parts. The topics here will be:\n-Design\n-Development\n-Hosting a site on the Internet"
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders shadow-5", "worksShow", 0]
           ],
           [
             "work_dialog_inner_textAndPicture",
@@ -51,7 +51,7 @@
                 "By default, Quasar is a powerful tool for developing for all platforms at once. The same applies to its components. Of course, Quasar does not cover all my tasks - pages with more static content had to be developed manually and adjusted for the PC and mobile versions."
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders shadow-5", "adaptiveUI", 0]
           ],
           [
             "work_dialog_inner_textOnly",
@@ -62,7 +62,7 @@
                 "What you see in front of you now is a dialog box component that accepts data from JSON, which I use as a static \"database\" where the data is stored, what classes to use, the texts of all these descriptions, and shortcuts to the images. \nThe same is true for other card components - tags for them and their filters that you can click on, links at the top of the site - all these components have functionality that allows me to more easily add new elements, and for you, as a user, to conveniently view my portfolio."
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders shadow-2", "components", 0]
           ],
           [
             "work_dialog_inner_textAndPicture",
@@ -73,7 +73,7 @@
                 "In terms of scalability, my app supports multilingualism thanks to the Vue i18n plugin.\n\nBecause I also know English, I decided to make this site with multilingualism in mind. This changes the coding somewhat, adding a syntax that is somewhat unusual for me, especially when it comes to dynamic components. However, with the help of all sources - from AI to forum posts, this has become quite possible."
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders shadow-5", "vuei18n", 0]
           ],
           [
             "work_dialog_inner_PictureAndText",
@@ -84,7 +84,7 @@
                 "For the site, I decided to choose an already established web design direction, coupled with the material design direction, which is the basis of Quasar. The following were used as design references: \n-Other portfolio sites \n-Ozon product cards \n\nDespite the convenience of Quasar in development, and the large number of its components, some things had to be done by myself or borrowed from other open-source sources. \n\nThe modified code of some Bootstrap classes was ideal here - especially the way it works with the text size on different devices. I had previously used Bootstrap in development, and so the choice fell on it."
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders shadow-5", "materailDesign", 0]
           ],
           [
             "work_dialog_inner_PictureAndText",
@@ -95,7 +95,7 @@
                 "Light and dark theme is the most complex theme of styling in Quasar. This theme has rather poor documentation and difficult search on the Internet, which means that various AIs do not really know how to work with it. For these reasons, this was probably the most complex theme of this project."
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders", "lightDark", 0]
           ],
           [
             "work_dialog_inner_PictureAndText",
@@ -106,12 +106,7 @@
                 "GitHub Pages is a great way to put a site on the Internet if the server doesn't have to do anything other than give the user a page with more or less static elements.\n\nSuch sites are easy to update, you just need to set up the deployment the first time."
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
-          ],
-          [
-            "work_dialog_inner_PictureOnly",
-            [["h3", "Thanks for attention!"]],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders", "githubPages", 0]
           ]
         ],
         "ru-1": [
@@ -124,7 +119,7 @@
                 "Главной целью этого проекта был интерактивный и удобный для кого угодно способ посмотреть на мои работы разных направлений.\n\nВ качестве стека был выбран фреймворк Quasar, основанный на фреймворке Vue - моей основной специализации как FrontEnd-разработчика.\n\nСпособом разместить этот сайт в интернете стал GitHub Pages - он позволяет бесплатно разместить статичный сайт в интернете.\n\nДалее я буду описывать свои действия и выборы при написании этого проекта, иногда уходя в технические части. Темами здесь будут:\n-Дизайн\n-Разработка\n-Размещение сайта в интернете"
               ]
             ],
-            ["rounded-borders shadow-5", "1_this_website/worksShow", 0]
+            ["rounded-borders shadow-5", "worksShow", 0]
           ],
           [
             "work_dialog_inner_PictureAndText",
@@ -135,7 +130,7 @@
                 "По умолчанию Quasar - мощный инструмент для разработки на все платформы сразу. То же касается и его компонентов. Конечно, у Quasar покрытие не всех моих задач - страницы с более статичным контентом необходимо было разработать вручную, и подогнать под ПК и мобильную версию."
               ]
             ],
-            ["rounded-borders shadow-5", "1_this_website/adaptiveUI", 0]
+            ["rounded-borders shadow-5", "adaptiveUI", 0]
           ],
           [
             "work_dialog_inner_textAndPicture",
@@ -149,7 +144,7 @@
                 "То, что вы сейчас видите перед собой - компонент диалог-окна, который принимает данные из JSON, который я использую как статичную \"базу данных\", где хранятся данные какие классы нужно использовать, тексты всех этих описаний, и кратких путей к картинкам.\nЭто же и случай для других компонентов карточек - тегов для них и их фильтров, на которые можно кликнуть, ссылки сверху сайта - все эти компоненты имеют функционал, позволяющий мне более легко добавлять новые элементы, а вам, как пользователю - удобно просматривать моё портфолио."
               ]
             ],
-            ["rounded-borders shadow-2", "1_this_website/components", 0]
+            ["rounded-borders shadow-2", "components", 0]
           ],
           [
             "work_dialog_inner_PictureAndText",
@@ -160,7 +155,7 @@
                 "Касаемо масштабируемости - мое приложение поддерживает мультиязычность благодаря плагину Vue i18n.\n\nИз-за того что я также знаю английский язык, я решил сделать этот сайт с расчётом на мультиязычность. Это несколько меняет написание кода, добавляя несколько необычный для меня синтаксис, особенно когда это касается динамических компонентов. Впрочем, с помощью всех источников - от ИИ до сообщений на форумах, это стало вполне возможно."
               ]
             ],
-            ["rounded-borders shadow-5", "1_this_website/vuei18n", 0]
+            ["rounded-borders shadow-5", "vuei18n", 0]
           ],
           [
             "work_dialog_inner_textAndPicture",
@@ -171,7 +166,7 @@
                 "Для сайта я решил выбрать уже устоявшееся направление веб-дизайна, в купе с направлением material-design, который лежит в основе Quasar. В качестве дизайнерских референсов были использованы:\n-Другие сайты-портфолио\n-Карточки товаров Ozon\n\nНесмотря на удобство Quasar в разработке, и большое количество его компонентов, некоторые вещи необходимо было сделать самому или позаимствовать из других open-source источников.\n\nСюда идеально подошел измененный код некоторых классов Bootstrap - в особенности то, как он работает с размером текста на разных устройствах. Ранее я уже использовал Bootstrap в разработке, и поэтому выбор пал именно на него."
               ]
             ],
-            ["rounded-borders shadow-5", "1_this_website/materailDesign", 0]
+            ["rounded-borders shadow-5", "materailDesign", 0]
           ],
           [
             "work_dialog_inner_PictureAndText",
@@ -185,7 +180,7 @@
                 "Светлая и темная тема - самая сложная тема стилизации в Quasar. У этой темы довольно скудная документация и сложный поиск в интернете, из чего исходит что и различные ИИ не сильно знают как именно работать с этим. По этим причинам это пожалуй было наиболее сложной темой этого проекта."
               ]
             ],
-            ["rounded-borders", "1_this_website/lightDark", 0]
+            ["rounded-borders", "lightDark", 0]
           ],
           [
             "work_dialog_inner_textAndPicture",
@@ -199,7 +194,7 @@
                 "GitHub Pages - отличный способ разместить сайт в интернете, если сервер не должен делать ничего, кроме как отдавать пользователю страницу с более-менее статичными элементами.\n\nТакие сайты легко обновлять, достаточно лишь первый раз настроить деплой."
               ]
             ],
-            ["rounded-borders", "1_this_website/githubPages", 0]
+            ["rounded-borders", "githubPages", 0]
           ]
         ]
       }
@@ -225,7 +220,7 @@
       ],
       "rating": 9,
       "hidden": true,
-      "thumbnail": "testcommS-3",
+      "ihn": "",
       "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
@@ -304,7 +299,7 @@
       ],
       "rating": 10,
       "hidden": true,
-      "thumbnail": "testcommS-3",
+      "ihn": "",
       "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
@@ -383,7 +378,7 @@
       ],
       "rating": 10,
       "hidden": true,
-      "thumbnail": "testcommS-3",
+      "ihn": "",
       "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
@@ -462,7 +457,7 @@
       ],
       "rating": 10,
       "hidden": true,
-      "thumbnail": "testcommS-3",
+      "ihn": "",
       "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
@@ -538,7 +533,7 @@
       ],
       "rating": 8,
       "hidden": false,
-      "thumbnail": "marketcard_strikeball1_1",
+      "ihn": "",
       "imgPaths": [
         "marketcard_strikeball1_1",
         "marketcard_strikeball1_2",
@@ -620,7 +615,7 @@
       ],
       "rating": 9,
       "hidden": false,
-      "thumbnail": "logo_massageStudio1_1",
+      "ihn": "",
       "imgPaths": ["logo_massageStudio1_1"],
       "descriptionShort": {
         "en-US": "Logo for the massage studio \"Smart Fitness\", created according to the customer's wishes",
@@ -697,7 +692,7 @@
       ],
       "rating": 9,
       "hidden": false,
-      "thumbnail": "logo_furniture1_1",
+      "ihn": "",
       "imgPaths": ["logo_furniture1_1"],
       "descriptionShort": {
         "en-US": "Logo for the furniture company \"Vam Dam Mebel\", created according to the customer's wishes",
@@ -772,7 +767,7 @@
       ],
       "rating": 7,
       "hidden": false,
-      "thumbnail": "testcommS-1",
+      "ihn": "",
       "imgPaths": ["testcommS-1"],
       "descriptionShort": {
         "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
@@ -848,7 +843,7 @@
       ],
       "rating": 9,
       "hidden": false,
-      "thumbnail": "testcommS-1",
+      "ihn": "",
       "imgPaths": ["testcommS-1"],
       "descriptionShort": {
         "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
@@ -925,7 +920,7 @@
       ],
       "rating": 9,
       "hidden": false,
-      "thumbnail": "testcommS-1",
+      "ihn": "",
       "imgPaths": ["testcommS-1"],
       "descriptionShort": {
         "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
@@ -1001,7 +996,7 @@
       "priceUS": 80,
       "priceRU": 4000,
       "hidden": false,
-      "thumbnail": "testcommS-3",
+      "ihn": "",
       "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
@@ -1072,7 +1067,7 @@
       "priceUS": 40,
       "priceRU": 2000,
       "hidden": false,
-      "thumbnail": "testcommS-3",
+      "ihn": "",
       "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
@@ -1145,7 +1140,7 @@
       "priceUS": 40,
       "priceRU": 2000,
       "hidden": true,
-      "thumbnail": "testcommS-3",
+      "ihn": "",
       "imgPaths": ["testcommS-3", "testcommS-3"],
       "descriptionShort": {
         "en-US": "I did this and that!",
