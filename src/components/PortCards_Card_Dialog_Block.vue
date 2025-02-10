@@ -20,8 +20,9 @@
     </div>
     <div class="any_block_wrapper row q-py-md" v-if="blockClass == 'work_dialog_inner_PictureAndText'"
         :class="$q.screen.lt.md ? 'q-px-xs' : 'q-px-lg'">
-        <div class="col-12 col-md"><q-img v-bind:src="imgURL_Pub" :class="blockImgClasses" style="max-height: 500px;"
-                spinner-color="secondary" fit="scale-down" class="full-width" alt="#" />
+        <div class="col-12 col-md" v-if="$q.screen.gt.sm">
+            <q-img v-bind:src="imgURL_Pub" :class="blockImgClasses" style="max-height: 500px;" spinner-color="secondary"
+                fit="scale-down" class="full-width" alt="#" />
         </div>
         <div class="col-12 col-md q-py-md flex" :class="$q.screen.lt.md ? 'q-px-xs' : 'q-px-lg'">
             <div class="self-center">
@@ -29,6 +30,10 @@
                     :style="{ whiteSpace: 'pre-line' }" v-text="blockText?.[1]">
                 </div>
             </div>
+        </div>
+        <div class="col-12 col-md" v-if="$q.screen.lt.md">
+            <q-img v-bind:src="imgURL_Pub" :class="blockImgClasses" style="max-height: 500px;" spinner-color="secondary"
+                fit="scale-down" class="full-width" alt="#" />
         </div>
     </div>
     <div class="any_block_wrapper q-py-md" v-if="blockClass == 'work_dialog_inner_textOnly'"
@@ -110,6 +115,36 @@ const imgURL_Pub = `works_imgs/${workFolder.value}${blockImgName.value}.${imgTyp
 // const imageUrl = computed(() => {
 //     return new URL(`works_imgs/${workFolder.value}${blockImgName.value}.${imgType.value}`, import.meta.url).href;
 // }); // failed at making those pics src folder
+
+// const imageUrl_Src = computed(() => {
+//     try {
+//         // Explicitly use require() for dynamic image paths
+//         return require(`../assets/works_imgs/${workFolder.value}${blockImgName.value}.${imgType.value}`);
+//     } catch (err) {
+//         console.error("Error loading image", err);
+//         return null; // Or a default image URL
+//     }
+// });
+// const imageUrl_Src = ref(null);
+
+// // Use import.meta.glob to dynamically import images
+// const imageModules = import.meta.glob('../assets/**/*', { eager: true });
+
+// onMounted(() => {
+//     try {
+//         const imagePath = `../assets/works_imgs/${workFolder.value}${blockImgName.value}.${imgType.value}`;
+//         // Find the matching module
+//         const imageModule = imageModules[imagePath];
+
+//         if (imageModule) {
+//             imageUrl_Src.value = imageModule.default;
+//         } else {
+//             console.warn(`Image not found: ${imagePath}`);
+//         }
+//     } catch (error) {
+//         console.error("Error loading image:", error);
+//     }
+// });
 </script>
 
 <style lang="scss">
