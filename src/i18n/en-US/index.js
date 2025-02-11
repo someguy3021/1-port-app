@@ -4,6 +4,7 @@ export default {
   close: "Close",
   open: "Open",
   filter: "Filter",
+  choose_a_filter_works: "Choose a tag and filter my portfolio to your liking",
   page404_caption: "Oops. Nothing here...",
   page404_button: "Back to previous page",
   settings: "Settings",

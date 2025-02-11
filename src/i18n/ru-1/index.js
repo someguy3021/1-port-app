@@ -4,6 +4,8 @@ export default {
   close: "Закрыть",
   open: "Открыть",
   filter: "Фильтр",
+  choose_a_filter_works:
+    "Выберите тег и отфильтруйте мое портфолио по своему вкусу",
   page404_caption: "Упс. Здесь ничего нет...",
   page404_button: "На предыдущую страницу",
   settings: "Настройки",

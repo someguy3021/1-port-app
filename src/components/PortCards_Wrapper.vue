@@ -1,12 +1,15 @@
 <template>
   <div>
     <div class="wrapper_head container">
-      <div class="h2 text-center text-bold q-py-md">
+      <!-- <div class="h2 text-center text-bold q-py-md">
         {{ $t("myportfolio") }}
+      </div> -->
+      <div class="h5 text-center text-bold q-py-md q-px-md">
+        {{ $t("choose_a_filter_works") }}
       </div>
       <div class="wrapper_head_options">
         <div v-if="$q.screen.width >= 880"
-          class="btns-container flex items-center no-wrap q-gutter-x-md q-gutter-y-md q-mb-lg text-h3 q-px-lg">
+          class="btns-container flex items-center justify-center no-wrap q-gutter-x-md q-gutter-y-md q-mb-lg text-h3 q-px-lg">
           <q-btn v-for="tag in uniqueTags" :key="tag" :label="$t(tag)" no-caps class="text-subtitle1" color="accent"
             @click="selectedTag = tag" />
 
