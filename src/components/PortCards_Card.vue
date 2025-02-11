@@ -16,8 +16,9 @@
     </div>
     <div class="q-pa-lg my-card-text text-weight-regular">
       <div class="flex q-gutter-x-sm q-gutter-y-sm q-mb-lg" id="tags_holder">
-        <q-btn v-for="(tag, index) in work.tags" :key="index" no-caps color="accent" class="q-pa-xs row rounded-borders"
-          @click="typeOfFillter = tag">
+        <q-btn v-for="(tag, index) in work.tags" :key="index" no-caps
+          :color="selectedTag === tag ? 'secondary' : 'accent'" class="q-pa-xs row rounded-borders"
+          @click="emit('emit-filter-by-tag', tag)">
           <div class="" style="min-width: 64px">
             {{ $t(tag) }}
           </div>
@@ -67,6 +68,11 @@ const props = defineProps({
   work: {
     type: Object,
   },
+  selectedTag: {
+    type: String,
+    default: null,
+    required: false,
+  }
 });
 const workFolder = computed(() => {
   if (!props.work || !props.work.ihn) return '';
@@ -90,6 +96,7 @@ const whatIconTagHas = (tag) => {
   }
   return tagIconMap[tag] || 'diamond';
 };
+const emit = defineEmits(['emit-filter-by-tag']);
 </script>
 
 <style>

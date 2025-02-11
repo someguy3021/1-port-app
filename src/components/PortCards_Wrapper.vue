@@ -10,8 +10,8 @@
       <div class="wrapper_head_options">
         <div v-if="$q.screen.width >= 880"
           class="btns-container flex items-center justify-center no-wrap q-gutter-x-md q-gutter-y-md q-mb-md text-h3 q-px-lg">
-          <q-btn v-for="tag in uniqueTags" :key="tag" :label="$t(tag)" no-caps class="text-subtitle1" color="accent"
-            @click="selectedTag = tag" />
+          <q-btn v-for="tag in uniqueTags" :key="tag" :label="$t(tag)" no-caps class="text-subtitle1"
+            :color="selectedTag === tag ? 'secondary' : 'accent'" @click="selectedTag = tag" />
 
           <q-icon name="close" size="md" class="q-ml-md cursor-pointer rounded-borders" v-ripple @click="clearFilter" />
         </div>
@@ -23,7 +23,8 @@
       </div>
     </div>
     <div class="wrapper_cards flex justify-center">
-      <PortCards_Card v-for="work in filteredWorks" :key="work.id" :work="work" />
+      <PortCards_Card v-for="work in filteredWorks" :key="work.id" :work="work" :selectedTag="selectedTag"
+        @emit-filter-by-tag="handleFilterByTag" />
     </div>
   </div>
 </template>
@@ -96,5 +97,9 @@ const filteredWorks = computed(() => {
 
 function clearFilter() {
   selectedTag.value = null;
+}
+
+function handleFilterByTag(tag) {
+  selectedTag.value = tag;
 }
 </script>
