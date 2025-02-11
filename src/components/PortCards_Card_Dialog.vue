@@ -35,22 +35,25 @@ function onOKClick() {
     // or with payload: onDialogOK({ ... })
     // ...and it will also hide the dialog automatically
 }
+// regarding the template:
+// Any more of 70vh results in some weird bottom button bugs, and also scroll bugs. can't use full-height, it breaks the scroll
 </script>
 
 <template>
     <q-dialog ref="dialogRef" @hide="onDialogHide">
-        <q-card class="q-dialog-plugin" style="width: 1400px; max-width: 95vw;">
-            <q-toolbar class="bg-dark">
+        <q-card class="q-dialog-plugin no-scroll" style="width: 1400px; max-width: 95vw;">
+            <q-card-section class="row bg-dark">
                 <q-toolbar-title>{{ work.title?.[i18nLocale.locale.value] }}</q-toolbar-title>
                 <q-btn v-close-popup flat round icon="close"></q-btn>
-            </q-toolbar>
-            <q-card-section style="max-height: 87vh;" class="scroll">
+            </q-card-section>
+            <q-separator />
+            <q-card-section style="max-height: 70vh;" class="scroll q-pb-none q-px-none">
                 <PortCards_Card_Dialog_Block
                     v-for="(block, index) in props.work.descriptionLong?.[i18nLocale.locale.value] || []" :key="index"
                     :block="block || {}" :workFolder="props.work.ihn || {}" />
-                <q-card-actions class="q-pt-lg" align="center">
-                    <q-btn class="text-capitalize" color="accent" :label="$t('close')" @click="onOKClick" size="lg" />
-                    <!-- <q-btn color="accent" label="Cancel" @click="onDialogCancel" /> -->
+                <q-card-actions class="q-pa-none" align="center" v-if="$q.screen.lt.md">
+                    <q-btn class="text-capitalize full-width no-border-radius" color="accent" :label="$t('close')"
+                        @click="onOKClick" size="lg" />
                 </q-card-actions>
             </q-card-section>
         </q-card>
