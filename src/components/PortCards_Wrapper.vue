@@ -25,7 +25,7 @@
     <div class="wrapper_cards">
       <q-infinite-scroll @load="onLoad" :offset="250">
         <div class="flex justify-center">
-          <PortCards_Card v-for="(work, index) in filteredWorks" :key="index" :work="work" :selectedTag="selectedTag"
+          <PortCards_Card v-for="(work, index) in scrollWorks" :key="work.id" :work="work" :selectedTag="selectedTag"
             @emit-filter-by-tag="handleFilterByTag" />
         </div>
         <template v-slot:loading>
@@ -39,12 +39,13 @@
 </template>
 
 <script setup>
-// Load works from DB into workArrayFull and ONLY 5 works from workArrayFull into workArrayForHandling and handle howMuchWorksToShow, filter functions, load 5 more works onLoad
+// Load works from DB into workArrayFull and handle howMuchWorksToShow + filterstuff and workArrayFullFiltered, and ONLY 5 works from workArrayFullFiltered into workArrayForHandling by 5 each onLoad
 import PortCards_Card from "./PortCards_Card.vue";
-import { works } from "../stores/DB_copies.json";
+import { works } from "../stores/DB.json";
 // import { works_dev } from "../stores/DB_dev.json";
-import { ref, onMounted, computed } from "vue";
-
+import { ref, onMounted, computed, watch } from "vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 defineOptions({
   name: "PortCards_Wrapper",
 });
@@ -91,8 +92,7 @@ const uniqueTags = computed(() => {
   });
   return Array.from(tags);
 });
-import { useI18n } from "vue-i18n";
-const { t } = useI18n();
+
 const tagOptions = computed(() => {
   return uniqueTags.value.map(tag => ({ label: t(tag), value: tag }));
 });
@@ -113,18 +113,43 @@ function handleFilterByTag(tag) {
   selectedTag.value = tag;
 }
 
+// scroll stuff-------------- scroll stuff-------------- scroll stuff-------------- scroll stuff-------------- scroll stuff-------------- scroll stuff--------------
 const scrollWorks = ref([])
 scrollWorks.value = filteredWorks.value.slice(0, 5)
-
+// console.log(scrollWorks.value)
+let currentIndex = 0;
+const chunkSize = 5;
 const onLoad = (index, done) => {
-  if (props.howMuchWorksToShow === null || props.howMuchWorksToShow === undefined) {
+  if ((currentIndex >= filteredWorks.value.length) && (filteredWorks.value.length != 0)) {
+    done(true); // signal that there are no more items to load
+    return;
+  }
+
+  if (props.howMuchWorksToShow == null) {
     setTimeout(() => {
-      const newWorks = filteredWorks.value.slice(0, 5).filter(work => !scrollWorks.value.includes(work))
-      scrollWorks.value.push(...newWorks, ...Array(5).fill({}))
-      done()
-    }, 2000)
+      const newWorks = filteredWorks.value.slice(currentIndex, currentIndex + chunkSize);
+      const filteredNewWorks = newWorks.filter(work => {
+        if (selectedTag.value) {
+          return work.tags.includes(selectedTag.value);
+        } else {
+          return true;
+        }
+      });
+      const newUniqueWorks = filteredNewWorks.filter(work => !scrollWorks.value.includes(work));
+      scrollWorks.value.push(...newUniqueWorks);
+      currentIndex += chunkSize;
+      done();
+    }, 500);
   } else {
-    done()
+    done();
   }
 }
+// Add a watch function to monitor the selectedTag value
+watch(selectedTag, (newTag, oldTag) => {
+  if (newTag !== oldTag) {
+    // Reset the scrollWorks array and currentIndex
+    scrollWorks.value = filteredWorks.value.slice(0, 5)
+    currentIndex = 0;
+  }
+})
 </script>
