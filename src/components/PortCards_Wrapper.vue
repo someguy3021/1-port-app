@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div class="wrapper_head container">
+    <div class="wrapper_head container" v-if="showFilters">
       <!-- <div class="h2 text-center text-bold q-py-md">
         {{ $t("myportfolio") }}
       </div> -->
-      <div class="h5 text-center text-bold q-py-md q-px-md">
+      <div class="h5 text-center text-bold q-pt-md q-pb-sm q-px-md">
         {{ $t("choose_a_filter_works") }}
       </div>
       <div class="wrapper_head_options">
         <div v-if="$q.screen.width >= 880"
-          class="btns-container flex items-center justify-center no-wrap q-gutter-x-md q-gutter-y-md q-mb-lg text-h3 q-px-lg">
+          class="btns-container flex items-center justify-center no-wrap q-gutter-x-md q-gutter-y-md q-mb-md text-h3 q-px-lg">
           <q-btn v-for="tag in uniqueTags" :key="tag" :label="$t(tag)" no-caps class="text-subtitle1" color="accent"
             @click="selectedTag = tag" />
 
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center">
+    <div class="wrapper_cards flex justify-center">
       <PortCards_Card v-for="work in filteredWorks" :key="work.id" :work="work" />
     </div>
   </div>
@@ -38,12 +38,16 @@ defineOptions({
   name: "PortCards_Wrapper",
 });
 
-// Get info about how much works to show on page
+// Get info about how much works to show on page, also added showFilters
 const props = defineProps({
   howMuchWorksToShow: {
     type: Number,
     required: false,
   },
+  showFilters: {
+    type: Boolean,
+    required: false
+  }
 });
 
 const worksData = ref([]); // this is place for works data
