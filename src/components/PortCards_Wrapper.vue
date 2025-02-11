@@ -150,6 +150,7 @@ watch(selectedTag, (newTag, oldTag) => {
     // Reset the scrollWorks array and currentIndex
     scrollWorks.value = filteredWorks.value.slice(0, 5)
     currentIndex = 0;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 })
 </script>
