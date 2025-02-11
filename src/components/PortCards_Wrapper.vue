@@ -25,8 +25,9 @@
     <div class="wrapper_cards">
       <q-infinite-scroll @load="onLoad" :offset="250">
         <div class="flex justify-center">
-          <PortCards_Card v-for="work in scrollWorks" :key="work.id" :work="work" :selectedTag="selectedTag"
-            @emit-filter-by-tag="handleFilterByTag" />
+          <PortCards_Card
+            v-for="work in (howMuchWorksToShow === null || howMuchWorksToShow === undefined) ? scrollWorks : filteredWorks"
+            :key="work.id" :work="work" :selectedTag="selectedTag" @emit-filter-by-tag="handleFilterByTag" />
         </div>
         <template v-slot:loading>
           <div class="row justify-center q-my-md">
