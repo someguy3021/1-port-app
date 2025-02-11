@@ -17,13 +17,13 @@
     <div class="q-pa-lg my-card-text text-weight-regular">
       <div class="flex q-gutter-x-sm q-gutter-y-sm q-mb-lg" id="tags_holder">
         <q-btn v-for="(tag, index) in work.tags" :key="index" no-caps
-          :color="selectedTag === tag ? 'secondary' : 'accent'" class="q-pa-xs row rounded-borders"
+          :color="selectedTag === tag ? 'secondary shadow-2' : 'accent'" class="q-pa-xs row rounded-borders"
           @click="emit('emit-filter-by-tag', tag)">
           <div class="" style="min-width: 64px">
             {{ $t(tag) }}
           </div>
           <q-icon :name="whatIconTagHas(tag)" size="sm" class="q-pl-md" />
-          <q-tooltip class="bg-secondary text-body2" :offset="[10, 10]">
+          <q-tooltip class="bg-secondary text-body2 shadow-5" :offset="[10, 10]">
             {{ $t("tooltip_clickTofilterByTag") }}
           </q-tooltip>
         </q-btn>
@@ -43,7 +43,7 @@
     <div>
       <q-card-actions align="right" class="q-pa-md">
         <q-btn class="text-capitalize" @click="showCardDialog = true" color="accent">{{ $t("button_ShowMore") }}
-          <q-tooltip class="bg-secondary text-body2" :offset="[10, 10]">
+          <q-tooltip class="bg-secondary text-body2  shadow-5" :offset="[10, 10]">
             {{ $t("tooltip_showTheWorkDescrLong") }}
           </q-tooltip></q-btn>
       </q-card-actions>
