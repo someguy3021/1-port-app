@@ -4,57 +4,22 @@
       <div class="h2 text-bold q-pb-md">
         {{ $t("myportfolio") }}
       </div>
-      <div
-        v-if="$q.screen.width >= 880"
-        class="btns-container flex items-center no-wrap q-gutter-x-md q-gutter-y-md q-mb-lg text-h3"
-      >
-        <q-btn
-          label="Только вебсайты"
-          no-caps
-          class="text-subtitle1"
-          color="accent"
-          @click="typeOfFillter = 'Только вебсайты'"
-        />
-        <q-btn
-          label="Только дизайны"
-          no-caps
-          class="text-subtitle1"
-          color="accent"
-          @click="typeOfFillter = 'Только дизайны'"
-        />
-        <q-btn
-          label="По типу работы"
-          no-caps
-          class="text-subtitle1"
-          color="accent"
-          @click="typeOfFillter = 'По типу товара'"
-        />
+      <div v-if="$q.screen.width >= 880"
+        class="btns-container flex items-center no-wrap q-gutter-x-md q-gutter-y-md q-mb-lg text-h3">
+        <q-btn v-for="tag in uniqueTags" :key="tag" :label="tag" no-caps class="text-subtitle1" color="accent"
+          @click="selectedTag = tag" />
 
-        <q-icon
-          name="close"
-          size="md"
-          class="q-ml-md cursor-pointer"
-          v-ripple
-          @click="clearFillter"
-        />
+        <q-icon name="close" size="md" class="q-ml-md cursor-pointer" v-ripple @click="clearFilter" />
       </div>
       <div v-else class="row flex-center q-mb-md no-wrap">
-        <q-select
-          standout
-          v-model="typeOfFillter"
-          :options="options"
-          label="Фильтр"
-          bg-color="secondary"
-          color="black"
-          class="full-width"
-        />
-        <q-icon
-          name="close"
-          size="md"
-          class="q-ml-md cursor-pointer"
-          v-ripple
-          @click="clearFillter"
-        />
+        <q-select standout v-model="selectedTag" :options="tagOptions" label="Фильтр" bg-color="secondary" color="black"
+          class="full-width" @update:model-value="filterByTag(selectedTag)" />
+        <q-icon name="close" size="md" class="q-ml-md cursor-pointer" v-ripple @click="clearFilter" />
+      </div>
+      <div v-else class="row flex-center q-mb-md no-wrap">
+        <q-select standout v-model="typeOfFillter" :options="options" label="Фильтр" bg-color="secondary" color="black"
+          class="full-width" />
+        <q-icon name="close" size="md" class="q-ml-md cursor-pointer" v-ripple @click="clearFillter" />
       </div>
     </div> -->
     <div class="flex justify-center">
@@ -67,23 +32,11 @@
 import PortCards_Card from "./PortCards_Card.vue";
 import { works } from "../stores/DB.json";
 // import { works_dev } from "../stores/DB_dev.json";
-import { ref, onMounted } from "vue";
+import { ref, onMounted, computed } from "vue";
 
 defineOptions({
   name: "PortCards_Wrapper",
 });
-
-// const typeOfFillter = ref("");
-// const modelForFB = ref("");
-
-// const $q = useQuasar();
-// const options = ref([
-//   "По популярности",
-//   "По цене",
-//   "По наименованию",
-//   "По типу товара",
-//   "Сначала избранное",
-// ]);
 
 // Get info about how much works to show on page
 const props = defineProps({
@@ -100,14 +53,6 @@ onMounted(async () => {
 });
 
 async function getworksData() {
-  //   const querySnapshot = await getDocs(collection(db, "worki"));
-  //   let tempArr = [];
-  //   querySnapshot.forEach((doc) => {
-  //     tempArr.push({
-  //       id: doc.id,
-  //       ...doc.worksData(),
-  //     });
-  //   });
   let tempArr = works;
   tempArr = tempArr.filter(work => work.hidden === false); // removing all the testing elements or hidden elements
   // console.log(tempArr);
@@ -120,45 +65,30 @@ async function getworksData() {
   } else worksData.value = tempArr;
 }
 
-// async function fillterworksData(modelForFB) {
-//   //   const querySnapshot = await getDocs(
-//   //     query(collection(db, "worki"), orderBy(modelForFB))
-//   //   );
-//   //   let tempArr = [];
-//   //   querySnapshot.forEach((doc) => {
-//   //     tempArr.push({
-//   //       id: doc.id,
-//   //       ...doc.worksData(),
-//   //     });
-//   //   });
-//   let tempArr = [];
-//   worksData.value = tempArr;
-// }
-
-// async function clearFillter() {
-//   getworksData();
-//   typeOfFillter.value = "";
-// }
-
-// watch(typeOfFillter, () => {
-//   switch (typeOfFillter.value) {
-//     case "По популярности":
-//       modelForFB.value = "popularity";
-//       break;
-//     case "По цене":
-//       modelForFB.value = "price";
-//       break;
-//     case "По наименованию":
-//       modelForFB.value = "name";
-//       break;
-//     case "По типу товара":
-//       modelForFB.value = "type";
-//       break;
-//     case "Сначала избранное":
-//       modelForFB.value = "popularity";
-//     default:
-//       return;
-//   }
-//   fillterworksData(modelForFB.value);
+// filter stuff-------------filter stuff-------------filter stuff-------------filter stuff-------------filter stuff-------------filter stuff-------------
+// const selectedTag = ref(null);
+// const uniqueTags = computed(() => {
+//   const tags = new Set();
+//   worksData.value.forEach(work => {
+//     if (work.tags && Array.isArray(work.tags)) {
+//       work.tags.forEach(tag => tags.add(tag));
+//     }
+//   });
+//   return Array.from(tags);
 // });
+
+// const tagOptions = computed(() => {
+//   return uniqueTags.value.map(tag => ({ label: tag, value: tag }));
+// });
+
+// const filteredWorks = computed(() => {
+//   if (!selectedTag.value) {
+//     return worksData.value;
+//   }
+//   return worksData.value.filter(work => work.tags && Array.isArray(work.tags) && work.tags.includes(selectedTag.value));
+// });
+
+// function clearFilter() {
+//   selectedTag.value = null;
+// }
 </script>

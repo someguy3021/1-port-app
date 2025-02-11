@@ -16,12 +16,12 @@
     </div>
     <div class="q-pa-lg my-card-text text-weight-regular">
       <div class="flex q-gutter-x-sm q-gutter-y-sm q-mb-lg" id="tags_holder">
-        <q-btn v-for="tag in work.tags" :key="tag" no-caps color="accent" class="q-pa-xs row rounded-borders"
+        <q-btn v-for="(tag, index) in work.tags" :key="index" no-caps color="accent" class="q-pa-xs row rounded-borders"
           @click="typeOfFillter = tag">
           <div class="" style="min-width: 64px">
-            {{ $t(tag?.[0]) }}
+            {{ $t(tag) }}
           </div>
-          <q-icon :name="tag?.[1]" size="sm" class="q-pl-md" />
+          <q-icon :name="whatIconTagHas(tag)" size="sm" class="q-pl-md" />
           <q-tooltip class="bg-secondary text-body2" :offset="[10, 10]">
             {{ $t("tooltip_clickTofilterByTag") }}
           </q-tooltip>
@@ -74,6 +74,22 @@ const workFolder = computed(() => {
 });
 
 const slide = ref(1);
+
+const whatIconTagHas = (tag) => {
+  const tagIconMap = {
+    "tag_website": 'language',
+    "tag_frontend": 'web_asset',
+    "tag_design": 'brush',
+    "tag_tilda": 'code_off',
+    "tag_wordpress": 'code_off',
+    "tag_logo": 'diamond',
+    "tag_graphics_and_vector": 'diamond',
+  };
+  if (!(tag in tagIconMap)) {
+    console.warn(`Unknown icon: ${tag}. Falling back to diamond icon.`);
+  }
+  return tagIconMap[tag] || 'diamond';
+};
 </script>
 
 <style>

@@ -10,11 +10,7 @@
         "en-US": "Me",
         "ru-1": "Я"
       },
-      "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"]
-      ],
+      "tags": ["tag_website", "tag_frontend", "tag_design"],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Coding_JS", "language"],
         ["work_stackUsedForWork_Coding_Vue", "language"],
@@ -209,11 +205,7 @@
         "en-US": "Me",
         "ru-1": "Я"
       },
-      "tags": [
-        ["tag_logo", "diamond"],
-        ["tag_graphics_and_vector", "diamond"],
-        ["tag_design", "brush"]
-      ],
+      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Coding_JS", "language"],
         ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
@@ -287,11 +279,11 @@
         "ru-1": "Я"
       },
       "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"],
-        ["tag_no_code", "code_off"],
-        ["tag_tilda", "code_off"]
+        "tag_website",
+        "tag_frontend",
+        "tag_design",
+        "tag_no_code",
+        "tag_tilda"
       ],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Coding_JS", "language"],
@@ -366,11 +358,11 @@
         "ru-1": "Я"
       },
       "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"],
-        ["tag_no_code", "code_off"],
-        ["tag_tilda", "code_off"]
+        "tag_website",
+        "tag_frontend",
+        "tag_design",
+        "tag_no_code",
+        "tag_tilda"
       ],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Coding_JS", "language"],
@@ -445,11 +437,11 @@
         "ru-1": "Я"
       },
       "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"],
-        ["tag_no_code", "code_off"],
-        ["tag_tilda", "code_off"]
+        "tag_website",
+        "tag_frontend",
+        "tag_design",
+        "tag_no_code",
+        "tag_tilda"
       ],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Coding_JS", "language"],
@@ -523,10 +515,7 @@
         "en-US": "Individual customer",
         "ru-1": "Индивидуальный заказчик"
       },
-      "tags": [
-        ["tag_graphics_and_vector", "diamond"],
-        ["tag_design", "brush"]
-      ],
+      "tags": ["tag_graphics_and_vector", "tag_design"],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
         ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
@@ -604,11 +593,7 @@
         "en-US": "Individual customer",
         "ru-1": "Индивидуальный заказчик"
       },
-      "tags": [
-        ["tag_logo", "diamond"],
-        ["tag_graphics_and_vector", "diamond"],
-        ["tag_design", "brush"]
-      ],
+      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
         ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
@@ -681,11 +666,7 @@
         "en-US": "Individual customer",
         "ru-1": "Индивидуальный заказчик"
       },
-      "tags": [
-        ["tag_logo", "diamond"],
-        ["tag_graphics_and_vector", "diamond"],
-        ["tag_design", "brush"]
-      ],
+      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
         ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
@@ -758,10 +739,7 @@
         "en-US": "Development Team \"ITitans\"",
         "ru-1": "Команда разработки \"ITitans\""
       },
-      "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"]
-      ],
+      "tags": ["tag_website", "tag_frontend"],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
@@ -833,10 +811,7 @@
         "en-US": "Development Team \"ITitans\"",
         "ru-1": "Команда разработки \"ITitans\""
       },
-      "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"]
-      ],
+      "tags": ["tag_website", "tag_frontend"],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Coding_JS", "language"],
         ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
@@ -909,10 +884,7 @@
         "en-US": "Development Team \"ITGene\"",
         "ru-1": "Команда разработки \"ITGene\""
       },
-      "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"]
-      ],
+      "tags": ["tag_website", "tag_frontend"],
       "stackUsedForWork": [
         ["work_stackUsedForWork_Coding_JS", "language"],
         ["work_stackUsedForWork_Coding_Vue", "language"],
@@ -986,11 +958,11 @@
         "ru-1": "Вебсайт на Тильда или Вордпресс"
       },
       "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"],
-        ["tag_tilda", "code_off"],
-        ["tag_wordpress", "code_off"]
+        "tag_website",
+        "tag_frontend",
+        "tag_design",
+        "tag_no_code",
+        "tag_tilda"
       ],
       "rating": 6,
       "priceUS": 80,
@@ -1058,11 +1030,7 @@
         "en-US": "Vector Logo",
         "ru-1": "Векторное Лого"
       },
-      "tags": [
-        ["tag_logo", "diamond"],
-        ["tag_graphics_and_vector", "diamond"],
-        ["tag_design", "brush"]
-      ],
+      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
       "rating": 10,
       "priceUS": 40,
       "priceRU": 2000,
@@ -1130,11 +1098,11 @@
         "ru-1": "Лого 2 для клиента"
       },
       "tags": [
-        ["tag_website", "language"],
-        ["tag_frontend", "web_asset"],
-        ["tag_design", "brush"],
-        ["tag_no_code", "code_off"],
-        ["tag_tilda", "code_off"]
+        "tag_website",
+        "tag_frontend",
+        "tag_design",
+        "tag_no_code",
+        "tag_tilda"
       ],
       "rating": 10,
       "priceUS": 40,
