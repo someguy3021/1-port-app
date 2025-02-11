@@ -3,6 +3,7 @@ export default {
   success: "Успешно",
   close: "Закрыть",
   open: "Открыть",
+  filter: "Фильтр",
   page404_caption: "Упс. Здесь ничего нет...",
   page404_button: "На предыдущую страницу",
   settings: "Настройки",

@@ -3,6 +3,7 @@ export default {
   success: "Action succsess",
   close: "Close",
   open: "Open",
+  filter: "Filter",
   page404_caption: "Oops. Nothing here...",
   page404_button: "Back to previous page",
   settings: "Settings",
