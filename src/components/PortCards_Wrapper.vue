@@ -22,16 +22,26 @@
         </div>
       </div>
     </div>
-    <div class="wrapper_cards flex justify-center">
-      <PortCards_Card v-for="work in filteredWorks" :key="work.id" :work="work" :selectedTag="selectedTag"
-        @emit-filter-by-tag="handleFilterByTag" />
+    <div class="wrapper_cards">
+      <q-infinite-scroll @load="onLoad" :offset="250">
+        <div class="flex justify-center">
+          <PortCards_Card v-for="(work, index) in filteredWorks" :key="index" :work="work" :selectedTag="selectedTag"
+            @emit-filter-by-tag="handleFilterByTag" />
+        </div>
+        <template v-slot:loading>
+          <div class="row justify-center q-my-md">
+            <q-spinner-dots color="primary" size="40px" />
+          </div>
+        </template>
+      </q-infinite-scroll>
     </div>
   </div>
 </template>
 
 <script setup>
+// Load works from DB into workArrayFull and ONLY 5 works from workArrayFull into workArrayForHandling and handle howMuchWorksToShow, filter functions, load 5 more works onLoad
 import PortCards_Card from "./PortCards_Card.vue";
-import { works } from "../stores/DB.json";
+import { works } from "../stores/DB_copies.json";
 // import { works_dev } from "../stores/DB_dev.json";
 import { ref, onMounted, computed } from "vue";
 
@@ -101,5 +111,20 @@ function clearFilter() {
 
 function handleFilterByTag(tag) {
   selectedTag.value = tag;
+}
+
+const scrollWorks = ref([])
+scrollWorks.value = filteredWorks.value.slice(0, 5)
+
+const onLoad = (index, done) => {
+  if (props.howMuchWorksToShow === null || props.howMuchWorksToShow === undefined) {
+    setTimeout(() => {
+      const newWorks = filteredWorks.value.slice(0, 5).filter(work => !scrollWorks.value.includes(work))
+      scrollWorks.value.push(...newWorks, ...Array(5).fill({}))
+      done()
+    }, 2000)
+  } else {
+    done()
+  }
 }
 </script>
