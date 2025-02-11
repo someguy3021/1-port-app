@@ -25,7 +25,7 @@
     <div class="wrapper_cards">
       <q-infinite-scroll @load="onLoad" :offset="250">
         <div class="flex justify-center">
-          <PortCards_Card v-for="(work, index) in scrollWorks" :key="work.id" :work="work" :selectedTag="selectedTag"
+          <PortCards_Card v-for="work in scrollWorks" :key="work.id" :work="work" :selectedTag="selectedTag"
             @emit-filter-by-tag="handleFilterByTag" />
         </div>
         <template v-slot:loading>
@@ -120,8 +120,8 @@ scrollWorks.value = filteredWorks.value.slice(0, 5)
 let currentIndex = 0;
 const chunkSize = 5;
 const onLoad = (index, done) => {
-  if ((currentIndex >= filteredWorks.value.length) && (filteredWorks.value.length != 0)) {
-    done(true); // signal that there are no more items to load
+  if ((currentIndex >= filteredWorks.value.length)) {
+    done(); // signal that there are no more items to load
     return;
   }
 
