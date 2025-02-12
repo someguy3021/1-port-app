@@ -64,6 +64,11 @@ const props = defineProps({
   showFilters: {
     type: Boolean,
     required: false
+  },
+  whatWorksToShow: {
+    type: String,
+    required: false,
+    default: ""
   }
 });
 

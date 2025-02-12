@@ -54,19 +54,7 @@ export default {
   work_stackUsedForWork_Visual_AdobePhotoshop: "Adobe Photoshop",
   work_stackUsedForWork_Visual_AdobeIllustrator: "Adobe Illustrator",
   work_stackUsedForWork_Visual_Figma: "Figma",
-  devPages_devRootPage_exp_general1: "Опыт работы",
-  devPages_devRootPage_exp_1_role: "FrontEnd-разработчик",
-  devPages_devRootPage_exp_1_where:
-    "СОЮЗ.РФ (Сентябрь 2024– к настоящему моменту)",
-  devPages_devRootPage_exp_1_descr: "Делал то-то-то",
-  devPages_devRootPage_exp_2_role: "FrontEnd-разработчик, Менеджер",
-  devPages_devRootPage_exp_2_where:
-    "Учебный проект на курсе 1Т - групповая разработка (Февраль 2024– Июнь 2024)",
-  devPages_devRootPage_exp_2_descr: "Делал то-то-то",
-  devPages_devRootPage_exp_3_role: "FrontEnd-разработчик, Менеджер",
-  devPages_devRootPage_exp_3_where:
-    "Дипломный проект УрФУ - групповая разработка (Февраль 2023– Май 2023)",
-  devPages_devRootPage_exp_3_descr: "Делал то-то-то",
+
   tooltip_showTheWorkDescrLong: "Показать работу подробнее",
   tooltip_clickTofilterByTag: "Нажмите чтобы отфильтровать по этому тегу",
   tooltip_clickTofilterByTag_disabled:

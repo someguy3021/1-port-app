@@ -5,6 +5,7 @@ public/works_imgs
 public/ign
 src/assets/ign
 src/assets/works_imgs
+.env
 
 # Quasar core related directories
 .quasar
