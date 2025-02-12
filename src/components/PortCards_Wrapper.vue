@@ -25,9 +25,13 @@
     <div class="wrapper_cards">
       <q-infinite-scroll @load="onLoad" :offset="250">
         <div class="flex justify-center">
-          <PortCards_Card
-            v-for="work in (howMuchWorksToShow === null || howMuchWorksToShow === undefined) ? scrollWorks : filteredWorks"
-            :key="work.id" :work="work" :selectedTag="selectedTag" @emit-filter-by-tag="handleFilterByTag" />
+          <PortCards_Card v-for="work in (wrapperIsNotStatic ? filteredWorks : scrollWorks)" :key="work.id" :work="work"
+            :selectedTag="selectedTag" @emit-filter-by-tag="handleFilterByTag"
+            :wrapperIsNotStatic="wrapperIsNotStatic" />
+        </div>
+        <div v-if="wrapperIsNotStatic" class="flex items-center justify-center">
+          <q-btn class="q-mt-md" color="accent" icon="search" :label="$t('show_more_of_my_works')"
+            :to="{ path: './works' }" />
         </div>
         <template v-slot:loading>
           <div class="row justify-center q-my-md">
@@ -64,6 +68,7 @@ const props = defineProps({
 });
 
 const worksData = ref([]); // this is place for works data
+const wrapperIsNotStatic = computed(() => !!props.howMuchWorksToShow)
 
 onMounted(async () => {
   getworksData();

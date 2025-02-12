@@ -5,6 +5,7 @@ export default {
   open: "Open",
   filter: "Filter",
   choose_a_filter_works: "Choose a tag and filter my portfolio to your liking",
+  show_more_of_my_works: "Show more of my works",
   page404_caption: "Oops. Nothing here...",
   page404_button: "Back to previous page",
   settings: "Settings",
@@ -66,4 +67,5 @@ export default {
   devPages_devRootPage_exp_3_descr: "Done this and that",
   tooltip_showTheWorkDescrLong: "Show the work in details",
   tooltip_clickTofilterByTag: "Click to filter by this tag",
+  tooltip_clickTofilterByTag_disabled: "Go to works page to filter my works",
 };

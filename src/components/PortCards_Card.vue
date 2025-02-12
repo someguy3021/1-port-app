@@ -17,13 +17,16 @@
       <div class="flex q-gutter-x-sm q-gutter-y-sm q-mb-lg" id="tags_holder">
         <q-btn v-for="(tag, index) in work.tags" :key="index" no-caps
           :color="selectedTag === tag ? 'secondary shadow-2' : 'accent'" class="q-pa-xs row rounded-borders"
-          @click="emit('emit-filter-by-tag', tag)">
+          @click="emit('emit-filter-by-tag', tag)" :disable="wrapperIsNotStatic">
           <div class="" style="min-width: 64px">
             {{ $t(tag) }}
           </div>
           <q-icon :name="whatIconTagHas(tag)" size="sm" class="q-pl-md" />
-          <q-tooltip class="bg-secondary text-body2 shadow-5" :offset="[10, 10]">
+          <q-tooltip v-if="!wrapperIsNotStatic" class="bg-secondary text-body2 shadow-5" :offset="[10, 10]">
             {{ $t("tooltip_clickTofilterByTag") }}
+          </q-tooltip>
+          <q-tooltip class="bg-accent text-body2 shadow-5" :offset="[10, 10]">
+            {{ $t("tooltip_clickTofilterByTag_disabled") }}
           </q-tooltip>
         </q-btn>
       </div>
@@ -71,6 +74,10 @@ const props = defineProps({
     type: String,
     default: null,
     required: false,
+  },
+  wrapperIsNotStatic: {
+    default: undefined,
+    required: false
   }
 });
 const workFolder = computed(() => {

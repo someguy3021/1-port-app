@@ -6,6 +6,7 @@ export default {
   filter: "Фильтр",
   choose_a_filter_works:
     "Выберите тег и отфильтруйте мое портфолио по своему вкусу",
+  show_more_of_my_works: "Показать больше моих работ",
   page404_caption: "Упс. Здесь ничего нет...",
   page404_button: "На предыдущую страницу",
   settings: "Настройки",
@@ -68,4 +69,6 @@ export default {
   devPages_devRootPage_exp_3_descr: "Делал то-то-то",
   tooltip_showTheWorkDescrLong: "Показать работу подробнее",
   tooltip_clickTofilterByTag: "Нажмите чтобы отфильтровать по этому тегу",
+  tooltip_clickTofilterByTag_disabled:
+    "Перейдите на страницу моих работ чтобы фильтровать их по тегам",
 };
