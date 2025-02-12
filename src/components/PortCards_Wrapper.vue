@@ -10,7 +10,7 @@
       <div class="wrapper_head_options">
         <div v-if="$q.screen.width >= 880"
           class="btns-container flex items-center justify-center no-wrap q-gutter-x-md q-gutter-y-md q-mb-md text-h3 q-px-lg">
-          <q-btn v-for="tag in uniqueTags" :key="tag" :label="$t(tag)" no-caps class="text-subtitle1"
+          <q-btn v-for="tag in uniqueTags" :key="tag" :label="$t(tag)" no-caps push class="text-subtitle1"
             :color="selectedTag === tag ? 'secondary shadow-2' : 'accent'" @click="selectedTag = tag" />
 
           <q-icon name="close" size="md" class="q-ml-md cursor-pointer rounded-borders" v-ripple @click="clearFilter" />

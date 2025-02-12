@@ -81,7 +81,7 @@ body {
 // Custom blocks colors with both themes
 
 .bg-glass-black {
-  background: linear-gradient(to left, $glass1, $glass2);
+  background: linear-gradient(to bottom, $glass1, $glass2);
 }
 
 .border-radius20 {
