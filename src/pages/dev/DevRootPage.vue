@@ -3,18 +3,21 @@
     <div class="q-py-xl container flex flex-center">
       <q-stepper v-model="step" vertical color="primary" animated style="width: 90%;">
         <q-step :name="1" :title="$t('devPages_devRootPage_exp_1_role')"
-          :caption="$t('devPages_devRootPage_exp_1_where')" color="secondary" icon="settings" :done="step > 1">
+          :caption="$t('devPages_devRootPage_exp_1_where')" color="secondary" icon="language" active-icon="language"
+          :done="step > 1">
           {{ $t("devPages_devRootPage_exp_1_descr") }}
         </q-step>
 
         <q-step :name="1" :title="$t('devPages_devRootPage_exp_2_role')"
-          :caption="$t('devPages_devRootPage_exp_2_where')" color="secondary" icon="create_new_folder" :done="step > 2">
+          :caption="$t('devPages_devRootPage_exp_2_where')" color="secondary" icon="manage_accounts"
+          active-icon="manage_accounts" :done="step > 2">
           {{ $t("devPages_devRootPage_exp_2_descr") }}
 
         </q-step>
 
         <q-step :name="1" :title="$t('devPages_devRootPage_exp_3_role')"
-          :caption="$t('devPages_devRootPage_exp_3_where')" color="secondary" icon="assignment">
+          :caption="$t('devPages_devRootPage_exp_3_where')" color="secondary" icon="manage_accounts"
+          active-icon="manage_accounts">
           {{ $t("devPages_devRootPage_exp_3_descr") }}
         </q-step>
       </q-stepper>
