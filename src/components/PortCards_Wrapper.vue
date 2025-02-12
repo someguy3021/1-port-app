@@ -47,7 +47,8 @@
 // Load works from DB into workArrayFull and handle howMuchWorksToShow + filterstuff and workArrayFullFiltered, and ONLY 5 works from workArrayFullFiltered into workArrayForHandling by 5 each onLoad
 import PortCards_Card from "./PortCards_Card.vue";
 import { works } from "../stores/DB.json";
-// import { works_dev } from "../stores/DB_dev.json";
+import { works as works_dev } from "../stores/DB_dev.json";
+import { works as works_webdes } from "../stores/DB_webdes.json";
 import { ref, onMounted, computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -80,7 +81,21 @@ onMounted(async () => {
 });
 
 async function getworksData() {
-  let tempArr = works;
+  let tempArr;
+  switch (props.whatWorksToShow) {
+    case 'works':
+      tempArr = works;
+      break;
+    case 'works_dev':
+      tempArr = works_dev;
+      break;
+    case 'works_webdes':
+      tempArr = works_webdes;
+      break;
+    default:
+      console.error('Works wrapper says: Invalid whatWorksToShow prop value');
+      return;
+  }
   tempArr = tempArr.filter(work => work.hidden === false); // removing all the testing elements or hidden elements
   // console.log(tempArr);
   // If not getting any data about how much elements to show - show all of them

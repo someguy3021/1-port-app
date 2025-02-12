@@ -1,6 +1,6 @@
 <template>
   <q-page class="container">
-    <PortCards_Wrapper :showFilters="true" />
+    <PortCards_Wrapper :showFilters="true" :whatWorksToShow="`works`" />
   </q-page>
 </template>
 
