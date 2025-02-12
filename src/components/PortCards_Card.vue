@@ -25,10 +25,11 @@
           <q-tooltip v-if="!wrapperIsNotStatic" class="bg-secondary text-body2 shadow-5" :offset="[10, 10]">
             {{ $t("tooltip_clickTofilterByTag") }}
           </q-tooltip>
-          <q-tooltip class="bg-accent text-body2 shadow-5" :offset="[10, 10]">
-            {{ $t("tooltip_clickTofilterByTag_disabled") }}
-          </q-tooltip>
         </q-btn>
+        <q-tooltip v-if="wrapperIsNotStatic" class="bg-info text-black text-body2 shadow-alwaysBlack-15"
+          :offset="[10, 10]" :hide-delay="1000">
+          {{ $t("tooltip_clickTofilterByTag_disabled") }}
+        </q-tooltip>
       </div>
       <div class="q-mt-lg">
         <div class="h4">
