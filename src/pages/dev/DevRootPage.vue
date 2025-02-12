@@ -21,6 +21,29 @@
           {{ $t("devPages_devRootPage_exp_3_descr") }}
         </q-step>
       </q-stepper>
+      <q-timeline color="secondary">
+        <q-timeline-entry heading body="Опыт работы" />
+
+        <q-timeline-entry title="Event Title" subtitle="February 22, 1986"
+          avatar="https://cdn.quasar.dev/img/avatar3.jpg" :body="body" />
+
+        <q-timeline-entry :title="$t('devPages_devRootPage_exp_2_role')" subtitle="February 21, 1986" icon="delete"
+          :body="body" />
+
+        <q-timeline-entry heading body="Обучение и самообучение, 2019 - настоящий момент" />
+
+        <q-timeline-entry title="Event Title" subtitle="February 22, 1986" :body="body" />
+
+        <q-timeline-entry title="Event Title" subtitle="February 22, 1986" :body="body" />
+
+        <q-timeline-entry title="Event Title" subtitle="February 22, 1986" color="orange" icon="done_all"
+          :body="body" />
+
+        <q-timeline-entry title="Event Title" subtitle="February 22, 1986" :body="body" />
+
+        <q-timeline-entry title="Event Title" subtitle="February 22, 1986"
+          body="bodybodybodybodybodybodybodybodybodybodybodybodybodybody" />
+      </q-timeline>
     </div>
 
     <div>
@@ -44,11 +67,12 @@ const step = ref(1)
 
 <style lang="scss">
 /* Stepper lines colors */
-.q-stepper--vertical .q-stepper__dot:before {
-  background: rgba(150, 150, 150, 0.267) !important;
-}
+// .q-stepper--vertical .q-stepper__dot:before {
+//   // background: rgba(150, 150, 150, 0.267) !important;
+// }
 
-.q-stepper--vertical .q-stepper__dot:after {
-  background: rgba(150, 150, 150, 0.267) !important;
-}
+// .q-stepper--vertical .q-stepper__dot:after {
+//   // background: rgba(150, 150, 150, 0.267) !important;
+// }
+/* Stepper lines colors */
 </style>

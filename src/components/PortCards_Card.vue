@@ -22,12 +22,12 @@
             {{ $t(tag) }}
           </div>
           <q-icon :name="whatIconTagHas(tag)" size="sm" class="q-pl-md" />
-          <q-tooltip v-if="!wrapperIsNotStatic" class="bg-secondary text-body2 shadow-alwaysBlack-15"
+          <q-tooltip v-if="!wrapperIsNotStatic" class="bg-secondary text-body2 shadow-alwaysBlack-20"
             :offset="[10, 10]">
             {{ $t("tooltip_clickTofilterByTag") }}
           </q-tooltip>
         </q-btn>
-        <q-tooltip v-if="wrapperIsNotStatic" class="bg-info text-black text-body2 shadow-alwaysBlack-15 q-pa-sm"
+        <q-tooltip v-if="wrapperIsNotStatic" class="bg-info text-black text-body2 shadow-alwaysBlack-20 q-pa-sm"
           :offset="[10, 10]" :hide-delay="1000">{{ $t("tooltip_clickTofilterByTag_disabled") }}
         </q-tooltip>
       </div>
