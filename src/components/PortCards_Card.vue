@@ -1,5 +1,5 @@
 <template>
-  <q-card class="q-pb-md q-ma-md " style="min-width: 200px; max-width: 500px">
+  <q-card class="q-pb-md q-ma-md shadow-alwaysBlack-2" style="min-width: 200px; max-width: 500px">
     <!-- Card sections divs -->
     <div>
       <q-carousel v-model="slide" infinite transition-prev="jump-right" transition-next="jump-left" swipeable animated

@@ -24,7 +24,7 @@
     </div>
 
     <div>
-      <div class="myworksexample thscale-q-pa-xl bg-glass-black border-radius20">
+      <div class="myworksexample thscale-q-pa-xl border-radius20">
         <PortCards_Wrapper :howMuchWorksToShow="3" />
       </div>
     </div>
