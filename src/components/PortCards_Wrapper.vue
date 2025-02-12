@@ -30,7 +30,7 @@
             :wrapperIsNotStatic="wrapperIsNotStatic" />
         </div>
         <div v-if="wrapperIsNotStatic" class="flex items-center justify-center">
-          <q-btn class="q-mt-md" color="accent" icon="search" :label="$t('show_more_of_my_works')"
+          <q-btn class="q-mt-md" color="accent" icon-right="search" :label="$t('show_more_of_my_works')"
             :to="{ path: './works' }" />
         </div>
         <template v-slot:loading>
@@ -132,20 +132,20 @@ const onLoad = (index, done) => {
   }
 
   if (props.howMuchWorksToShow == null) {
-    setTimeout(() => {
-      const newWorks = filteredWorks.value.slice(currentIndex, currentIndex + chunkSize);
-      const filteredNewWorks = newWorks.filter(work => {
-        if (selectedTag.value) {
-          return work.tags.includes(selectedTag.value);
-        } else {
-          return true;
-        }
-      });
-      const newUniqueWorks = filteredNewWorks.filter(work => !scrollWorks.value.includes(work));
-      scrollWorks.value.push(...newUniqueWorks);
-      currentIndex += chunkSize;
-      done();
-    }, 500);
+    // setTimeout(() => {
+    const newWorks = filteredWorks.value.slice(currentIndex, currentIndex + chunkSize);
+    const filteredNewWorks = newWorks.filter(work => {
+      if (selectedTag.value) {
+        return work.tags.includes(selectedTag.value);
+      } else {
+        return true;
+      }
+    });
+    const newUniqueWorks = filteredNewWorks.filter(work => !scrollWorks.value.includes(work));
+    scrollWorks.value.push(...newUniqueWorks);
+    currentIndex += chunkSize;
+    done();
+    // }, 500);
   } else {
     done();
   }
