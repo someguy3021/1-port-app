@@ -86,7 +86,20 @@ const props = defineProps({
     required: false
   }
 });
-const longDescrAvailable = computed(() => !!props.work?.hasLongDescr);
+const longDescrAvailable = computed(() => {
+  if (!props.work?.hasLongDescr) return false;
+  const descriptionLong = props.work.descriptionLong;
+  if (typeof descriptionLong === 'string' && descriptionLong.trim() !== '') return true;
+  if (Array.isArray(descriptionLong) && descriptionLong.length > 0) return true;
+  if (typeof descriptionLong === 'object') {
+    return Object.values(descriptionLong).some(value => {
+      if (typeof value === 'string' && value.trim() !== '') return true;
+      if (Array.isArray(value) && value.length > 0) return true;
+      return false;
+    });
+  }
+  return false;
+});
 
 const workFolder = computed(() => {
   if (!props.work || !props.work.ihn) return '';

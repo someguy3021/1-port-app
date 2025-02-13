@@ -447,53 +447,8 @@
       },
       "hasLongDescr": true,
       "descriptionLong": {
-        "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
-        "ru-1": [
-          [
-            "work_dialog_inner_textAndPicture",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_textOnly",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_PictureAndText",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_PictureOnly",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ]
-        ]
+        "en-US": "",
+        "ru-1": []
       }
     },
     {
