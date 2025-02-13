@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="wrapper_cards">
-      <q-infinite-scroll @load="onLoad" :offset="250">
+      <q-infinite-scroll @load="onLoad" :offset="550">
         <div class="flex justify-center">
           <PortCards_Card v-for="work in (wrapperIsNotStatic ? filteredWorks : scrollWorks)" :key="work.id" :work="work"
             :selectedTag="selectedTag" @emit-filter-by-tag="handleFilterByTag"
