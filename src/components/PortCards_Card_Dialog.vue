@@ -42,12 +42,14 @@ function onOKClick() {
 <template>
     <q-dialog ref="dialogRef" @hide="onDialogHide">
         <q-card class="q-dialog-plugin no-scroll" style="width: 1400px; max-width: 95vw;">
-            <q-card-section class="row bg-dark">
-                <q-toolbar-title>{{ work.title?.[i18nLocale.locale.value] }}</q-toolbar-title>
+            <q-card-section class="row q-py-sm shadow-1">
+                <q-toolbar-title class="flex items-center">
+                    <div>{{ work.title?.[i18nLocale.locale.value] }}</div>
+                </q-toolbar-title>
                 <q-btn v-close-popup flat round icon="close"></q-btn>
             </q-card-section>
-            <q-separator />
-            <q-card-section style="max-height: 70vh;" class="scroll q-pb-none q-px-none">
+            <q-separator size='2px' />
+            <q-card-section style="max-height: 70vh;" class="scroll q-pb-none q-pt-md q-px-none">
                 <PortCards_Card_Dialog_Block
                     v-for="(block, index) in props.work.descriptionLong?.[i18nLocale.locale.value] || []" :key="index"
                     :block="block || {}" :workFolder="props.work.ihn || '0_general_pics'" />
