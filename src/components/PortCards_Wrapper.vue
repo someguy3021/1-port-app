@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="wrapper_cards">
-      <q-infinite-scroll @load="onLoad" :offset="550">
+      <q-infinite-scroll @load="onLoad" :offset="850">
         <div class="flex justify-center">
           <PortCards_Card v-for="work in (wrapperIsNotStatic ? filteredWorks : scrollWorks)" :key="work.id" :work="work"
             :selectedTag="selectedTag" @emit-filter-by-tag="handleFilterByTag"
@@ -32,6 +32,10 @@
         <div v-if="wrapperIsNotStatic" class="flex items-center justify-center">
           <q-btn class="q-mt-md" color="accent" icon-right="search" :label="$t('show_more_of_my_works')"
             :to="{ path: './works' }" />
+        </div>
+        <div v-if="allWorksAreLoaded" class="all_is_loaded flex items-center justify-center">
+          <q-btn class="q-mt-md" color="dark" icon-right="search" :label="$t('works_allWorksLoaded')"
+            :to="{ path: './works' }" disable />
         </div>
         <template v-slot:loading>
           <div class="row justify-center q-my-md">
@@ -145,6 +149,7 @@ scrollWorks.value = filteredWorks.value.slice(0, 5)
 // console.log(scrollWorks.value)
 let currentIndex = 0;
 const chunkSize = 5;
+const allWorksAreLoaded = ref(false);
 const onLoad = (index, done) => {
   if ((currentIndex >= filteredWorks.value.length)) {
     done(); // signal that there are no more items to load
@@ -158,6 +163,7 @@ const onLoad = (index, done) => {
       if (selectedTag.value) {
         return work.tags.includes(selectedTag.value);
       } else {
+        allWorksAreLoaded.value = true; // TODO this works only the first time, but it should be true if only all works are loaded
         return true;
       }
     });
@@ -165,7 +171,7 @@ const onLoad = (index, done) => {
     scrollWorks.value.push(...newUniqueWorks);
     currentIndex += chunkSize;
     done();
-    // }, 500);
+    // }, 1000);
   } else {
     done();
   }
