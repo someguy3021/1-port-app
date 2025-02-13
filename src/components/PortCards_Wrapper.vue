@@ -34,8 +34,7 @@
             :to="{ path: './works' }" />
         </div>
         <div v-if="allWorksAreLoaded" class="all_is_loaded flex items-center justify-center">
-          <q-btn class="q-mt-md" color="dark" icon-right="search" :label="$t('works_allWorksLoaded')"
-            :to="{ path: './works' }" disable />
+          <q-btn class="q-mt-md" color="dark" icon-right="search" :label="$t('works_allWorksLoaded')" disable />
         </div>
         <template v-slot:loading>
           <div class="row justify-center q-my-md">

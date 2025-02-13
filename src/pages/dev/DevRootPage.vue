@@ -72,7 +72,7 @@
     </div>
 
     <div>
-      <div class="myworksexample thscale-q-pa-xl border-radius20">
+      <div class="myworksexample thscale-q-py-xl border-radius20">
         <PortCards_Wrapper :howMuchWorksToShow="3" :whatWorksToShow="`works`" />
       </div>
     </div>
