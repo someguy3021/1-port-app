@@ -46,9 +46,9 @@
 <script setup>
 // Load works from DB into workArrayFull and handle howMuchWorksToShow + filterstuff and workArrayFullFiltered, and ONLY 5 works from workArrayFullFiltered into workArrayForHandling by 5 each onLoad
 import PortCards_Card from "./PortCards_Card.vue";
-import { works } from "../stores/DB.json";
-import { works as works_dev } from "../stores/DB_dev.json";
-import { works as works_webdes } from "../stores/DB_webdes.json";
+import { works } from "../stores/DB/DB.json";
+import { works as works_dev } from "../stores/DB/DB_dev.json";
+import { works as works_webdes } from "../stores/DB/DB_webdes.json";
 import { ref, onMounted, computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();

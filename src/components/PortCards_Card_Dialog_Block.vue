@@ -45,7 +45,7 @@
     <div class="any_block_wrapper q-py-md" v-if="blockClass == 'work_dialog_inner_PictureOnly'"
         :class="$q.screen.lt.md ? 'q-px-xs' : 'q-px-lg'">
         <q-img v-bind:src="imgURL_Pub" :class="blockImgClasses" class="full-width" spinner-color="secondary"
-            fit="scale-down" alt="#" />
+            style="max-height: 500px;" fit="scale-down" alt="#" />
     </div>
 </template>
 
