@@ -4,8 +4,8 @@
     <div>
       <q-carousel v-model="slide" infinite transition-prev="jump-right" transition-next="jump-left" swipeable animated
         control-color="dark" prev-icon="arrow_left" next-icon="arrow_right" navigation-icon="radio_button_unchecked"
-        navigation-active-icon="radio_button_checked" control-type="regular" :navigation="work.thumbImgPaths.length > 1"
-        :arrows="work.thumbImgPaths.length > 1" height="calc(200px + 10vw)" ref="carousel"
+        navigation-active-icon="radio_button_checked" control-type="regular" :navigation="thumbnailHasMoreThat1Pic"
+        :arrows="thumbnailHasMoreThat1Pic" height="calc(200px + 10vw)" ref="carousel"
         class="text-white shadow-0 bg-glass-black q-pt-md">
         <q-carousel-slide v-for="(img, index) in work.thumbImgPaths" :key="img" :name="index + 1"
           class="flex justify-center" style="width: 100%;"><q-img v-bind:src="`works_imgs/${workFolder}${img}.webp`"
@@ -67,11 +67,9 @@ const showCardDialog = ref(false);
 defineOptions({
   name: "PortCards_Card",
 });
-
 import { useI18n } from "vue-i18n";
 const i18nLocale = useI18n();
 
-// Get info about 1 work
 const props = defineProps({
   work: {
     type: Object,
@@ -86,6 +84,8 @@ const props = defineProps({
     required: false
   }
 });
+const emit = defineEmits(['emit-filter-by-tag']);
+
 const longDescrAvailable = computed(() => {
   if (!props.work?.hasLongDescr) return false;
   const descriptionLong = props.work.descriptionLong;
@@ -99,6 +99,11 @@ const longDescrAvailable = computed(() => {
     });
   }
   return false;
+});
+
+const thumbnailHasMoreThat1Pic = computed(() => {
+  if (props.work.thumbImgPaths.length > 1) return true
+  else return false
 });
 
 const workFolder = computed(() => {
@@ -123,7 +128,6 @@ const whatIconTagHas = (tag) => {
   }
   return tagIconMap[tag] || 'diamond';
 };
-const emit = defineEmits(['emit-filter-by-tag']);
 </script>
 
 <style>
