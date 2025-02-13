@@ -25,6 +25,7 @@
         "en-US": "Portfolio website on the Quasar framework. Development of design, layout and internal work of the website, as well as hosting on GitHub Pages.",
         "ru-1": "Сайт-портфолио на фреймворке Quasar. Разработка дизайна, верстки и внутренней работы сайта, а также хостинг на GitHub Pages."
       },
+      "hasLongDescr": true,
       "descriptionLong": {
         "en-US": [
           [
@@ -223,13 +224,14 @@
         "en-US": "Product card design for Ozon marketplace - airsoft accessories. Design according to customer's wishes.",
         "ru-1": "Дизайн карт продукта для маркетплейса Ozon - аксессуары для страйкбола. Дизайн по пожеланиям заказчика."
       },
+      "hasLongDescr": true,
       "descriptionLong": {
         "en-US": "Дизайн карт продукта для маркетплейса Ozon - аксессуары для страйкбола. Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола",
         "ru-1": [
           [
             "work_dialog_inner_textAndPicture",
             [
-              ["h3", "Это большой текст или заголовок"],
+              ["h3", "Карточки товара для Ozone"],
               [
                 "h6",
                 "Тут должна быть текст + картинка. \n\n\nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
@@ -240,7 +242,7 @@
           [
             "work_dialog_inner_textOnly",
             [
-              ["h3", "Это большой текст или заголовок"],
+              ["h3", "Анализ референсов"],
               [
                 "h4",
                 "Тут должна быть текст. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
@@ -251,7 +253,7 @@
           [
             "work_dialog_inner_PictureAndText",
             [
-              ["h3", "Это большой текст или заголовок"],
+              ["h3", "Создание общей цветовой схемы и направления дизайна"],
               [
                 "h4",
                 "Тут должна быть картинка + текст. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
@@ -262,7 +264,7 @@
           [
             "work_dialog_inner_PictureOnly",
             [
-              ["h3", "Это большой текст или заголовок"],
+              ["h3", "Передача изображений заказчику"],
               [
                 "h4",
                 "Тут должна быть картинка. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
@@ -296,6 +298,7 @@
         "en-US": "Logo for the massage studio \"Smart Fitness\", created according to the customer's wishes.",
         "ru-1": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика."
       },
+      "hasLongDescr": true,
       "descriptionLong": {
         "en-US": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика. Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика.",
         "ru-1": [
@@ -369,6 +372,7 @@
         "en-US": "Logo for the furniture company \"Vam Dam Mebel\", created according to the customer's wishes.",
         "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\", созданный по пожеланиям заказчика."
       },
+      "hasLongDescr": false,
       "descriptionLong": {
         "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
         "ru-1": [
@@ -441,6 +445,7 @@
         "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout.",
         "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету."
       },
+      "hasLongDescr": true,
       "descriptionLong": {
         "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
         "ru-1": [
@@ -514,6 +519,7 @@
         "en-US": "Development of a chat component for the web service \"FG-rulit\", including saving and synchronizing messages from any time zones.",
         "ru-1": "Разработка компонента чата для веб-сервиса \"Фг-рулит\", в том числе сохранение и синхронизация сообщений из любых часовых поясов."
       },
+      "hasLongDescr": true,
       "descriptionLong": {
         "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
         "ru-1": [
@@ -588,6 +594,7 @@
         "en-US": "Developing website components from designers' mockups, client-side PDF generation, submitting forms and receiving data.",
         "ru-1": "Разработка компонентов веб-сайта из макетов дизайнеров, генерация PDF на стороне клиента, отправка форм и получение данных."
       },
+      "hasLongDescr": true,
       "descriptionLong": {
         "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
         "ru-1": [

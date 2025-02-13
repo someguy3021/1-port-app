@@ -45,10 +45,15 @@
     </div>
     <div>
       <q-card-actions align="right" class="q-pa-md">
-        <q-btn class="text-capitalize" @click="showCardDialog = true" color="accent" push>{{ $t("button_ShowMore") }}
-          <q-tooltip class="bg-secondary text-body2  shadow-5" :offset="[10, 10]">
+        <q-btn class="text-capitalize" @click="showCardDialog = true" color="accent" push
+          :disable="longDescrAvailable != true">{{ $t("button_ShowMore") }}
+          <q-tooltip v-if="longDescrAvailable == true" class="bg-secondary text-body2 shadow-5" :offset="[10, 10]">
             {{ $t("tooltip_showTheWorkDescrLong") }}
-          </q-tooltip></q-btn>
+          </q-tooltip>
+          <q-tooltip v-if="!longDescrAvailable" class="bg-negative text-body2 shadow-alwaysBlack-20" :offset="[10, 10]">
+            {{ $t("tooltip_showTheWorkDescrLong_notAvailable") }}
+          </q-tooltip>
+        </q-btn>
       </q-card-actions>
     </div>
   </q-card>
@@ -81,6 +86,8 @@ const props = defineProps({
     required: false
   }
 });
+const longDescrAvailable = computed(() => !!props.work?.hasLongDescr);
+
 const workFolder = computed(() => {
   if (!props.work || !props.work.ihn) return '';
   return `${props.work.ihn}/`;
