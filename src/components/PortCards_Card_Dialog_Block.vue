@@ -64,9 +64,9 @@ const props = defineProps({ // Block contains a type of block (text or img or co
     }
 });
 // console.log(props.block?.[1]?.[1]?.[1])
-const workFolder = computed(() => {
+const workFolder = computed(() => { // ihn
     if (!props.workFolder || !props.workFolder) return '';
-    return `${props.workFolder}/`;
+    return `${props.workFolder}`;
 });
 
 const blockClass = computed(() => props.block?.[0])
@@ -85,16 +85,24 @@ const imgTypeMap = {
 const imgType = computed(() => {
     const type = blockImgType.value
     if (type === undefined) {
-        console.warn(`Image format doesn't exist in picture array. Falling back to webp format.`)
+        // console.warn(`Image format doesn't exist in picture array. Falling back to webp format.`)
         return 'webp'
     } else if (type in imgTypeMap) {
         return imgTypeMap[type]
     } else {
-        console.warn(`Unknown image type: ${type}. Falling back to webp format.`)
+        // console.warn(`Unknown image type: ${type}. Falling back to webp format.`)
         return 'webp'
     }
 })
-const imgURL_Pub = `works_imgs/${workFolder.value}${blockImgName.value}.${imgType.value}`;
+// const imgURL_Pub_old = `works_imgs/${workFolder.value}/${blockImgName.value}.${imgType.value}`; // make so if blockImgName has 0_general_pics in its name path is `works_imgs/0_general_pics/${blockImgName.value}.${imgType.value}`
+// const imgURL_Pub = `works_imgs/${blockImgName.value.includes('0_general_pics') ? '' : workFolder.value}/${blockImgName.value}.${imgType.value}`;
+const imgURL_Pub = computed(() => {
+    const basePath = blockImgName.value.includes('0_general_pics')
+        ? `works_imgs/`
+        : `works_imgs/${workFolder.value}`;
+
+    return `${basePath}/${blockImgName.value}.${imgType.value}`;
+});
 // // failed at making those pics src folder --------failed at making those pics src folder --------failed at making those pics src folder --------
 // const defaultImageUrl = '~assets/ign/works_imgs/1_this_website/vuei18n.webp';
 // const imageUrl = ref(null);

@@ -50,7 +50,7 @@ function onOKClick() {
             <q-card-section style="max-height: 70vh;" class="scroll q-pb-none q-px-none">
                 <PortCards_Card_Dialog_Block
                     v-for="(block, index) in props.work.descriptionLong?.[i18nLocale.locale.value] || []" :key="index"
-                    :block="block || {}" :workFolder="props.work.ihn || {}" />
+                    :block="block || {}" :workFolder="props.work.ihn || '0_general_pics'" />
                 <q-card-actions class="q-pa-none" align="center" v-if="$q.screen.lt.md">
                     <q-btn class="text-capitalize full-width no-border-radius" color="accent" :label="$t('close')"
                         @click="onOKClick" size="lg" />

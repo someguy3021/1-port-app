@@ -17,7 +17,7 @@
         ["work_stackUsedForWork_Coding_VueQuasar", "language"],
         ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
-      "rating": 8,
+      "rating": 10,
       "hidden": false,
       "ihn": "1_this_website",
       "imgPaths": ["worksShow", "githubPages"],
@@ -198,28 +198,33 @@
     {
       "id": 2,
       "title": {
-        "en-US": "Logo 1 for a client",
-        "ru-1": "Пример - Лого 1 для клиента"
+        "en-US": "Product cards - accessories for strikeball",
+        "ru-1": "Карточки товара - акссесуары для страйкбола"
       },
       "madeFor": {
-        "en-US": "Me",
-        "ru-1": "Я"
+        "en-US": "Individual customer",
+        "ru-1": "Индивидуальный заказчик"
       },
-      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
+      "tags": ["tag_graphics_and_vector", "tag_design"],
       "stackUsedForWork": [
-        ["work_stackUsedForWork_Coding_JS", "language"],
-        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+        ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
+        ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
       ],
-      "rating": 9,
-      "hidden": true,
-      "ihn": "",
-      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "rating": 8,
+      "hidden": false,
+      "ihn": "marketcard_strikeball1",
+      "imgPaths": [
+        "marketcard_strikeball1_1",
+        "marketcard_strikeball1_2",
+        "marketcard_strikeball1_3",
+        "marketcard_strikeball1_4"
+      ],
       "descriptionShort": {
-        "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
+        "en-US": "Product card design for Ozon marketplace - airsoft accessories. Design according to customer's wishes.",
+        "ru-1": "Дизайн карт продукта для маркетплейса Ozon - аксессуары для страйкбола. Дизайн по пожеланиям заказчика."
       },
       "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "en-US": "Дизайн карт продукта для маркетплейса Ozon - аксессуары для страйкбола. Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола",
         "ru-1": [
           [
             "work_dialog_inner_textAndPicture",
@@ -230,7 +235,7 @@
                 "Тут должна быть текст + картинка. \n\n\nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders", "marketcard_strikeball1_1", 0]
           ],
           [
             "work_dialog_inner_textOnly",
@@ -241,7 +246,7 @@
                 "Тут должна быть текст. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders", "marketcard_strikeball1_2", 0]
           ],
           [
             "work_dialog_inner_PictureAndText",
@@ -252,7 +257,7 @@
                 "Тут должна быть картинка + текст. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders", "marketcard_strikeball1_3", 0]
           ],
           [
             "work_dialog_inner_PictureOnly",
@@ -263,7 +268,7 @@
                 "Тут должна быть картинка. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
               ]
             ],
-            ["rounded-borders", "testcommS-1"]
+            ["rounded-borders", "marketcard_strikeball1_4"]
           ]
         ]
       }
@@ -271,78 +276,72 @@
     {
       "id": 3,
       "title": {
-        "en-US": "Logo 2 for a client",
-        "ru-1": "Пример - Лого 2 для клиента"
+        "en-US": "Logo for massage studio \"Smart Fitness\"",
+        "ru-1": "Логотип для студии массажа \"Умный фитнес\""
       },
       "madeFor": {
-        "en-US": "Me",
-        "ru-1": "Я"
+        "en-US": "Individual customer",
+        "ru-1": "Индивидуальный заказчик"
       },
-      "tags": [
-        "tag_website",
-        "tag_frontend",
-        "tag_design",
-        "tag_no_code",
-        "tag_tilda"
-      ],
+      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
       "stackUsedForWork": [
-        ["work_stackUsedForWork_Coding_JS", "language"],
-        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+        ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
+        ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
       ],
-      "rating": 10,
-      "hidden": true,
-      "ihn": "",
-      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "rating": 9,
+      "hidden": false,
+      "ihn": "logo_smartFitness",
+      "imgPaths": ["logo_massageStudio1"],
       "descriptionShort": {
-        "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
+        "en-US": "Logo for the massage studio \"Smart Fitness\", created according to the customer's wishes.",
+        "ru-1": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика."
       },
       "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "en-US": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика. Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика.",
         "ru-1": [
           [
             "work_dialog_inner_textAndPicture",
             [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
+              ["h3", "Это большой текст или заголовок"],
+              [
+                "h6",
+                "Тут должна быть текст + картинка. \n\n\nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
+              ]
+            ],
+            ["rounded-borders", "logo_massageStudio1", 0]
           ],
           [
             "work_dialog_inner_textOnly",
             [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
+              ["h3", "Это большой текст или заголовок"],
+              [
+                "h4",
+                "Тут должна быть текст. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
+              ]
+            ],
+            ["rounded-borders", "0_general_pics/testcommS-4", 0]
           ],
           [
             "work_dialog_inner_PictureAndText",
             [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
+              ["h3", "Это большой текст или заголовок"],
+              [
+                "h4",
+                "Тут должна быть картинка + текст. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
+              ]
+            ],
+            ["rounded-borders", "0_general_pics/testcommS-4", 0]
           ],
           [
             "work_dialog_inner_PictureOnly",
             [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
+              ["h3", "Это большой текст или заголовок"],
+              [
+                "h4",
+                "Тут должна быть картинка. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
+              ]
+            ],
+            ["rounded-borders", "0_general_pics/testcommS-4"]
           ]
         ]
       }
@@ -350,34 +349,28 @@
     {
       "id": 4,
       "title": {
-        "en-US": "Logo 2 for a client",
-        "ru-1": "Пример - Лого 2 для клиента"
+        "en-US": "Logo for furniture company \"Vam Dam Mebel\"",
+        "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\""
       },
       "madeFor": {
-        "en-US": "Me",
-        "ru-1": "Я"
+        "en-US": "Individual customer",
+        "ru-1": "Индивидуальный заказчик"
       },
-      "tags": [
-        "tag_website",
-        "tag_frontend",
-        "tag_design",
-        "tag_no_code",
-        "tag_tilda"
-      ],
+      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
       "stackUsedForWork": [
-        ["work_stackUsedForWork_Coding_JS", "language"],
-        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
+        ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
+        ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
       ],
-      "rating": 10,
-      "hidden": true,
-      "ihn": "",
-      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "rating": 9,
+      "hidden": false,
+      "ihn": "logo_vandammebel",
+      "imgPaths": ["logo_vandammebel"],
       "descriptionShort": {
-        "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
+        "en-US": "Logo for the furniture company \"Vam Dam Mebel\", created according to the customer's wishes.",
+        "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\", созданный по пожеланиям заказчика."
       },
       "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
         "ru-1": [
           [
             "work_dialog_inner_textAndPicture",
@@ -429,34 +422,27 @@
     {
       "id": 5,
       "title": {
-        "en-US": "Logo 2 for a client",
-        "ru-1": "Пример - Лого 2 для клиента"
+        "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
+        "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету"
       },
       "madeFor": {
-        "en-US": "Me",
-        "ru-1": "Я"
+        "en-US": "Development Team \"ITitans\"",
+        "ru-1": "Команда разработки \"ITitans\""
       },
-      "tags": [
-        "tag_website",
-        "tag_frontend",
-        "tag_design",
-        "tag_no_code",
-        "tag_tilda"
-      ],
+      "tags": ["tag_website", "tag_frontend"],
       "stackUsedForWork": [
-        ["work_stackUsedForWork_Coding_JS", "language"],
         ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
       ],
-      "rating": 10,
-      "hidden": true,
-      "ihn": "",
-      "imgPaths": ["testcommS-3", "testcommS-3"],
+      "rating": 7,
+      "hidden": false,
+      "ihn": "web_robots-serbia",
+      "imgPaths": ["401", "404"],
       "descriptionShort": {
-        "en-US": "I did this and that!",
-        "ru-1": "Я сделал и то и это!"
+        "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout.",
+        "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету."
       },
       "descriptionLong": {
-        "en-US": "I did this and that sa dasd aw dad sd asdq dwqd aqd wsd qawdqw d!",
+        "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
         "ru-1": [
           [
             "work_dialog_inner_textAndPicture",
@@ -508,302 +494,6 @@
     {
       "id": 6,
       "title": {
-        "en-US": "Product cards - accessories for strikeball",
-        "ru-1": "Карточки товара - акссесуары для страйкбола"
-      },
-      "madeFor": {
-        "en-US": "Individual customer",
-        "ru-1": "Индивидуальный заказчик"
-      },
-      "tags": ["tag_graphics_and_vector", "tag_design"],
-      "stackUsedForWork": [
-        ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
-        ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
-      ],
-      "rating": 8,
-      "hidden": false,
-      "ihn": "",
-      "imgPaths": [
-        "marketcard_strikeball1_1",
-        "marketcard_strikeball1_2",
-        "marketcard_strikeball1_3",
-        "marketcard_strikeball1_4"
-      ],
-      "descriptionShort": {
-        "en-US": "Product card design for Ozon marketplace - airsoft accessories",
-        "ru-1": "Дизайн карт продукта для маркетплейса Ozon - аксессуары для страйкбола"
-      },
-      "descriptionLong": {
-        "en-US": "Дизайн карт продукта для маркетплейса Ozon - аксессуары для страйкбола. Дизайн карт продукта для маркетплейса Ozon - акссесуары для страйкбола",
-        "ru-1": [
-          [
-            "work_dialog_inner_textAndPicture",
-            [
-              ["h3", "Это большой текст или заголовок"],
-              [
-                "h6",
-                "Тут должна быть текст + картинка. \n\n\nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
-              ]
-            ],
-            ["rounded-borders", "testcommS-1"]
-          ],
-          [
-            "work_dialog_inner_textOnly",
-            [
-              ["h3", "Это большой текст или заголовок"],
-              [
-                "h4",
-                "Тут должна быть текст. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
-              ]
-            ],
-            ["rounded-borders", "testcommS-1"]
-          ],
-          [
-            "work_dialog_inner_PictureAndText",
-            [
-              ["h3", "Это большой текст или заголовок"],
-              [
-                "h4",
-                "Тут должна быть картинка + текст. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
-              ]
-            ],
-            ["rounded-borders", "testcommS-1"]
-          ],
-          [
-            "work_dialog_inner_PictureOnly",
-            [
-              ["h3", "Это большой текст или заголовок"],
-              [
-                "h4",
-                "Тут должна быть картинка. \nЯ <span>очень</span> вдумчиво создавал эту картинку, взгляните на неё! This is regular text.\n**This is bold text**.\n##This is big text##\nMore regular text."
-              ]
-            ],
-            ["rounded-borders", "testcommS-1"]
-          ]
-        ]
-      }
-    },
-    {
-      "id": 7,
-      "title": {
-        "en-US": "Logo for massage studio \"Smart Fitness\"",
-        "ru-1": "Логотип для студии массажа \"Умный фитнес\""
-      },
-      "madeFor": {
-        "en-US": "Individual customer",
-        "ru-1": "Индивидуальный заказчик"
-      },
-      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
-      "stackUsedForWork": [
-        ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
-        ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
-      ],
-      "rating": 9,
-      "hidden": false,
-      "ihn": "",
-      "imgPaths": ["logo_massageStudio1_1"],
-      "descriptionShort": {
-        "en-US": "Logo for the massage studio \"Smart Fitness\", created according to the customer's wishes",
-        "ru-1": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика"
-      },
-      "descriptionLong": {
-        "en-US": "Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика. Логотип для студии массажа \"Умный фитнес\", созданный по пожеланиям заказчика.",
-        "ru-1": [
-          [
-            "work_dialog_inner_textAndPicture",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_textOnly",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_PictureAndText",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_PictureOnly",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "id": 8,
-      "title": {
-        "en-US": "Logo for furniture company \"Vam Dam Mebel\"",
-        "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\""
-      },
-      "madeFor": {
-        "en-US": "Individual customer",
-        "ru-1": "Индивидуальный заказчик"
-      },
-      "tags": ["tag_logo", "tag_graphics_and_vector", "tag_design"],
-      "stackUsedForWork": [
-        ["work_stackUsedForWork_Visual_AdobePhotoshop", "language"],
-        ["work_stackUsedForWork_Visual_AdobeIllustrator", "web_asset"]
-      ],
-      "rating": 9,
-      "hidden": false,
-      "ihn": "",
-      "imgPaths": ["logo_furniture1_1"],
-      "descriptionShort": {
-        "en-US": "Logo for the furniture company \"Vam Dam Mebel\", created according to the customer's wishes",
-        "ru-1": "Логотип для мебельной компании \"Вам Дам Мебель\", созданный по пожеланиям заказчика"
-      },
-      "descriptionLong": {
-        "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
-        "ru-1": [
-          [
-            "work_dialog_inner_textAndPicture",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_textOnly",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_PictureAndText",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_PictureOnly",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "id": 9,
-      "title": {
-        "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
-        "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету"
-      },
-      "madeFor": {
-        "en-US": "Development Team \"ITitans\"",
-        "ru-1": "Команда разработки \"ITitans\""
-      },
-      "tags": ["tag_website", "tag_frontend"],
-      "stackUsedForWork": [
-        ["work_stackUsedForWork_Coding_HtmlCSS", "web_asset"]
-      ],
-      "rating": 7,
-      "hidden": false,
-      "ihn": "",
-      "imgPaths": ["testcommS-1"],
-      "descriptionShort": {
-        "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
-        "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету"
-      },
-      "descriptionLong": {
-        "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
-        "ru-1": [
-          [
-            "work_dialog_inner_textAndPicture",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_textOnly",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_PictureAndText",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ],
-          [
-            "work_dialog_inner_PictureOnly",
-            [
-              "Я сделал и то и это вфыфы в цвй вц йцв йцв ывй ыфв фв ыфв ы в! Если строка пустая, то див не создаётся",
-              "fw-normal",
-              "font-size:18vw",
-              "testcommS-1",
-              "rounded-borders",
-              "width:300px"
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "id": 10,
-      "title": {
         "en-US": "Development of chat logic for the service \"FG-Rulit\"",
         "ru-1": "Разработка логики чата для сервиса \"ФГ-Рулит\""
       },
@@ -818,11 +508,11 @@
       ],
       "rating": 9,
       "hidden": false,
-      "ihn": "",
-      "imgPaths": ["testcommS-1"],
+      "ihn": "web_fg-rulit",
+      "imgPaths": ["landing"],
       "descriptionShort": {
-        "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
-        "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету"
+        "en-US": "Development of a chat component for the web service \"FG-rulit\", including saving and synchronizing messages from any time zones.",
+        "ru-1": "Разработка компонента чата для веб-сервиса \"Фг-рулит\", в том числе сохранение и синхронизация сообщений из любых часовых поясов."
       },
       "descriptionLong": {
         "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
@@ -875,7 +565,7 @@
       }
     },
     {
-      "id": 11,
+      "id": 7,
       "title": {
         "en-US": "Full development of the frontend part of the service \"Bushtree\"",
         "ru-1": "Полная разработка фронтенд-части сервиса \"Bushtree\""
@@ -892,11 +582,11 @@
       ],
       "rating": 9,
       "hidden": false,
-      "ihn": "",
-      "imgPaths": ["testcommS-1"],
+      "ihn": "web_bushtree",
+      "imgPaths": ["landing_1", "landing_2", "gen_3"],
       "descriptionShort": {
-        "en-US": "Partial layout for the project \"Robots Serbia\" according to the layout",
-        "ru-1": "Частичная верстка для проекта \"Роботы Сербия\" по макету"
+        "en-US": "Developing website components from designers' mockups, client-side PDF generation, submitting forms and receiving data.",
+        "ru-1": "Разработка компонентов веб-сайта из макетов дизайнеров, генерация PDF на стороне клиента, отправка форм и получение данных."
       },
       "descriptionLong": {
         "en-US": "Можно сделать блоки с процессом работы, которые будут прогружаться из тегов.",
