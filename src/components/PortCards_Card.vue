@@ -89,15 +89,22 @@ const emit = defineEmits(['emit-filter-by-tag']);
 const longDescrAvailable = computed(() => {
   if (!props.work?.hasLongDescr) return false;
   const descriptionLong = props.work.descriptionLong;
-  if (typeof descriptionLong === 'string' && descriptionLong.trim() !== '') return true;
-  if (Array.isArray(descriptionLong) && descriptionLong.length > 0) return true;
-  if (typeof descriptionLong === 'object') {
-    return Object.values(descriptionLong).some(value => {
-      if (typeof value === 'string' && value.trim() !== '') return true;
-      if (Array.isArray(value) && value.length > 0) return true;
-      return false;
-    });
+  const currentLocale = i18nLocale.locale.value;
+
+  if (typeof descriptionLong === 'string') {
+    return descriptionLong.trim() !== '';
   }
+
+  if (Array.isArray(descriptionLong)) {
+    return descriptionLong.length > 0;
+  }
+
+  if (typeof descriptionLong === 'object') {
+    return Object.prototype.hasOwnProperty.call(descriptionLong, currentLocale) &&
+      (typeof descriptionLong[currentLocale] === 'string' ? descriptionLong[currentLocale].trim() !== '' :
+        Array.isArray(descriptionLong[currentLocale]) ? descriptionLong[currentLocale].length > 0 : false);
+  }
+
   return false;
 });
 
