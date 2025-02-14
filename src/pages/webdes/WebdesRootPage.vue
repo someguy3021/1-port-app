@@ -19,16 +19,40 @@
           </q-item>
         </q-item-section>
       </q-item>
-      <q-card class="whoiam-img flex justify-center flex-center border-radius20 q-ma-md">
+      <!-- <q-card class="whoiam-img flex justify-center flex-center border-radius20 q-ma-md">
         <q-img class="non-selectable rounded-borders" alt="Meme" spinner-color="secondary" src="\general\me_me.webp"
           style="min-width: 200px; min-height: 200px; width: 80%; height: 80%" />
-      </q-card>
-    </div>
-    <div>
-      <div class="h1 text-center q-pb-md">
-        Мои работы
+      </q-card> -->
+      <div class="flex flex-center">
+        <q-item>
+          <q-item-section>
+            <q-card flat bordered style="max-width: 650px" class="q-pa-md">
+              <q-card-section class="row flex items-center"
+                :class="$q.screen.lt.sm ? 'justify-around' : 'justify-between'">
+                <div class="q-pr-md text-h4 text-center q-pt-sm">{{ $t("devPages_devRootPage_me_name") }}</div>
+                <div class="q-pl-md flex">
+                  <q-btn class="q-mx-sm" disable round color="dark" icon="fa-brands fa-telegram" size="lg" />
+                  <q-btn class="q-mx-sm" disable round color="dark" icon="fa-brands fa-github" size="lg" />
+                  <q-tooltip class="bg-negative text-black text-body2 shadow-alwaysBlack-20 q-pa-sm"
+                    :offset="[10, 10]">{{
+                      $t("not_yet_available") }}
+                  </q-tooltip>
+                </div>
+              </q-card-section>
+              <q-separator color="accent" size='2px' />
+              <q-card-section>
+                <div class="h6 text-subtitle2 q-pa-sm">{{ $t("devPages_devRootPage_me_aboutMe") }}</div>
+              </q-card-section>
+            </q-card>
+          </q-item-section>
+        </q-item>
       </div>
-      <div class="myworksexample thscale-q-pa-xl border-radius20">
+    </div>
+    <div class="q-pt-xl">
+      <div class="h1 text-center">
+        {{ $t("myWorks") }}
+      </div>
+      <div class="myworksexample border-radius20">
         <PortCards_Wrapper :howMuchWorksToShow="3" :whatWorksToShow="`works_webdes`" />
       </div>
     </div>
@@ -54,35 +78,32 @@
         </q-item>
       </div>
     </div> -->
-    <div class="container">
-      <q-item>
+    <div class="container q-pb-xl">
+      <div class="h1_bigger2 text-center">
+        {{ $t("webdes_workplan_title_workplan") }}
+      </div>
+      <q-item class="q-pb-xl container">
+        <q-timeline color="secondary" layout="dense">
 
-        <q-timeline color="secondary" layout="loose">
-          <div class="h1 text-center q-pb-md">
-            План работы
-          </div>
           <q-timeline-entry color="secondary" icon="keyboard_arrow_down" />
 
-          <q-timeline-entry :title="$t('devPages_devRootPage_exp_3_roleAndWhere')"
-            :subtitle="$t('devPages_devRootPage_exp_3_when')" :body="$t('devPages_devRootPage_exp_3_descr')"
+          <q-timeline-entry :title="$t('webdes_workplan_1_descr')" :subtitle="$t('webdes_workplan_1_name')"
             color="secondary" icon="question_mark" />
 
-          <q-timeline-entry :title="$t('devPages_devRootPage_exp_2_roleAndWhere')"
-            :subtitle="$t('devPages_devRootPage_exp_2_when')" :body="$t('devPages_devRootPage_exp_2_descr')"
+          <q-timeline-entry :title="$t('webdes_workplan_2_descr')" :subtitle="$t('webdes_workplan_2_name')"
             color="accent" icon="calendar_today" />
 
-          <q-timeline-entry :title="$t('devPages_devRootPage_exp_1_roleAndWhere')"
-            :subtitle="$t('devPages_devRootPage_exp_1_when')" :body="$t('devPages_devRootPage_exp_1_descr')"
+          <q-timeline-entry :title="$t('webdes_workplan_3_descr')" :subtitle="$t('webdes_workplan_3_name')"
             color="accent" icon="find_replace" />
 
-          <q-timeline-entry :title="$t('devPages_devRootPage_exp_0_roleAndWhere')"
-            :subtitle="$t('devPages_devRootPage_exp_0_when')" color="orange" icon="done_all" />
+          <q-timeline-entry :title="$t('webdes_workplan_4_descr')" :subtitle="$t('webdes_workplan_4_name')"
+            color="orange" icon="done_all" />
         </q-timeline>
       </q-item>
     </div>
     <div class="container q-pb-xl">
-      <div class="h1 text-center q-pb-md">
-        Связаться со мной
+      <div class="h1_bigger2 text-center q-pb-md">
+        {{ $t("contactMe") }}
       </div>
       <div class="flex flex-center">
         <q-item>
