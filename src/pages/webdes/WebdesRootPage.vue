@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="q-py-xl whoiam-wrapper container flex">
-      <q-item class="whoiam-text flex column">
+      <q-item class="whoiam-text flex column" style="height:60vh">
         <q-item-section class="flex">
           <q-item-label class="h1_bigger2 text-bold ">{{
             $t("aboutmepage_Frontend_Developer_Designer")
@@ -10,42 +10,21 @@
             $t("aboutmepage_Making_Products")
           }}</q-item-label>
         </q-item-section>
-        <q-item-section class="whoiam-wrapper q-py-md">
+        <!-- <q-item-section class="whoiam-wrapper q-py-md">
           <q-item class="q-pt-md h5" style="max-width: 300px">
             {{ $t("aboutmepage_Making_Products_SmallPhrase1") }}
           </q-item>
           <q-item class="q-pt-md h5" style="max-width: 300px">
             {{ $t("aboutmepage_Making_Products_SmallPhrase2") }}
           </q-item>
-        </q-item-section>
+        </q-item-section> -->
       </q-item>
       <!-- <q-card class="whoiam-img flex justify-center flex-center border-radius20 q-ma-md">
         <q-img class="non-selectable rounded-borders" alt="Meme" spinner-color="secondary" src="\general\me_me.webp"
           style="min-width: 200px; min-height: 200px; width: 80%; height: 80%" />
       </q-card> -->
       <div class="flex flex-center">
-        <q-item>
-          <q-item-section>
-            <q-card flat bordered style="max-width: 650px" class="q-pa-md">
-              <q-card-section class="row flex items-center"
-                :class="$q.screen.lt.sm ? 'justify-around' : 'justify-between'">
-                <div class="q-pr-md text-h4 text-center q-pt-sm">{{ $t("devPages_devRootPage_me_name") }}</div>
-                <div class="q-pl-md flex">
-                  <q-btn class="q-mx-sm" disable round color="dark" icon="fa-brands fa-telegram" size="lg" />
-                  <q-btn class="q-mx-sm" disable round color="dark" icon="fa-brands fa-github" size="lg" />
-                  <q-tooltip class="bg-negative text-black text-body2 shadow-alwaysBlack-20 q-pa-sm"
-                    :offset="[10, 10]">{{
-                      $t("not_yet_available") }}
-                  </q-tooltip>
-                </div>
-              </q-card-section>
-              <q-separator color="accent" size='2px' />
-              <q-card-section>
-                <div class="h6 text-subtitle2 q-pa-sm">{{ $t("devPages_devRootPage_me_aboutMe") }}</div>
-              </q-card-section>
-            </q-card>
-          </q-item-section>
-        </q-item>
+        <MeBrief />
       </div>
     </div>
     <div class="q-pt-xl">
@@ -106,28 +85,7 @@
         {{ $t("contactMe") }}
       </div>
       <div class="flex flex-center">
-        <q-item>
-          <q-item-section>
-            <q-card flat bordered style="max-width: 650px" class="q-pa-md">
-              <q-card-section class="row flex items-center"
-                :class="$q.screen.lt.sm ? 'justify-around' : 'justify-between'">
-                <div class="q-pr-md text-h4 text-center q-pt-sm">{{ $t("devPages_devRootPage_me_name") }}</div>
-                <div class="q-pl-md flex">
-                  <q-btn class="q-mx-sm" disable round color="dark" icon="fa-brands fa-telegram" size="lg" />
-                  <q-btn class="q-mx-sm" disable round color="dark" icon="fa-brands fa-github" size="lg" />
-                  <q-tooltip class="bg-negative text-black text-body2 shadow-alwaysBlack-20 q-pa-sm"
-                    :offset="[10, 10]">{{
-                      $t("not_yet_available") }}
-                  </q-tooltip>
-                </div>
-              </q-card-section>
-              <q-separator color="accent" size='2px' />
-              <q-card-section>
-                <div class="h6 text-subtitle2 q-pa-sm">{{ $t("devPages_devRootPage_me_aboutMe") }}</div>
-              </q-card-section>
-            </q-card>
-          </q-item-section>
-        </q-item>
+        <MeBrief />
       </div>
       <div class="flex items-center justify-center">
         <q-btn class="q-mt-md" color="accent" icon-right="search" :label="$t('show_more_of_my_works')"
@@ -139,6 +97,7 @@
 
 <script setup>
 import PortCards_Wrapper from "src/components/PortCards_Wrapper.vue";
+import MeBrief from "src/components/MeBrief.vue"
 defineOptions({
   name: "WebdesRootPage",
 });
