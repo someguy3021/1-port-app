@@ -60,13 +60,14 @@
           <q-timeline-entry heading :body="$t('devPages_devRootPage_exp_general2')" />
 
           <q-timeline-entry :title="$t('devPages_devRootPage_exp_2_roleAndWhere')"
-            :subtitle="$t('devPages_devRootPage_exp_2_when')" :body="$t('devPages_devRootPage_exp_2_descr')" />
+            :subtitle="$t('devPages_devRootPage_exp_2_when')" :body="$t('devPages_devRootPage_exp_2_descr')"
+            color="secondary" icon="keyboard_arrow_up" />
 
           <q-timeline-entry :title="$t('devPages_devRootPage_exp_1_roleAndWhere')"
             :subtitle="$t('devPages_devRootPage_exp_1_when')" :body="$t('devPages_devRootPage_exp_1_descr')" />
 
           <q-timeline-entry :title="$t('devPages_devRootPage_exp_0_roleAndWhere')"
-            :subtitle="$t('devPages_devRootPage_exp_0_when')" />
+            :subtitle="$t('devPages_devRootPage_exp_0_when')" color="secondary" icon="keyboard_arrow_up" />
         </q-timeline>
       </q-item>
     </div>

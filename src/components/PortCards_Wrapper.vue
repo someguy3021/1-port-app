@@ -96,7 +96,7 @@ async function getworksData() {
       tempArr = works_webdes;
       break;
     default:
-      console.error('Works wrapper says: Invalid whatWorksToShow prop value');
+      console.error('Works wrapper says: Invalid whatWorksToShow prop value, or no value at all');
       return;
   }
   tempArr = tempArr.filter(work => work.hidden === false); // removing all the testing elements or hidden elements
