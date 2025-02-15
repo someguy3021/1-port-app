@@ -26,8 +26,7 @@
       <q-infinite-scroll @load="onLoad" :offset="850">
         <div class="flex justify-center">
           <PortCards_Card v-for="work in (wrapperIsNotStatic ? filteredWorks : scrollWorks)" :key="work.id" :work="work"
-            :selectedTag="selectedTag" @emit-filter-by-tag="handleFilterByTag"
-            :wrapperIsNotStatic="wrapperIsNotStatic" />
+            :selectedTag="selectedTag" @emit-filter-by-tag="handleTagClick" :wrapperIsNotStatic="wrapperIsNotStatic" />
         </div>
         <div v-if="wrapperIsNotStatic" class="flex items-center justify-center">
           <q-btn class="q-mt-md h6" color="accent" icon-right="search" :label="$t('show_more_of_my_works')"
@@ -145,10 +144,10 @@ function handleTagClick(tag) {
     selectedTag.value = tag;
   }
 }
-
-function handleFilterByTag(tag) {
-  selectedTag.value = tag;
-}
+// // This function doesn't clear filter by design, don't want to delete it yet
+// function handleFilterByTag(tag) {
+//   selectedTag.value = tag;
+// }
 
 // scroll stuff-------------- scroll stuff-------------- scroll stuff-------------- scroll stuff-------------- scroll stuff-------------- scroll stuff--------------
 const scrollWorks = ref([])
