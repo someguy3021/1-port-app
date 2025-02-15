@@ -11,14 +11,14 @@
         <div v-if="$q.screen.width >= 880"
           class="btns-container flex items-center justify-center no-wrap q-gutter-x-md q-gutter-y-md q-mb-md text-h3 q-px-lg">
           <q-btn v-for="tag in uniqueTags" :key="tag" :label="$t(tag)" no-caps push class="text-subtitle1"
-            :color="selectedTag === tag ? 'secondary shadow-2' : 'accent'" @click="selectedTag = tag" />
+            :color="selectedTag === tag ? 'secondary shadow-2' : 'accent'" @click="handleTagClick(tag)" />
 
-          <q-icon name="close" size="md" class="q-ml-md cursor-pointer rounded-borders" v-ripple @click="clearFilter" />
+          <q-btn round push color="dark" icon="close" @click="clearFilter" />
         </div>
         <div v-else class="row flex-center q-mb-md no-wrap q-px-lg">
           <q-select v-model="selectedTag" :options="tagOptions" :label="$t('filter')" label-color="secondary" dense
             class="full-width" :label-fn="(tag) => $t(tag)" emit-value map-options />
-          <q-icon name="close" size="md" class="q-ml-md cursor-pointer rounded-borders" v-ripple @click="clearFilter" />
+          <q-btn round push color="dark" class="q-ml-md" icon="close" @click="clearFilter" />
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@
             :wrapperIsNotStatic="wrapperIsNotStatic" />
         </div>
         <div v-if="wrapperIsNotStatic" class="flex items-center justify-center">
-          <q-btn class="q-mt-md" color="accent" icon-right="search" :label="$t('show_more_of_my_works')"
+          <q-btn class="q-mt-md h6" color="accent" icon-right="search" :label="$t('show_more_of_my_works')"
             :to="{ path: './works' }" />
         </div>
         <div v-if="allWorksAreLoaded" class="all_is_loaded flex items-center justify-center">
@@ -138,6 +138,14 @@ function clearFilter() {
   selectedTag.value = null;
 }
 
+function handleTagClick(tag) {
+  if (selectedTag.value === tag) {
+    clearFilter();
+  } else {
+    selectedTag.value = tag;
+  }
+}
+
 function handleFilterByTag(tag) {
   selectedTag.value = tag;
 }
@@ -175,13 +183,51 @@ const onLoad = (index, done) => {
     done();
   }
 }
-// Add a watch function to monitor the selectedTag value
+// TODO behavior: 'smooth' results in mozilla bug where scroll doesn't work
 watch(selectedTag, (newTag, oldTag) => {
   if (newTag !== oldTag) {
-    // Reset the scrollWorks array and currentIndex
-    scrollWorks.value = filteredWorks.value.slice(0, 5)
-    currentIndex = 0;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    resetScrollState();
+    if (navigator.userAgent.includes('Firefox')) { handleFirefoxScroll() }
   }
 })
+
+function resetScrollState() {
+  scrollWorks.value = filteredWorks.value.slice(0, 5);
+  currentIndex = 0;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function handleFirefoxScroll() {
+  scrollWorks.value = filteredWorks.value.slice(0, 5);
+  currentIndex = 0;
+  window.scrollTo({ top: 0 }); // TODO this is a workaround for the bug in mozilla
+}
+
+// const resetWorksScroll = () => {
+//   scrollWorks.value = filteredWorks.value.slice(0, 5);
+//   currentIndex = 0;
+//   const scrollOptions = { top: 0, behavior: 'smooth' };
+//   if (navigator.userAgent.includes('Firefox')) {
+//     scrollOptions.behavior = 'auto';
+//     setTimeout(() => {
+//       window.scrollTo({ top: 0, behavior: 'smooth' });
+//     }, 0);
+//   }
+//   window.scrollTo(scrollOptions);
+// }
+
+// watch(selectedTag, (newTag, oldTag) => {
+//   if (newTag !== oldTag) {
+//     // Reset the scrollWorks array and currentIndex
+//     scrollWorks.value = filteredWorks.value.slice(0, 5)
+//     currentIndex = 0;
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+//     if (navigator.userAgent.includes('Firefox')) {
+//       scrollOptions.behavior = 'auto';
+//       setTimeout(() => {
+//         window.scrollTo({ top: 0, behavior: 'smooth' });
+//       }, 0);
+//     }
+//   }
+// })
 </script>
