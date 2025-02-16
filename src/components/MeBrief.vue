@@ -1,9 +1,10 @@
 <template>
     <q-item>
         <q-item-section>
-            <q-card flat bordered style="max-width: 650px" class="q-pa-md">
+            <q-card flat bordered style="max-width: 650px" class="q-pa-md"
+                :class="$q.dark.isActive ? 'border-solid-thickness1 border-color-darkborder1' : ''">
                 <q-card-section class="row flex items-center"
-                    :class="$q.screen.lt.sm ? 'justify-around' : 'justify-between'">
+                    :class="$q.screen.lt.lg ? 'justify-around' : 'justify-between'">
                     <div class="q-pr-md text-h4 text-center q-pt-sm">{{ $t("devPages_devRootPage_me_name") }}</div>
                     <div class="q-pl-md flex">
                         <q-btn class="q-mx-sm" disable round color="dark" icon="fa-brands fa-telegram" size="lg" />

@@ -8,7 +8,7 @@
           control-color="dark" prev-icon="arrow_left" next-icon="arrow_right" navigation-icon="radio_button_unchecked"
           navigation-active-icon="radio_button_checked" control-type="regular" :navigation="thumbnailHasMoreThat1Pic"
           :arrows="thumbnailHasMoreThat1Pic" height="calc(200px + 10vw)" ref="carousel"
-          class="text-white shadow-0 bg-glass-black q-pt-md">
+          class="text-white shadow-0 bg-glass-1 q-pt-md">
           <q-carousel-slide v-for="(img, index) in work.thumbImgPaths" :key="img" :name="index + 1"
             class="flex justify-center" style="width: 100%;"><q-img v-bind:src="`works_imgs/${workFolder}${img}.webp`"
               spinner-color="secondary" fit="contain" style="max-height: 100%; max-width: 400px"

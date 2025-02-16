@@ -19,7 +19,7 @@
           </q-item>
         </q-item-section> -->
       </q-item>
-      <!-- <q-card class="whoiam-img flex justify-center flex-center border-radius20 q-ma-md">
+      <!-- <q-card class="whoiam-img flex justify-center flex-center border-radius-20 q-ma-md">
         <q-img class="non-selectable rounded-borders" alt="Meme" spinner-color="secondary" src="\general\me_me.webp"
           style="min-width: 200px; min-height: 200px; width: 80%; height: 80%" />
       </q-card> -->
@@ -31,7 +31,7 @@
       <div class="h1 text-center">
         {{ $t("myWorks") }}
       </div>
-      <div class="myworksexample border-radius20">
+      <div class="myworksexample border-radius-20">
         <PortCards_Wrapper :howMuchWorksToShow="3" :whatWorksToShow="`works_webdes`" />
       </div>
     </div>

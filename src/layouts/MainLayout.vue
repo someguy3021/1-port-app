@@ -127,7 +127,7 @@ const showCookieNotification = () => {
   $q.notify({
     message: t('we_are_using_cookies'), // Localized message
     position: 'bottom-right',
-    color: 'primary',
+    color: 'dark',
     icon: 'contactless',
     actions: [
       {
