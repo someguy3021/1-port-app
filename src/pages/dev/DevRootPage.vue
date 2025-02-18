@@ -1,7 +1,10 @@
 <template>
   <q-page>
-    <div class="q-py-xl container flex flex-center">
+    <div class="q-pt-xl container flex flex-center">
       <MeBrief />
+    </div>
+    <div class="q-pb-xl container flex flex-center">
+      <MeBriefStack />
     </div>
     <div class=" container flex flex-center">
       <!-- <q-stepper v-model="step" vertical color="primary" animated style="width: 90%;">
@@ -48,6 +51,9 @@
     </div>
 
     <div>
+      <div class="h1 text-center">
+        {{ $t("myWorks") }}
+      </div>
       <div class="myworksexample thscale-q-py-xl border-radius-20">
         <PortCards_Wrapper :howMuchWorksToShow="3" :whatWorksToShow="`works`" />
       </div>
@@ -58,6 +64,7 @@
 <script setup>
 import PortCards_Wrapper from "src/components/PortCards_Wrapper.vue";
 import MeBrief from "src/components/MeBrief.vue"
+import MeBriefStack from "src/components/MeBrief_Stack.vue"
 
 defineOptions({
   name: "DevRootPage",
