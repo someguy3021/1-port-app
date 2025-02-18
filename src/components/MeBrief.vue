@@ -5,8 +5,9 @@
                 :class="$q.dark.isActive ? 'border-solid-thickness1 border-color-darkborder1' : ''">
                 <q-card-section class="row flex items-center"
                     :class="$q.screen.lt.lg ? 'justify-around' : 'justify-between'">
-                    <div class="q-pr-md text-h4 text-center q-pt-sm">{{ $t("devPages_devRootPage_me_name") }}</div>
-                    <div class="q-pl-md flex">
+                    <div class=" text-h4 text-center q-pt-sm" :class="$q.screen.lt.lg ? '' : 'q-pr-md'">{{
+                        $t("devPages_devRootPage_me_name") }}</div>
+                    <div class="flex" :class="$q.screen.lt.lg ? '' : 'q-pl-md'">
                         <q-btn class="q-mx-sm" disable round color="dark" icon="fa-brands fa-telegram" size="lg" />
                         <q-btn class="q-mx-sm" disable round color="dark" icon="fa-brands fa-github" size="lg" />
                         <q-tooltip class="bg-negative text-black text-body2 shadow-alwaysBlack-20 q-pa-sm"
