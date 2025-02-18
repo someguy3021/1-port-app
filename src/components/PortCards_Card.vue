@@ -47,7 +47,7 @@
       </q-card-section>
     </div>
     <q-card-actions align="right" class="q-pa-md self-end">
-      <q-btn class="text-capitalize" @click="showCardDialog = true" color="accent" push
+      <q-btn class="text-capitalize" @click="showCardDialog = true" :color="longDescrAvailable ? 'accent' : 'dark'" push
         :disable="longDescrAvailable != true">{{ $t("button_ShowMore") }}
         <q-tooltip v-if="longDescrAvailable == true" class="bg-secondary text-body2 shadow-5" :offset="[10, 10]">
           {{ $t("tooltip_showTheWorkDescrLong") }}
