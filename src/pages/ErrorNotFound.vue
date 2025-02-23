@@ -7,8 +7,7 @@
         {{ $t("page404_caption") }}
       </div>
 
-      <q-btn class="q-mt-xl" color="white" text-color="black" unelevated @click="goBack" :label="$t('page404_button')"
-        no-caps />
+      <q-btn class="q-mt-xl" color="white" text-color="black" unelevated to="/" :label="$t('page404_button')" no-caps />
     </div>
   </div>
 </template>
@@ -18,11 +17,11 @@ defineOptions({
   name: "ErrorNotFound",
 });
 
-import { useRouter } from 'vue-router';
+// import { useRouter } from 'vue-router';
 
-const router = useRouter();
+// const router = useRouter();
 
-function goBack() {
-  router.go(-1); // Navigates back to the previous page
-}
+// function goBack() {
+//   router.go(-1); // Navigates back to the previous page
+// }
 </script>
