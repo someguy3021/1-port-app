@@ -22,7 +22,7 @@
 
 <script setup>
 defineOptions({
-  name: "EssentialLink",
+  name: "AppLink",
 });
 
 import { computed } from 'vue';

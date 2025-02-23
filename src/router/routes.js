@@ -1,15 +1,17 @@
 const routes = [
-  // {
-  //   // these are depricate routes, probably 404 should be added here later
-  //   path: "/",
-  //   component: () => import("layouts/MainLayout.vue"),
-  //   children: [
-  //     { path: "", component: () => import("pages/AboutMePage.vue") },
-  //     { path: "works", component: () => import("pages/MyWorksPage.vue") },
-  //     { path: "services", component: () => import("pages/ServicesPage.vue") },
-  //     { path: "contacts", component: () => import("pages/ContactsPage.vue") },
-  //   ],
-  // },
+  {
+    // these are depricate routes, probably 404 should be added here later
+    path: "/",
+    name: "Root",
+    component: () => import("layouts/MainLayout.vue"),
+    // children: [
+    //   { path: "", component: () => import("pages/AboutMePage.vue") },
+    //   { path: "works", component: () => import("pages/MyWorksPage.vue") },
+    //   { path: "services", component: () => import("pages/ServicesPage.vue") },
+    //   { path: "contacts", component: () => import("pages/ContactsPage.vue") },
+    // ],
+    redirect: "/dev",
+  },
   {
     // these routes for who wants to hire me as a prog and knows coding
     path: "/dev",

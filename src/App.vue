@@ -27,4 +27,9 @@ onBeforeMount(() => {
     $q.loading.hide();
   }, 1000); // Adjust this duration as needed for your async task
 });
+
+// app.config.errorHandler = (err) => {
+//   /* обработка ошибки */
+//   /* i didn't check if that thing could work, cause there should be createApp for it, but it is nowhere to be found in the proj. In a case if that works, this should i guess reload the page in case of some errors, especially render error i guess, cause i had it once when switching tabs or smthn */
+// }
 </script>

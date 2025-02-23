@@ -10,7 +10,7 @@
           <q-item class="text-weight-regular text-white rounded-borders">{{ $t("myportfolio") }}</q-item>
         </q-toolbar-title>
         <div class="row gt-sm">
-          <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" :isHeader="true" />
+          <AppLink v-for="link in linksList" :key="link.title" v-bind="link" :isHeader="true" />
         </div>
       </q-toolbar>
     </q-header>
@@ -62,7 +62,7 @@
             </q-item-section>
           </q-item>
         </q-item-label>
-        <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" />
+        <AppLink v-for="link in linksList" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
 
@@ -71,7 +71,7 @@
     </q-page-container>
     <q-footer v-if="$q.screen.lt.md" elevated :class="$q.dark.isActive ? 'bg-dark' : 'bg-darkLighter'">
       <q-toolbar class="container flex flex-center">
-        <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" :isHeader="true" />
+        <AppLink v-for="link in linksList" :key="link.title" v-bind="link" :isHeader="true" />
       </q-toolbar>
     </q-footer>
     <q-page-scroller position="bottom-right" :scroll-offset="150" :offset="[18, 18]">
@@ -82,7 +82,7 @@
 
 <script setup>
 import { ref } from "vue";
-import EssentialLink from "components/EssentialLink.vue";
+import AppLink from "components/AppLink.vue";
 import LanguageSwitch from "src/components/LanguageSwitch.vue";
 import ThemeSwitcher from "src/components/ThemeSwitcher.vue";
 
