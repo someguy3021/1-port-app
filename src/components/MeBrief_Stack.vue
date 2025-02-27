@@ -24,6 +24,7 @@ const myStack = [
     { name: 'TypeScript', icon: 'fa-brands fa-js', colorBlock: 'blue-9', colorText: 'white' },
     { name: 'Vite', icon: 'fa-brands fa-js', colorBlock: 'deep-purple-9', colorText: 'white' },
     { name: 'Vue', icon: 'fa-brands fa-vuejs', colorBlock: 'green-7', colorText: 'white' },
+    { name: 'Pinia', icon: 'fa-brands fa-vuejs', colorBlock: 'green-7', colorText: 'white' },
     { name: 'Quasar', icon: 'fa-brands fa-vuejs', colorBlock: 'blue-9', colorText: 'white' },
     { name: 'Adobe Photoshop', icon: 'fa-solid fa-image', colorBlock: 'blue-8', colorText: 'white' },
     { name: 'Adobe Illustrator', icon: 'fa-solid fa-image', colorBlock: 'orange-10', colorText: 'white' },

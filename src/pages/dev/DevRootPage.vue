@@ -6,7 +6,7 @@
     <div class="q-pb-xl container flex flex-center">
       <MeBriefStack />
     </div>
-    <div class=" container flex flex-center">
+    <div class="container flex flex-center">
       <!-- <q-stepper v-model="step" vertical color="primary" animated style="width: 90%;">
         <q-step :name="1" :title="$t('devPages_devRootPage_exp_1_role')"
           :caption="$t('devPages_devRootPage_exp_1_where')" color="secondary" icon="language" active-icon="language"
