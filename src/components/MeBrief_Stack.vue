@@ -23,6 +23,7 @@ const myStack = [
     { name: 'JavaScript', icon: 'fa-brands fa-js', colorBlock: 'orange-9', colorText: 'white' },
     { name: 'TypeScript', icon: 'fa-brands fa-js', colorBlock: 'blue-9', colorText: 'white' },
     { name: 'Vite', icon: 'fa-brands fa-js', colorBlock: 'deep-purple-9', colorText: 'white' },
+    { name: 'Unit-tests', icon: 'fa-brands fa-js', colorBlock: 'orange-9', colorText: 'white' },
     { name: 'Vue', icon: 'fa-brands fa-vuejs', colorBlock: 'green-7', colorText: 'white' },
     { name: 'Pinia', icon: 'fa-brands fa-vuejs', colorBlock: 'green-7', colorText: 'white' },
     { name: 'Quasar', icon: 'fa-brands fa-vuejs', colorBlock: 'blue-9', colorText: 'white' },
@@ -30,6 +31,7 @@ const myStack = [
     { name: 'Adobe Illustrator', icon: 'fa-solid fa-image', colorBlock: 'orange-10', colorText: 'white' },
     { name: 'Figma', icon: 'fa-brands fa-figma', colorBlock: 'grey-10', colorText: 'white' },
     { name: 'SQL', icon: 'fa-solid fa-database', colorBlock: 'blue-9', colorText: 'white' },
+    { name: 'FSD', icon: 'architecture', colorBlock: 'blue-9', colorText: 'white' },
     // { name: 'Node.js', icon: 'search', colorBlock: 'dark', colorText: 'white' },
     // { name: 'Express.js', icon: 'search', colorBlock: 'dark', colorText: 'white' },
 ]
