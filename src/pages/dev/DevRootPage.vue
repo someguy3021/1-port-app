@@ -1,5 +1,8 @@
 <template>
   <q-page>
+    <div class="stars-background">
+      <div v-for="(star, index) in stars" :key="index" class="star" :style="star.style"></div>
+    </div>
     <div class="q-pt-xl container flex flex-center">
       <MeBrief />
     </div>
@@ -27,8 +30,9 @@
           {{ $t("devPages_devRootPage_exp_3_descr") }}
         </q-step>
       </q-stepper> -->
-      <q-item>
-        <q-timeline color="secondary">
+      <q-item :class="$q.dark.isActive ? 'border-solid-thickness1 border-color-darkborder1 bg-dark' : ''"
+        class="border-radius-20">
+        <q-timeline color="secondary" :class="$q.screen.lt.lg ? 'q-ma-md' : 'q-ma-lg'">
           <q-timeline-entry heading :body="experienceString" />
           <q-timeline-entry :title="$t('devPages_devRootPage_exp_3_roleAndWhere')"
             :subtitle="formattedStartDate + $t('devPages_devRootPage_exp_3_when')"
@@ -50,7 +54,7 @@
     </div>
 
     <div>
-      <div class="h1 text-center">
+      <div class="h1 text-center q-pt-xl">
         {{ $t("myWorks") }}
       </div>
       <div class="myworksexample thscale-q-py-xl border-radius-20">
@@ -64,7 +68,7 @@
 import PortCards_Wrapper from "src/components/PortCards_Wrapper.vue";
 import MeBrief from "src/components/MeBrief.vue"
 import MeBriefStack from "src/components/MeBrief_Stack.vue"
-import { computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
@@ -125,6 +129,39 @@ const getExperienceString = (years) => {
 }
 
 const experienceString = computed(() => getExperienceString(totalExperience.value))
+
+// Генерация звезд для анимации
+const stars = ref([])
+
+onMounted(() => {
+  generateStars()
+})
+
+function generateStars() {
+  const starsArray = []
+  const count = 30 // Количество звезд
+
+  for (let i = 0; i < count; i++) {
+    const size = Math.random() * 3 + 1 // Размер звезды (1-4px)
+    const left = Math.random() * 100 // Позиция по горизонтали
+    const duration = Math.random() * 10 + 25 // Длительность анимации (5-15 секунд)
+    const delay = Math.random() * 1 // Задержка анимации (до 5 секунд)
+
+    starsArray.push({
+      style: {
+        width: `${size}px`,
+        height: `${size}px`,
+        left: `${left}vw`,
+        top: `${Math.random() * 100}vh`,
+        animationDuration: `${duration}s`,
+        animationDelay: `${delay}s`,
+        boxShadow: `0 0 ${size * 2}px ${size / 2}px rgba(255, 255, 255, 0.7)`
+      }
+    })
+  }
+
+  stars.value = starsArray
+}
 </script>
 
 <style lang="scss">
@@ -137,4 +174,42 @@ const experienceString = computed(() => getExperienceString(totalExperience.valu
 //   // background: rgba(150, 150, 150, 0.267) !important;
 // }
 /* Stepper lines colors */
+/* Анимация звездного фона */
+.stars-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  will-change: transform, opacity;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
 </style>
