@@ -4,9 +4,12 @@ export default {
   close: "Закрыть",
   open: "Открыть",
   filter: "Фильтр",
+  not_yet_available: "Пока недоступно",
+  works_allWorksLoaded: "Все доступные работы уже показаны",
   choose_a_filter_works:
     "Выберите тег и отфильтруйте мое портфолио по своему вкусу",
   show_more_of_my_works: "Показать больше моих работ",
+  my_skills: "Мои навыки",
   page404_caption: "Упс. Здесь ничего нет...",
   page404_button: "На предыдущую страницу",
   settings: "Настройки",
@@ -14,7 +17,7 @@ export default {
   changetheme: "Изменить тему сайта",
   myportfolio: "Мое портфолио",
   we_are_using_cookies:
-    "Этот сайт использует куки чтобы сохранять цветовую тему и язык сайта",
+    "Этот сайт использует куки чтобы сохранять цветовую тему и язык сайта. Они хранятся только в памяти вашего браузера.",
   we_are_using_cookies_agree: "Хорошо",
   link_links: "Ссылки",
   link_aboutme_title: "Обо мне",
@@ -33,30 +36,5 @@ export default {
   tag_no_code: "No-code",
   tag_tilda: "Tilda",
   tag_wordpress: "Wordpress",
-  aboutmepage_Frontend_Developer_Designer: `Frontend Разработчик\\Дизайнер`,
-  aboutmepage_Making_Products: `Разработка и дизайн рабочих веб-продуктов.`,
-  aboutmepage_Making_Products_SmallPhrase1:
-    "FrontEnd-разработчик с навыками создания веб-сайтов c простым для понимания интерфейсом и опытом взаимодействия.",
-  aboutmepage_Making_Products_SmallPhrase2:
-    "Дизайнер с более чем 5-летним опытом векторной графики и опытом работы в веб-дизайне.",
-  aboutmepage_2GridBlocks_Design_Title: "Дизайн",
-  aboutmepage_2GridBlocks_Design_Descr:
-    "Дизайнер с более чем 5-летним опытом векторной графики и опытом работы в веб-дизайне.",
-  aboutmepage_2GridBlocks_Frontend_Title: "Frontend",
-  aboutmepage_2GridBlocks_Frontend_Descr:
-    "FrontEnd-разработчик с навыками создания веб-сайтов c простым для понимания интерфейсом и опытом взаимодействия.",
-  button_ShowMore: "Подробности",
-  portcard_work_madeFor: "Заказчик",
-  work_stackUsedForWork_Coding_JS: "Javascript",
-  work_stackUsedForWork_Coding_HtmlCSS: "HTML+CSS",
-  work_stackUsedForWork_Coding_Vue: "Vue",
-  work_stackUsedForWork_Coding_VueQuasar: "Quasar",
-  work_stackUsedForWork_Visual_AdobePhotoshop: "Adobe Photoshop",
-  work_stackUsedForWork_Visual_AdobeIllustrator: "Adobe Illustrator",
-  work_stackUsedForWork_Visual_Figma: "Figma",
-
-  tooltip_showTheWorkDescrLong: "Показать работу подробнее",
-  tooltip_clickTofilterByTag: "Нажмите чтобы отфильтровать по этому тегу",
-  tooltip_clickTofilterByTag_disabled:
-    "Перейдите на страницу моих работ чтобы фильтровать их по тегам",
+  // личная информация
 };

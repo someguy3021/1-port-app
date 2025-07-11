@@ -4,8 +4,11 @@ export default {
   close: "Close",
   open: "Open",
   filter: "Filter",
+  not_yet_available: "Not yet available",
+  works_allWorksLoaded: "All available works are already shown",
   choose_a_filter_works: "Choose a tag and filter my portfolio to your liking",
   show_more_of_my_works: "Show more of my works",
+  my_skills: "My skills",
   page404_caption: "Oops. Nothing here...",
   page404_button: "Back to previous page",
   settings: "Settings",
@@ -13,7 +16,7 @@ export default {
   changetheme: "Change site theme",
   myportfolio: "My portfolio",
   we_are_using_cookies:
-    "This site uses cookies to save theme colors and your language for website",
+    "This site uses cookies to save theme colors and your language for website. They are stored only in the memory of your browser.",
   we_are_using_cookies_agree: "Ok",
   link_links: "Links",
   link_aboutme_title: "About me",
@@ -32,29 +35,5 @@ export default {
   tag_no_code: "No code",
   tag_tilda: "Tilda",
   tag_wordpress: "Wordpress",
-  aboutmepage_Frontend_Developer_Designer: `Frontend Developer\\Designer`,
-  aboutmepage_Making_Products: `Making solid design products and experiences.`,
-  aboutmepage_Making_Products_SmallPhrase1:
-    "Frontend Developer with skills to make a website with complex but easy to understand UI and UX.",
-  aboutmepage_Making_Products_SmallPhrase2:
-    "Designer with +5 years of vector graphics, and experience in web-design.",
-  aboutmepage_2GridBlocks_Design_Title: "Design",
-  aboutmepage_2GridBlocks_Design_Descr:
-    "Designer with +5 years of vector graphics, and experience in web-design.",
-  aboutmepage_2GridBlocks_Frontend_Title: "Frontend",
-  aboutmepage_2GridBlocks_Frontend_Descr:
-    "Frontend Developer with skills to make a website with complex but easy to understand UI and UX.",
-  button_ShowMore: "Show more",
-  portcard_work_madeFor: "Customer",
-  work_stackUsedForWork_Coding_JS: "Javascript",
-  work_stackUsedForWork_Coding_HtmlCSS: "HTML+CSS",
-  work_stackUsedForWork_Coding_Vue: "Vue",
-  work_stackUsedForWork_Coding_VueQuasar: "Quasar",
-  work_stackUsedForWork_Visual_AdobePhotoshop: "Adobe Photoshop",
-  work_stackUsedForWork_Visual_AdobeIllustrator: "Adobe Illustrator",
-  work_stackUsedForWork_Visual_Figma: "Figma",
-
-  tooltip_showTheWorkDescrLong: "Show the work in details",
-  tooltip_clickTofilterByTag: "Click to filter by this tag",
-  tooltip_clickTofilterByTag_disabled: "Go to works page to filter my works",
+  // личная информация
 };
