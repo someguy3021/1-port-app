@@ -2,7 +2,7 @@
     <q-item>
         <q-item-section>
             <q-card flat bordered style="max-width: 650px" class="q-pa-md"
-                :class="$q.dark.isActive ? 'border-solid-thickness1 border-color-darkborder1' : ''">
+                :class="$q.dark.isActive ? 'border-solid-thickness1 border-color-darkborder1 border-radius-20' : ''">
                 <div class="h4 q-pb-sm text-center">{{ $t("my_skills") }}</div>
                 <div>
                     <q-chip v-for="(tech, index) in myStack" :key="index" :color="tech.colorBlock"

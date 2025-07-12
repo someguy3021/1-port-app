@@ -2,7 +2,7 @@
     <q-item>
         <q-item-section>
             <q-card flat bordered style="max-width: 650px" class="q-pa-md"
-                :class="$q.dark.isActive ? 'border-solid-thickness1 border-color-darkborder1' : ''">
+                :class="$q.dark.isActive ? 'border-solid-thickness1 border-color-darkborder1 border-radius-20' : ''">
                 <q-card-section class="row flex items-center"
                     :class="$q.screen.lt.lg ? 'justify-around' : 'justify-between'">
                     <div class=" text-h4 text-center q-pt-sm" :class="$q.screen.lt.lg ? '' : 'q-pr-md'">{{
