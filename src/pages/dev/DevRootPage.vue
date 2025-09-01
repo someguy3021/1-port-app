@@ -40,12 +40,12 @@
 
           <q-timeline-entry heading :body="$t('devPages_devRootPage_exp_general2')" />
 
-          <q-timeline-entry :title="$t('devPages_devRootPage_exp_2_roleAndWhere')"
+          <!-- <q-timeline-entry :title="$t('devPages_devRootPage_exp_2_roleAndWhere')"
             :subtitle="$t('devPages_devRootPage_exp_2_when')" :body="$t('devPages_devRootPage_exp_2_descr')"
             color="secondary" icon="keyboard_arrow_up" />
 
           <q-timeline-entry :title="$t('devPages_devRootPage_exp_1_roleAndWhere')"
-            :subtitle="$t('devPages_devRootPage_exp_1_when')" :body="$t('devPages_devRootPage_exp_1_descr')" />
+            :subtitle="$t('devPages_devRootPage_exp_1_when')" :body="$t('devPages_devRootPage_exp_1_descr')" /> -->
 
           <q-timeline-entry :title="$t('devPages_devRootPage_exp_0_roleAndWhere')"
             :subtitle="$t('devPages_devRootPage_exp_0_when')" color="secondary" icon="keyboard_arrow_up" />
@@ -96,13 +96,13 @@ const formattedStartDate = computed(() => {
   return `${months[monthIndex]} ${year}`
 })
 
-const startDate = new Date('2024-02-01') // Укажите вашу дату начала
+const startDate = new Date('2023-07-01') // Укажите вашу дату начала
 const totalExperience = computed(() => {
   const now = new Date()
   const diffInMs = now - startDate
   const years = diffInMs / (1000 * 60 * 60 * 24 * 365.25)
   const exp = Math.round(years * 10) / 10
-  return exp < 1.5 ? 1.5 : exp
+  return exp < 2 ? 2 : exp
 })
 
 // Функция для правильного склонения
