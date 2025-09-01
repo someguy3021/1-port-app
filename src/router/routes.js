@@ -50,56 +50,56 @@ const routes = [
       // { path: "contacts", component: () => import("pages/ContactsPage.vue") },
     ],
   },
-  {
-    // these routes for who wants a website or a design, but it is just a customer
-    path: "/webdes",
-    name: "WebDes",
-    component: () => import("layouts/MainLayout.vue"),
-    props: {
-      linksList: [
-        {
-          title: "link_aboutme_title",
-          caption: "link_aboutme_caption",
-          icon: "school",
-          link: "/",
-        },
-        {
-          title: "link_myworks_title",
-          caption: "link_myworks_caption",
-          icon: "code",
-          link: "/works",
-        },
-        // {
-        //   title: "link_services_title",
-        //   caption: "link_services_caption",
-        //   icon: "home_repair_service",
-        //   link: "/contacts",
-        // },
-        // {
-        //   title: "link_contacts_title",
-        //   caption: "link_contacts_caption",
-        //   icon: "record_voice_over",
-        //   link: "/contacts",
-        // },
-      ],
-    },
-    children: [
-      {
-        path: "",
-        name: "WebDesRoot",
-        component: () => import("pages/webdes/WebdesRootPage.vue"),
-      },
-      {
-        path: "works",
-        component: () => import("pages/webdes/Webdes_WorksPage.vue"),
-      },
-      {
-        path: "services",
-        component: () => import("pages/webdes/Webdes_ServicesPage.vue"),
-      },
-      // { path: "contacts", component: () => import("pages/ContactsPage.vue") },
-    ],
-  },
+  // {
+  //   // these routes for who wants a website or a design, but it is just a customer
+  //   path: "/webdes",
+  //   name: "WebDes",
+  //   component: () => import("layouts/MainLayout.vue"),
+  //   props: {
+  //     linksList: [
+  //       {
+  //         title: "link_aboutme_title",
+  //         caption: "link_aboutme_caption",
+  //         icon: "school",
+  //         link: "/",
+  //       },
+  //       {
+  //         title: "link_myworks_title",
+  //         caption: "link_myworks_caption",
+  //         icon: "code",
+  //         link: "/works",
+  //       },
+  //       // {
+  //       //   title: "link_services_title",
+  //       //   caption: "link_services_caption",
+  //       //   icon: "home_repair_service",
+  //       //   link: "/contacts",
+  //       // },
+  //       // {
+  //       //   title: "link_contacts_title",
+  //       //   caption: "link_contacts_caption",
+  //       //   icon: "record_voice_over",
+  //       //   link: "/contacts",
+  //       // },
+  //     ],
+  //   },
+  //   children: [
+  //     {
+  //       path: "",
+  //       name: "WebDesRoot",
+  //       component: () => import("pages/webdes/WebdesRootPage.vue"),
+  //     },
+  //     {
+  //       path: "works",
+  //       component: () => import("pages/webdes/Webdes_WorksPage.vue"),
+  //     },
+  //     {
+  //       path: "services",
+  //       component: () => import("pages/webdes/Webdes_ServicesPage.vue"),
+  //     },
+  //     // { path: "contacts", component: () => import("pages/ContactsPage.vue") },
+  //   ],
+  // },
   // {
   //   // these routes for someone who wants their audio fixed, but it is just a customer
   //   path: "/freelancer",

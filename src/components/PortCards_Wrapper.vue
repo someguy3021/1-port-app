@@ -60,7 +60,6 @@
 import PortCards_Card from "components/PortCards_Card.vue";
 import { works } from "stores/DB/DB.json";
 import { works as works_dev } from "stores/DB/DB_dev.json";
-import { works as works_webdes } from "stores/DB/DB_webdes.json";
 import { ref, onMounted, computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
@@ -102,7 +101,7 @@ async function getworksData() {
       tempArr = works_dev;
       break;
     case 'works_webdes':
-      tempArr = works_webdes;
+      tempArr = works;
       break;
     default:
       console.error('Works wrapper says: Invalid whatWorksToShow prop value, or no value at all');

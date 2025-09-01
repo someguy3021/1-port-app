@@ -32,7 +32,7 @@
         {{ $t("myWorks") }}
       </div>
       <div class="myworksexample border-radius-20">
-        <PortCards_Wrapper :howMuchWorksToShow="3" :whatWorksToShow="`works_webdes`" />
+        <PortCards_Wrapper :howMuchWorksToShow="3" :whatWorksToShow="`works`" />
       </div>
     </div>
     <!-- <div class="q-py-xl" :class="$q.dark.isActive ? '' : ''">
